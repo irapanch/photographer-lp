@@ -1,6 +1,7 @@
 .header {
   padding-top: 20px;
   padding-bottom: 20px;
+  max-height: 66px;
   .nav {
     display: flex;
     justify-content: space-between;
@@ -10,12 +11,12 @@
       gap: 3vw;
     }
     &-item {
-      border-bottom: 1px solid transparent;
+      border-bottom: 2px solid transparent;
       transition: color 0.5s $transition-timing-function;
     }
     &-item:hover {
-      color: $hover-color;
-      border-bottom: 2px solid $hover-color;
+      color: $accent-color;
+      border-bottom: 2px solid $accent-color;
     }
     &-item__link {
       padding-top: 20px;
