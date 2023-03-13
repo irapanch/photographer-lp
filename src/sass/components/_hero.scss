@@ -1,6 +1,6 @@
 .hero {
   // max-width: 1600px;
-  height: calc(100vh - 66px);
+  height: 100vh;
   margin: 0 auto;
   text-align: center;
   display: flex;
@@ -15,6 +15,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  .hero-container {
+    display: block;
+    width: 100%;
+  }
+  .title-container {
+    margin-left: 0;
+    text-align: left;
+  }
 
   &__title {
     font-size: 36px;

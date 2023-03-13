@@ -1,7 +1,14 @@
 .header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+
   padding-top: 20px;
   padding-bottom: 20px;
-  max-height: 66px;
+
+  z-index: 99;
+  color: $light-color;
   .nav {
     display: flex;
     justify-content: space-between;

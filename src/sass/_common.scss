@@ -79,8 +79,8 @@ img {
 
 .button {
   padding: 10px 0;
-  color: $main-color;
-  background-color: $accent-color;
+  color: $light-color;
+  background-color: #6b6b6b52;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -88,7 +88,7 @@ img {
   letter-spacing: 0.06em;
   font-family: inherit;
   border-radius: 4px;
-  border-width: 0;
+  border: 1px solid $light-color;
   cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -96,7 +96,8 @@ img {
 
 .button:hover {
   color: $main-color;
-  background-color: $light-color;
+  background-color: $accent-color;
+  border-color: $main-color;
 }
 
 section {
