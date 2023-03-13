@@ -1,0 +1,22 @@
+.about {
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+  }
+  &-photo__container {
+    flex-basis: 25%;
+    width: 300px;
+  }
+  &-photo {
+    width: 300px;
+    border-radius: 50%;
+    // width: 25vw;
+    // width: 100%;
+  }
+
+  &-wrapper {
+    flex-basis: 70%;
+  }
+}
