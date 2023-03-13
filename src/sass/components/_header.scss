@@ -1,0 +1,25 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    &-list {
+      display: flex;
+      gap: 3vw;
+    }
+    &-item {
+      border-bottom: 1px solid transparent;
+      transition: color 0.5s $transition-timing-function;
+    }
+    &-item:hover {
+      color: $hover-color;
+      border-bottom: 2px solid $hover-color;
+    }
+    &-item__link {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}
