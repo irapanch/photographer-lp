@@ -1,0 +1,17 @@
+.advantages {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    // justify-content: center;
+
+    .item {
+      width: 31%;
+      // text-align: center;
+      &-text {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+}
