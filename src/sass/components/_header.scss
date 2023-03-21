@@ -9,13 +9,19 @@
 
   z-index: 99;
   color: $light-color;
+
   .nav {
     display: flex;
     justify-content: space-between;
     font-weight: 500;
     &-list {
-      display: flex;
+      display: none;
+
       gap: 3vw;
+
+      @media screen and (min-width: $tablet-width) {
+        display: flex;
+      }
     }
     &-item {
       border-bottom: 2px solid transparent;
