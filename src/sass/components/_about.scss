@@ -9,9 +9,36 @@
   }
   &-photo__container {
     flex-basis: 25%;
-    width: 300px;
+    // width: 300px;
     margin: 20px auto;
+    position: relative;
+    width: 200px;
+    height: 200px;
+
+    &::before,
+    &::after {
+      border: 5px solid transparent;
+      border-radius: 50%;
+      border-top: 5px solid $accent-color;
+      content: '';
+      display: block;
+      height: calc(100% + 10px);
+      left: 50%;
+      width: calc(100% + 10px);
+      position: absolute;
+    }
+
+    &::before {
+      top: -2 * 5px;
+      transform: translateX(-50%);
+    }
+
+    &::after {
+      bottom: -2 * 5px;
+      transform: translateX(-50%) rotate(180deg);
+    }
   }
+
   &-photo {
     width: 300px;
     border-radius: 50%;
