@@ -1,10 +1,19 @@
+// @import './fonts/fonts';
 @import './utils/variables';
 
 @import './common';
 
 @import './components/header';
 @import './components/hero';
-@import './components/about';
-@import './components/benefits';
-@import './components/services';
-@import './components/timeline';
+// @import './components/about';
+// @import './components/benefits';
+// @import './components/services';
+// @import './components/timeline';
+
+
+@font-face {
+  font-family: 'Kharkiv';
+  src: url('./fonts/KharkivTone.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}

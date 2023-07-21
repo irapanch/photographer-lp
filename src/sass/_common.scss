@@ -4,18 +4,13 @@
 html {
   scroll-behavior: smooth;
   overflow-y: scroll;
+  font-size: 10px;
 }
 
 body {
-  // font-family: $font-family400;
   font-size: 16px;
   line-height: calc(24 / 16);
   color: $main-color;
-  // background-color: $white-color;
-
-  // @media screen and (min-width: $tablet-width) {
-  //   font-size: 20px;
-  // }
   font-family: $main-font;
 }
 
@@ -44,7 +39,6 @@ ul {
 
 h1,
 h3 {
-  font-family: $secondary-font;
   font-weight: 600;
 }
 
@@ -80,29 +74,23 @@ img {
 
 .container {
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 1.6rem;
   max-width: $desktop-width;
   // max-width: 90vw;
 }
-
-// . {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
 
 .button {
   position: relative;
   padding: 10px 0;
   overflow: hidden;
-  color: $light-color;
+  // color: $light-color;
   background-color: #6b6b6b52;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
-  font-family: $secondary-font;
+  // font-family: $secondary-font;
   border-radius: 50px;
   // border: 1px solid $light-color;
   border: none;
