@@ -3,8 +3,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 2rem;
-    padding-top: 2.8rem;
-    padding-bottom: 2.8rem;
+    padding-left: 4rem;
 
     .nav__phone {
       color: $accent-color;
@@ -32,5 +31,41 @@
         display: flex;
       }
     }
+
+    .nav-item {
+      display: inline-flex;
+    }
+
+    .nav-item__link {
+      position: relative;
+      // padding: 2rem 3rem;
+      padding-bottom: 2rem;
+      padding-top: 2rem;
+    }
+
+    .nav-item__link:after {
+      opacity: 0;
+      transition: opacity $transition-duration $transition-timing-function;
+    }
+
+    .nav-item__link.active:after,
+    .nav-item__link:hover:after {
+      // display: inline-block;
+      content: '';
+      width: 162px;
+      height: 51px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      background-image: url('../images/svg/chosen.svg');
+      background-repeat: no-repeat;
+      // transform: translateY(calc(50% - 2rem));
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+  }
+
+  .phone-header {
+    align-self: center;
   }
 }
