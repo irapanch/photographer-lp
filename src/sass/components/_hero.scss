@@ -1,59 +1,117 @@
 .hero {
-  // max-width: 1600px;
-  height: 100vh;
+  height: calc(100vh - 63px);
   margin: 0 auto;
-  text-align: center;
   display: flex;
   align-items: center;
-  background-color: #c4c4c4;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
     ),
-    url(../images/hero.jpg);
+    url(../images/hero.jpg), lightgray -421.946px 0px / 234.371% 100% no-repeat;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-position: top right;
   background-size: cover;
 
-  .hero-container {
-    display: block;
-    width: 100%;
+  @media (min-width: $desktop-width) {
+    background-position: center;
+    height: calc(100vh - 70px);
   }
-  .title-container {
-    margin-left: 0;
-    text-align: center;
 
-    @media screen and (min-width: $tablet-width) {
-      text-align: left;
+  .hero-container {
+    flex-direction: column;
+    align-self: flex-end;
+
+    display: flex;
+    width: $desktop-max-width;
+    padding: 0 15px;
+    @media (min-width: $desktop-width) {
+      padding: 0 40px;
+      gap: 25vh;
+      align-self: center;
+      gap: 0;
     }
   }
 
   &__title {
-    font-size: 30px;
-    // color: $light-color;
-    // font-family: $secondary-font;
-    @media screen and (min-width: $tablet-width) {
-      font-size: 36px;
+    display: flex;
+    flex-direction: column;
+
+    // text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5.6rem;
+    line-height: 52.92px;
+    text-transform: uppercase;
+    color: $light-text-color;
+
+    @media (min-width: $tablet-width) {
+      font-size: 100px;
+      line-height: 80px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 150px;
+      line-height: 150px;
+    }
+
+    & .title__first-word {
+      align-self: flex-start;
+    }
+
+    & .title__second-word {
+      @media (min-width: $desktop-width) {
+        align-self: flex-end;
+      }
     }
   }
+
   &__subtitle {
-    font-size: 36px;
-    // color: $light-color;
-    // font-family: $secondary-font;
-    @media screen and (min-width: $tablet-width) {
-      font-size: 48px;
+    text-align: left;
+    margin-bottom: 13px;
+    font-size: 1.4rem;
+    line-height: 21px;
+    color: $light-text-color;
+    font-style: normal;
+    font-weight: 400;
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+      font-size: 1.8rem;
+      position: relative;
+      margin-left: auto;
+      top: 22px;
     }
   }
   &__text {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    // color: $light-color;
+    text-align: right;
+    font-size: 1.6rem;
+    color: $light-text-color;
+    line-height: 19.2px;
+    margin-bottom: 20vh;
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+      text-align: left;
+      margin-bottom: 0;
+    }
+  }
+
+  .hero__bottom {
+    @media (min-width: $desktop-width) {
+      width: 908px;
+      display: flex;
+      margin-left: auto;
+      gap: 100px;
+      align-items: center;
+    }
   }
 
   .button-hero {
-    padding-left: 32px;
-    padding-right: 32px;
+    margin: 0 auto;
+    display: block;
+    max-width: 345px;
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      align-self: center;
+    }
   }
 }

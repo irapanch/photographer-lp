@@ -12,15 +12,9 @@ body {
   line-height: calc(24 / 16);
   color: $main-color;
   font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
 }
-
-// section {
-//   overflow: hidden;
-
-//   @media screen and (min-width: $desktop-width) {
-//     overflow: auto;
-//   }
-// }
 
 ul {
   list-style: none;
@@ -35,16 +29,6 @@ p,
 ul {
   margin: 0;
   padding: 0;
-}
-
-h1,
-h3 {
-  font-weight: 600;
-}
-
-h2 {
-  font-size: 1.3em;
-  margin-bottom: 10px;
 }
 
 a {
@@ -75,24 +59,21 @@ img {
 .container {
   margin: 0 auto;
   padding: 0 1.6rem;
-  max-width: 1280px;
+  max-width: $desktop-max-width;
   // max-width: 90vw;
 }
 
 .button {
   position: relative;
-  padding: 10px 0;
-  overflow: hidden;
+  padding: 16px 32px 12px;
   // color: $light-color;
-  background-color: #6b6b6b52;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.87;
+  background-color: $accent-color;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
   text-align: center;
-  letter-spacing: 0.06em;
-  // font-family: $secondary-font;
-  border-radius: 50px;
-  // border: 1px solid $light-color;
+  color: $light-text-color;
   border: none;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
 
@@ -107,39 +88,7 @@ img {
   border-color: $main-color;
 }
 
-// #shiny {
-// 	border-radius: 50px;
-// 	border: none;
-// 	background: #a7c957;
-// 	position: relative;
-// 	overflow: hidden;
-// }
-
-.button::before {
-  position: absolute;
-  content: '';
-  width: 15rem;
-  height: 1.5rem;
-  top: -70%;
-  left: -60%;
-  background-color: #f2e8cf;
-  transform: rotateZ(115deg);
-  transition: left 800ms ease, transform 800ms ease;
-}
-
-.button:hover:before {
-  left: 70%;
-}
-
-.button:active {
-  transform: scale(0.98);
-}
-
 section {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-h2 {
-  // margin-bottom: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
