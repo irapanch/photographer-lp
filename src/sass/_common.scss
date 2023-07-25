@@ -60,7 +60,9 @@ img {
   margin: 0 auto;
   padding: 0 1.6rem;
   max-width: $desktop-max-width;
-  // max-width: 90vw;
+  @media (min-width: $desktop-width) {
+    padding: 0 4rem;
+  }
 }
 
 .button {
@@ -88,7 +90,7 @@ img {
   border-color: $main-color;
 }
 
-section {
-  padding-top: 32px;
-  padding-bottom: 32px;
+.section-container {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
