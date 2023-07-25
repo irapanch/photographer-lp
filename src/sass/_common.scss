@@ -94,3 +94,9 @@ img {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+
+@mixin header-text {
+  font-size: 4rem;
+  line-height: 40px;
+  text-transform: uppercase;
+}

@@ -1,25 +1,32 @@
 .benefits.section-container {
   @media (min-width: $desktop-width) {
-    background-image: url('../images/svg/hand-ok.svg');
+    background-image: url('../images/svg/hand-ok.svg'),
+      url('../images/svg/hand-bottom.svg');
     background-repeat: no-repeat;
-    background-position: top right;
-    margin-top: 50px;
-    background-size: 20%;
+    background-position: 100% 0, 100% 385px;
+    margin-top: 35px;
+    background-size: 320px, 420px;
+    padding: 0;
   }
 }
 
 .benefits {
   &-container {
+    margin-bottom: 60px;
+    @media (min-width: $desktop-width) {
+      padding: 10rem 4rem 0;
+      margin-bottom: 100px;
+    }
   }
 
   &__header {
-    font-size: 4rem;
-    line-height: 40px;
-    text-transform: uppercase;
+    @include header-text;
+
     margin-bottom: 60px;
     max-width: 375px;
     @media (min-width: $tablet-width) {
       max-width: max-content;
+      // margin-bottom: 100px;
     }
   }
   &__list {
@@ -28,17 +35,13 @@
     gap: 60px;
 
     @media (min-width: $desktop-width) {
-      flex-direction: row;
-      gap: 24px;
-      width: 80%;
-    }
-
-    &-item:first-of-type {
-      flex-grow: 2;
+      // flex-direction: row;
+      gap: 50px;
+      width: 56%;
     }
 
     &-item:not(:first-of-type) {
-      flex-grow: 3;
+      // flex-basis: 4;
     }
 
     &-item h3 {
@@ -60,6 +63,62 @@
       background-image: url('../images/svg/underline.svg');
       background-repeat: no-repeat;
       // transform: translate(-50%, -50%);
+    }
+  }
+
+  .recipe {
+    // width: 375px;
+    // position: relative;
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    & img {
+      width: 375px;
+      margin: 0 auto;
+      @media (min-width: $desktop-width) {
+        margin: 0;
+      }
+    }
+
+    &-text {
+      position: relative;
+      bottom: 100px;
+      left: 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      @media (min-width: $desktop-width) {
+        flex-direction: row;
+        bottom: 0;
+        width: 90%;
+        justify-content: space-around;
+        font-size: 20px;
+      }
+
+      & .light-text {
+        color: $light-text-color;
+        @media (min-width: $desktop-width) {
+          color: $main-color;
+        }
+      }
+      & .light-text > span + span {
+        max-width: 185px;
+        display: inline-block;
+        font-size: 15px;
+        @media (min-width: $desktop-width) {
+          max-width: 100%;
+          font-size: 20px;
+        }
+      }
+
+      &__header {
+        @include header-text;
+        display: block;
+      }
     }
   }
 }
