@@ -1,4 +1,5 @@
 .benefits.section-container {
+  position: relative;
   @media (min-width: $desktop-width) {
     background-image: url('../images/svg/hand-ok.svg'),
       url('../images/svg/hand-bottom.svg');
@@ -121,4 +122,19 @@
       }
     }
   }
+}
+
+.sault-animation {
+  position: absolute;
+  top: 700px;
+  right: 313px;
+  width: 1px;
+  height: 1px;
+  overflow: visible;
+}
+
+.circle {
+  position: absolute;
+  background-color: #0065fd;
+  border-radius: 50%;
 }
