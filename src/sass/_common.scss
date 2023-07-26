@@ -95,6 +95,12 @@ img {
   padding-bottom: 80px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 @mixin header-text {
   font-size: 4rem;
   line-height: 40px;

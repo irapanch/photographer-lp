@@ -1,53 +1,80 @@
 .about {
-  &-container {
-    @media screen and (min-width: $tablet-width) {
-      display: flex;
-      justify-content: space-between;
-      gap: 30px;
-      align-items: center;
+  // width: 375px;
+  // position: relative;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    // justify-content: space-between;
+  }
+
+  &__image {
+    display: block;
+    width: 375px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    & img {
+      width: 300px;
+      margin: 0 auto;
+      @media (min-width: $desktop-width) {
+        margin: 0;
+      }
     }
   }
-  &-photo__container {
-    flex-basis: 25%;
-    // width: 300px;
-    margin: 20px auto;
+
+  &__text {
     position: relative;
-    width: 200px;
-    height: 200px;
+    // bottom: 100px;
+    left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    // gap: 40px;
 
-    &::before,
-    &::after {
-      border: 5px solid transparent;
-      border-radius: 50%;
-      border-top: 5px solid $accent-color;
-      content: '';
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      // bottom: 0;
+      // justify-content: space-around;
+      font-size: 20px;
+    }
+
+    // &-item {
+    //   color: $light-text-color;
+    //   @media (min-width: $desktop-width) {
+    //     color: $main-color;
+    //   }
+    // }
+    &-item > span + span {
+      // max-width: 185px;
+      display: inline-block;
+      font-size: 15px;
+      @media (min-width: $desktop-width) {
+        // max-width: 100%;
+        font-size: 20px;
+      }
+    }
+
+    &-header {
+      @include header-text;
       display: block;
-      height: calc(100% + 10px);
-      left: 50%;
-      width: calc(100% + 10px);
-      position: absolute;
-    }
-
-    &::before {
-      top: -2 * 5px;
-      transform: translateX(-50%);
-    }
-
-    &::after {
-      bottom: -2 * 5px;
-      transform: translateX(-50%) rotate(180deg);
     }
   }
+}
+.order-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  &-photo {
-    width: 300px;
-    border-radius: 50%;
-
-    // width: 25vw;
-    // width: 100%;
+  .order-title {
+    @include header-text;
+    font-size: 34px;
+    margin-bottom: 20px;
+    align-self: center;
+    text-align: center;
   }
-
-  &-wrapper {
-    flex-basis: 70%;
+  .order-text {
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
   }
 }
