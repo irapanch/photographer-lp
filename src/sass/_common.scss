@@ -101,6 +101,16 @@ img {
   height: auto;
 }
 
+.button-order{
+  margin: 0 auto;
+  display: block;
+  max-width: 345px;
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    align-self: center;
+  }
+}
+
 @mixin header-text {
   font-size: 4rem;
   line-height: 40px;
