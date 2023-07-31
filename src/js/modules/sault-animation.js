@@ -1,7 +1,7 @@
 export const saultAnimation = () => {
   const WIDTH_SCREEN = 1024;
 
-  const isDesktop = window.innerWidth > WIDTH_SCREEN;
+  const isDesktop = window.innerWidth >= WIDTH_SCREEN;
 
   if (isDesktop) {
     const container = document.querySelector('.sault-animation');
