@@ -49,7 +49,7 @@
     bottom: 0;
   }
 
-  &__card h2,
+  &__card .content-header,
   &__card p {
     margin: 0;
     padding: 0 30px;
@@ -58,13 +58,23 @@
     left: 0;
   }
 
-  &__card h2 {
+  &__card .content-header {
     color: #ffffff;
     font-weight: 400;
     text-transform: uppercase;
     top: 80%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+    position: relative;
+  }
+
+  & .content-header::after {
+    content: url('../images/svg/arrow-right.svg');
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 62px;
+    height: 19px;
   }
 
   &__card p {
