@@ -15,14 +15,20 @@
     }
   }
 
-  &__header {
+  &-header {
     @include header-text;
-    margin-bottom: 60px;
-    max-width: 375px;
+    // margin-bottom: 60px;
+    // max-width: 375px;
+    font-size: 32px;
     @media (min-width: $tablet-width) {
-      max-width: max-content;
+      max-width: 700px;
     }
   }
+
+  &-subheader {
+    margin-bottom: 60px;
+  }
+
   &__list {
     display: flex;
     flex-direction: column;

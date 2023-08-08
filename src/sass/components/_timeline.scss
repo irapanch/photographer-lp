@@ -1,6 +1,10 @@
 .timeline {
   &-header {
     @include header-text;
+    // margin-bottom: 60px;
+  }
+
+  &-subheader {
     margin-bottom: 60px;
   }
 
@@ -76,28 +80,44 @@
 
   /*Define Accordion box*/
   .accordion {
-    display: flex;
-    justify-content: space-between;
-    height: 300px;
     // overflow: hidden;
+    @media (min-width: $tablet-width) {
+      display: flex;
+      height: 300px;
+      justify-content: space-between;
+    }
 
     & .accordion-item {
       // position: relative;
       display: flex;
-      flex-direction: column;
-      padding-top: 10px;
       align-items: center;
-      // overflow: hidden;
+      overflow: hidden;
       color: $main-color;
       cursor: pointer;
       background: $accent-color;
-      width: 5%;
+      margin-top: 10px;
+      padding-left: 15px;
       border: 1px solid $accent-color;
-      -moz-transition: width 0.5s ease-out;
-      -webkit-transition: width 0.5s ease-out;
-      -o-transition: width 0.5s ease-out;
-      transition: width 0.5s ease-out;
+      width: 100%;
+      transition-property: height, color, background-color;
+      transition-duration: 0.5s;
+      transition-timing-function: $transition-timing-function;
+
+      @media (max-width: $tablet-width) {
+        height: 78px;
+        transition: height 0.5s ease;
+      }
+
+      @media (min-width: $tablet-width) {
+        flex-direction: column;
+        padding-top: 10px;
+        padding-left: 0;
+        margin-top: 0;
+        width: 5%;
+        transition-property: width, color, background-color;
+      }
     }
+
     & .accordion-item:hover {
       background: $secondary-color;
     }
@@ -106,6 +126,12 @@
       display: none;
       padding-top: 20px;
       overflow: hidden;
+
+      @media (max-width: $tablet-width) {
+        width: 80%;
+        margin-right: auto;
+        height: fit-content;
+      }
     }
 
     & .accordion-item::before {
@@ -141,7 +167,10 @@
       background: $light-text-color;
       cursor: default;
       padding: 20px;
-      // overflow: auto;
+      flex-direction: column;
+      @media (max-width: $tablet-width) {
+        height: 500px;
+      }
     }
 
     & .accordion-item.active::before {
@@ -157,7 +186,6 @@
       color: #333;
       padding: 0;
       font-weight: 800;
-      // font-size: 24px;
     }
 
     & .accordion-item.active p {
@@ -165,23 +193,29 @@
     }
 
     & .accordion-item h3 {
-      // padding: 20px 20px 20px 100px;
       padding-top: 20px;
       padding-bottom: 20px;
-      width: 250px;
+      margin-left: 15px;
       display: block;
       font-size: 24px;
       font-weight: normal;
       color: $light-text-color;
-      transform: rotate(90deg) translateX(33%);
-      // text-decoration: none;
+
+      @media (min-width: $tablet-width) {
+        width: 250px;
+        margin-left: 0;
+        transform: rotate(90deg) translateX(33%);
+      }
     }
 
     /*On mouse over open slide*/
     & .active {
-      width: 73%;
       position: relative;
-      // height: 230px;
+      width: 100%;
+
+      @media (min-width: $tablet-width) {
+        width: 73%;
+      }
     }
     & .active h3 {
       top: 0px;
@@ -198,8 +232,13 @@
       width: 204px;
       height: 28px;
       position: absolute;
-      top: -44px;
-      right: -32px;
+      top: 30px;
+      right: 22px;
+      @media (max-width: $tablet-width) {
+        transform: rotate(90deg);
+        right: -60px;
+        top: 50%;
+      }
     }
   }
 }
