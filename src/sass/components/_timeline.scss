@@ -1,75 +1,205 @@
 .timeline {
   &-header {
     @include header-text;
+    margin-bottom: 60px;
   }
 
-  /* Accordion styles */
-  .tabs {
-    // border-radius: 8px;
-    overflow: hidden;
-    // box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
-  }
-  .tab {
-    width: 100%;
-    // color: rgb(121, 19, 19);
-    overflow: hidden;
+  // /* Accordion styles */
+  // .tabs {
+  //   // border-radius: 8px;
+  //   overflow: hidden;
+  //   // box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+  // }
+  // .tab {
+  //   width: 100%;
+  //   // color: rgb(121, 19, 19);
+  //   overflow: hidden;
 
-    input {
+  //   input {
+  //     position: absolute;
+  //     opacity: 0;
+  //     z-index: -1;
+  //   }
+  //   &-label {
+  //     display: flex;
+  //     justify-content: space-between;
+  //     padding: 1em;
+  //     // background: black;
+  //     // font-weight: bold;
+  //     cursor: pointer;
+  //     /* Icon */
+  //     &:hover {
+  //       // background: darken(black, 10%);
+  //     }
+  //     &::before {
+  //       content: url('../images/svg/plus.svg');
+  //       width: 40px;
+  //       height: 40px;
+  //       text-align: center;
+  //       transition: all 0.35s;
+  //     }
+  //   }
+  //   &-content {
+  //     max-height: 0;
+  //     // padding: 0 1em;
+  //     color: black;
+  //     background: white;
+  //     transition: all $transition-duration;
+  //   }
+  //   &-close {
+  //     display: flex;
+  //     justify-content: flex-end;
+  //     padding: 1em;
+  //     font-size: 0.75em;
+  //     // background: black;
+  //     cursor: pointer;
+  //     &:hover {
+  //       // background: darken(black, 10%);
+  //     }
+  //   }
+  // }
+
+  // // :checked
+  // input:checked {
+  //   + .tab-label {
+  //     // background: darken(black, 10%);
+  //     &::before {
+  //       transform: rotate(180deg);
+  //       content: url('../images/svg/minus.svg');
+  //     }
+  //   }
+  //   ~ .tab-content {
+  //     max-height: 100vh;
+  //     padding: 1em;
+  //   }
+  // }
+
+  /*Define Accordion box*/
+  .accordion {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    // overflow: hidden;
+
+    & .accordion-item {
+      // position: relative;
+      display: flex;
+      flex-direction: column;
+      padding-top: 10px;
+      align-items: center;
+      // overflow: hidden;
+      color: $main-color;
+      cursor: pointer;
+      background: $accent-color;
+      width: 5%;
+      border: 1px solid $accent-color;
+      -moz-transition: width 0.5s ease-out;
+      -webkit-transition: width 0.5s ease-out;
+      -o-transition: width 0.5s ease-out;
+      transition: width 0.5s ease-out;
+    }
+    & .accordion-item:hover {
+      background: $secondary-color;
+    }
+
+    & .accordion-item p {
+      display: none;
+      padding-top: 20px;
+      overflow: hidden;
+    }
+
+    & .accordion-item::before {
+      position: relative;
+      font-size: 40px;
+      color: $light-text-color;
+      font-weight: bold;
+      transition: color $transition-duration $transition-timing-function;
+    }
+
+    & .accordion-item:nth-child(1)::before {
+      content: '1';
+    }
+    & .accordion-item:nth-child(2)::before {
+      content: '2';
+    }
+    & .accordion-item:nth-child(3)::before {
+      content: '3';
+    }
+    & .accordion-item:nth-child(4)::before {
+      content: '4';
+    }
+    & .accordion-item:nth-child(5)::before {
+      content: '5';
+    }
+
+    & .accordion-item:nth-child(6)::before {
+      content: '6';
+      font-size: 40px;
+    }
+
+    & .accordion-item.active {
+      background: $light-text-color;
+      cursor: default;
+      padding: 20px;
+      // overflow: auto;
+    }
+
+    & .accordion-item.active::before {
+      color: $main-color;
+    }
+
+    & .accordion-item.active:hover {
+      background: $light-text-color;
+    }
+
+    & .accordion-item.active h3 {
+      width: 100%;
+      color: #333;
+      padding: 0;
+      font-weight: 800;
+      // font-size: 24px;
+    }
+
+    & .accordion-item.active p {
+      display: block;
+    }
+
+    & .accordion-item h3 {
+      // padding: 20px 20px 20px 100px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      width: 250px;
+      display: block;
+      font-size: 24px;
+      font-weight: normal;
+      color: $light-text-color;
+      transform: rotate(90deg) translateX(33%);
+      // text-decoration: none;
+    }
+
+    /*On mouse over open slide*/
+    & .active {
+      width: 73%;
+      position: relative;
+      // height: 230px;
+    }
+    & .active h3 {
+      top: 0px;
+      left: 0;
+      font-weight: 800;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+
+    & .active:not(:last-of-type):after {
+      content: url(../images/svg/circle-arrow.svg);
+      width: 204px;
+      height: 28px;
       position: absolute;
-      opacity: 0;
-      z-index: -1;
-    }
-    &-label {
-      display: flex;
-      justify-content: space-between;
-      padding: 1em;
-      // background: black;
-      // font-weight: bold;
-      cursor: pointer;
-      /* Icon */
-      &:hover {
-        // background: darken(black, 10%);
-      }
-      &::before {
-        content: url('../images/svg/plus.svg');
-        width: 40px;
-        height: 40px;
-        text-align: center;
-        transition: all 0.35s;
-      }
-    }
-    &-content {
-      max-height: 0;
-      // padding: 0 1em;
-      color: black;
-      background: white;
-      transition: all $transition-duration;
-    }
-    &-close {
-      display: flex;
-      justify-content: flex-end;
-      padding: 1em;
-      font-size: 0.75em;
-      // background: black;
-      cursor: pointer;
-      &:hover {
-        // background: darken(black, 10%);
-      }
-    }
-  }
-
-  // :checked
-  input:checked {
-    + .tab-label {
-      // background: darken(black, 10%);
-      &::before {
-        transform: rotate(180deg);
-        content: url('../images/svg/minus.svg');
-      }
-    }
-    ~ .tab-content {
-      max-height: 100vh;
-      padding: 1em;
+      top: -44px;
+      right: -32px;
     }
   }
 }

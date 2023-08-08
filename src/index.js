@@ -1,4 +1,4 @@
-// import { accordion } from './js/modules/accordion';
+import { accordion } from './js/modules/accordion';
 import {saultAnimation} from './js/modules/sault-animation';
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -11,6 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
   //   }
   // );
 
-  // accordion();
+  accordion();
 
 });
