@@ -5,7 +5,7 @@ export const saultAnimation = () => {
 
   if (isDesktop) {
     const container = document.querySelector('.sault-animation');
-    const numElements = 25; // Кількість елементів, що сиплються
+    const numElements = 40; // Кількість елементів, що сиплються
     const circles = [];
 
     for (let i = 0; i < numElements; i++) {
@@ -23,8 +23,8 @@ export const saultAnimation = () => {
     function animate() {
       circles.forEach(circle => {
         const duration = Math.random() * 3 + 4; // Випадковий час в секундах (від 2 до 5)
-        const maxShift = 20; // Максимальний зсув (вліво чи вправо) для елемента
-        const maxFall = 200; // Максимальний зсув вниз для елемента
+        const maxShift = 25; // Максимальний зсув (вліво чи вправо) для елемента
+        const maxFall = 300; // Максимальний зсув вниз для елемента
 
         const endX = (Math.random() - 0.5) * maxShift;
         const endY = Math.random() * maxFall;
