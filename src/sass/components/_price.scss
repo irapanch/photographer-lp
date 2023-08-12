@@ -1,0 +1,51 @@
+.price {
+  &-header {
+    @include header-text;
+    margin-bottom: 60px;
+  }
+
+  &-amount {
+    display: block;
+    font-size: 64px;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 41px;
+    padding-right: 41px;
+    margin-top: 8px;
+  }
+
+  &-amount::before {
+    display: block;
+    width: 277px;
+    height: 97px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-57%);
+    content: '';
+    background-size: cover;
+    background-image: url(../images/svg/chosen-big.svg);
+    background-repeat: no-repeat;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .text-wrapper {
+      @media (min-width: $tablet-width) {
+        flex-basis: 50%;
+      }
+    }
+
+    .text-wrapper p:not(last-of-type) {
+      margin-bottom: 20px;
+    }
+  }
+}

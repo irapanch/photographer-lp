@@ -103,7 +103,7 @@
       transition-duration: 0.5s;
       transition-timing-function: $transition-timing-function;
 
-      @media (max-width: $tablet-width) {
+      @media (max-width: $mobile-and-table-only) {
         height: 78px;
         transition: height 0.5s ease;
       }
@@ -127,7 +127,7 @@
       padding-top: 20px;
       overflow: hidden;
 
-      @media (max-width: $tablet-width) {
+      @media (max-width: $mobile-and-table-only) {
         width: 80%;
         margin-right: auto;
         height: fit-content;
@@ -168,7 +168,7 @@
       cursor: default;
       padding: 20px;
       flex-direction: column;
-      @media (max-width: $tablet-width) {
+      @media (max-width: $mobile-and-table-only) {
         height: 500px;
       }
     }
@@ -234,7 +234,7 @@
       position: absolute;
       top: 30px;
       right: 22px;
-      @media (max-width: $tablet-width) {
+      @media (max-width: $mobile-and-table-only) {
         transform: rotate(90deg);
         right: -60px;
         top: 50%;
