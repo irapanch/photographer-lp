@@ -1,61 +1,68 @@
-.tabs {
-  overflow: hidden;
-  // box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
-}
-.tab {
-  width: 100%;
-  // color: rgb(121, 19, 19);
-  overflow: hidden;
-
-  input {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
+.faq {
+  &-header {
+    @include header-text;
+    margin-bottom: 60px;
   }
-  &-label {
-    display: flex;
-    // justify-content: space-between;
-    padding: 1em;
-    gap: 20px;
-    // background: black;
-    // font-weight: bold;
-    cursor: pointer;
-    /* Icon */
-    &:hover {
+
+  .tabs {
+    overflow: hidden;
+    // box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+  }
+  .tab {
+    width: 100%;
+    // color: rgb(121, 19, 19);
+    overflow: hidden;
+
+    input {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+    }
+    &-label {
+      display: flex;
+      // justify-content: space-between;
+      padding: 1em;
+      gap: 20px;
+      // background: black;
+      // font-weight: bold;
+      cursor: pointer;
+      /* Icon */
+      &:hover {
+        // background: darken(black, 10%);
+      }
+      &::before {
+        content: url('../images/svg/plus.svg');
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        transition: all 0.35s;
+      }
+    }
+
+    &-label {
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+
+    &-content {
+      max-height: 0;
+      color: black;
+      background: white;
+      transition: all $transition-duration;
+    }
+  }
+  // :checked
+  input:checked {
+    + .tab-label {
       // background: darken(black, 10%);
+      &::before {
+        transform: rotate(180deg);
+        content: url('../images/svg/minus.svg');
+      }
     }
-    &::before {
-      content: url('../images/svg/plus.svg');
-      width: 40px;
-      height: 40px;
-      text-align: center;
-      transition: all 0.35s;
+    ~ .tab-content {
+      max-height: 100vh;
+      padding: 1em;
     }
-  }
-
-  &-label {
-    font-size: 20px;
-    text-transform: uppercase;
-  }
-
-  &-content {
-    max-height: 0;
-    color: black;
-    background: white;
-    transition: all $transition-duration;
-  }
-}
-// :checked
-input:checked {
-  + .tab-label {
-    // background: darken(black, 10%);
-    &::before {
-      transform: rotate(180deg);
-      content: url('../images/svg/minus.svg');
-    }
-  }
-  ~ .tab-content {
-    max-height: 100vh;
-    padding: 1em;
   }
 }
