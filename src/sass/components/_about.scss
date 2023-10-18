@@ -1,8 +1,14 @@
 .about {
-  & .section-container {
+  background: url(../images/noise.png);
+  background-color: $accent-color;
+  color: $bg-color;
+  mix-blend-mode: darken;
+
+  & .about-container {
     display: flex;
-    gap: 20px;
+    // gap: 20px;
     flex-direction: column;
+    justify-content: space-between;
 
     @media (min-width: $desktop-width) {
       flex-direction: row;
@@ -12,7 +18,7 @@
   &__content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   &__image {
@@ -21,7 +27,7 @@
     margin: 0 auto;
 
     & img {
-      width: 300px;
+      width: 200px;
       margin: 0 auto;
       @media (min-width: $desktop-width) {
         margin: 0;

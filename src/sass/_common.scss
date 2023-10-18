@@ -14,6 +14,7 @@ body {
   font-family: $main-font;
   font-style: normal;
   font-weight: 400;
+  background-color: $bg-color
 }
 
 ul {
@@ -91,7 +92,7 @@ img {
   border-color: $main-color;
 }
 
-.section-container {
+section {
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -118,3 +119,7 @@ img {
   text-transform: uppercase;
   font-weight: 400;
 }
+
+
+
+
