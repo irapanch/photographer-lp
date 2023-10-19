@@ -1,4 +1,4 @@
-import Swiper, { Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper';
+import Swiper, { Autoplay, EffectCoverflow, Navigation, Pagination, Thumbs, Virtual } from 'swiper';
 import { Navigation, Pagination } from 'swiper';
 // import Swiper and modules styles
 import 'swiper/swiper-bundle.min.css';
@@ -14,30 +14,27 @@ const swiper = new Swiper(".swiper", {
   centeredSlides: true,
   slidesPerView: 1,
   loop: true,
-  effect: "coverflow",
-  modules: [ Autoplay, Navigation, Pagination, EffectCoverflow],
+  mousewheelControl: true,
+  keyboardControl: true,
+  updateOnWindowResize: true,
+  slideToClickedSlide: true,
+
+  modules: [ Autoplay, Navigation, Pagination],
+  speed: 2000,
   autoplay: {
-    delay: 5000,
-    // disableOnInteraction: false,
-  },
-  coverflowEffect: {
-      rotate: 0,
-  //     stretch: 80,
-      depth: 200,
-      modifier: 1,
+    delay: 3000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
   },
   breakpoints: {
-    640: {
-      slidesPerView: 1,
+
+    768: {
+      slidesPerView: 2,
       spaceBetween: 20,
     },
-    768: {
-      slidesPerView: 1.5,
-      spaceBetween: 70,
-    },
-    1024: {
+    1200: {
       slidesPerView: 3,
-      spaceBetween: 80,
+      spaceBetween: 20,
     },
   },
   pagination: {

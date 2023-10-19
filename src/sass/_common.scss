@@ -1,6 +1,12 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,600;1,400;1,600&family=Mulish:wght@400;600;800&display=swap');
 
+
+:root{
+  --swiper-theme-color: #235f83 !important;
+  --swiper-pagination-bottom: 0 !important
+}
+
 html {
   scroll-behavior: smooth;
   overflow-y: scroll;
