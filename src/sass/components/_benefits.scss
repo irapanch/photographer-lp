@@ -1,24 +1,25 @@
 .benefits {
+  position: relative;
+
   .section-container {
     position: relative;
-    padding-top: 80px;
+    padding-top: 40px;
     @media (min-width: $desktop-width) {
       background-image: url('../images/svg/hand-ok.svg'),
         url('../images/svg/hand-bottom.svg');
       background-repeat: no-repeat;
       background-position: 100% 0, 100% 385px;
-      margin-top: 50px;
-      margin-bottom: 50px;
       background-size: 320px, 420px;
       // padding: 0;
       height: 725px;
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
     }
   }
 
   &-header {
     @include header-text;
-    // margin-bottom: 60px;
-    // max-width: 375px;
     font-size: 32px;
     @media (min-width: $tablet-width) {
       max-width: 700px;
@@ -64,7 +65,7 @@
 .sault-animation {
   position: absolute;
   top: 700px;
-  right: 313px;
+  right: 312px;
   width: 1px;
   height: 1px;
   overflow: visible;

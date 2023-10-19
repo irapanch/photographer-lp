@@ -5,14 +5,14 @@ export const saultAnimation = () => {
 
   if (isDesktop) {
     const container = document.querySelector('.sault-animation');
-    const numElements = 40; // Кількість елементів, що сиплються
+    const numElements = 70; // Кількість елементів, що сиплються
     const circles = [];
 
     for (let i = 0; i < numElements; i++) {
       const circle = document.createElement('div');
       circle.className = 'circle';
 
-      const size = Math.floor(Math.random() * 3) + 3; // Випадковий розмір від 3 до 5 пікселів у діаметрі
+      const size = Math.floor(Math.random() * 4) + 4; // Випадковий розмір від 4 до 7 пікселів у діаметрі
       circle.style.width = `${size}px`;
       circle.style.height = `${size}px`;
 
@@ -23,8 +23,8 @@ export const saultAnimation = () => {
     function animate() {
       circles.forEach(circle => {
         const duration = Math.random() * 3 + 4; // Випадковий час в секундах (від 2 до 5)
-        const maxShift = 25; // Максимальний зсув (вліво чи вправо) для елемента
-        const maxFall = 300; // Максимальний зсув вниз для елемента
+        const maxShift = 35; // Максимальний зсув (вліво чи вправо) для елемента
+        const maxFall = 400; // Максимальний зсув вниз для елемента
 
         const endX = (Math.random() - 0.5) * maxShift;
         const endY = Math.random() * maxFall;
