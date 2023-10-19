@@ -126,6 +126,13 @@ img {
   font-weight: 400;
 }
 
+@mixin colored-bg {
+  background: url(../images/noise.png);
+  background-color: $accent-color;
+  color: $bg-color;
+  mix-blend-mode: darken;
+}
+
 
 
 

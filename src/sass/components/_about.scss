@@ -1,8 +1,5 @@
 .about {
-  background: url(../images/noise.png);
-  background-color: $accent-color;
-  color: $bg-color;
-  mix-blend-mode: darken;
+@include colored-bg;
 
   & .about-container {
     display: flex;
