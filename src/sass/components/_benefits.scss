@@ -1,20 +1,98 @@
 .benefits {
   position: relative;
+  padding-bottom: 0;
 
   .section-container {
     position: relative;
     padding-top: 40px;
     @media (min-width: $desktop-width) {
       background-image: url('../images/svg/hand-ok.svg'),
-        url('../images/svg/hand-bottom.svg');
+        url('../images/svg/hand-bottom.svg'), url('../images/svg/album.svg');
       background-repeat: no-repeat;
-      background-position: 100% 0, 100% 385px;
-      background-size: 320px, 420px;
+      background-position: 100% 0, 100% 385px, 100% 400px;
+      background-size: 320px, 420px, 400px;
       // padding: 0;
       height: 725px;
       display: flex;
-    flex-direction: column;
-    justify-content: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .set {
+    display: flex;
+  }
+
+  .photocard,
+  .photocard2,
+  .photocard3,
+  .photocard4,
+  .photocard5 {
+    position: absolute;
+    top: 700px;
+    right: 300px;
+    transform: translateY(0);
+    animation: falling 4s infinite;
+    // animation-fill-mode: forwards;
+
+    z-index: 10;
+    pointer-events: none;
+  }
+
+  // .photocard2 {
+  //   animation-delay: -3s;
+  //   animation: fallingLeft 5s infinite;
+  //   transform: rotate(-20deg);
+  // }
+  .photocard3 {
+    animation-delay: -2s;
+    animation: falling 3.5s infinite;
+  }
+  .photocard4 {
+    animation-delay: -1.5s;
+    transform: rotate(20deg);
+    animation: fallingRight 6s infinite;
+  }
+  .photocard5 {
+    animation-delay: -0.5s;
+    animation: falling 2s infinite;
+  }
+
+  @keyframes falling {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+      transform: translateY(0) rotate(0deg);
+    }
+    100% {
+      transform: translateY(500px) rotate(200deg) scale(2);
+    }
+  }
+
+  @keyframes fallingRight {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+      transform: translateY(0) rotate(20deg);
+    }
+    100% {
+      transform: translateY(500px) translateX(75px) rotate(-260deg);
+    }
+  }
+
+  @keyframes fallingLeft {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+      transform: translateY(0) rotate(20deg);
+    }
+    100% {
+      transform: translateY(500px) translateX(-75px) rotate(240deg);
     }
   }
 

@@ -1,8 +1,8 @@
 .about {
-@include colored-bg;
+  // @include colored-bg;
 
   & .about-container {
-    display: flex;
+    // display: flex;
     flex-direction: column;
     justify-content: space-between;
 

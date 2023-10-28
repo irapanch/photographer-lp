@@ -1,4 +1,4 @@
-import Swiper, { Autoplay, EffectCoverflow, Navigation, Pagination, Thumbs, Virtual } from 'swiper';
+import Swiper, { Autoplay, Navigation, Pagination, Thumbs, Virtual } from 'swiper';
 import { Navigation, Pagination } from 'swiper';
 // import Swiper and modules styles
 import 'swiper/swiper-bundle.min.css';
@@ -18,7 +18,7 @@ const swiper = new Swiper(".swiper", {
   keyboardControl: true,
   updateOnWindowResize: true,
   slideToClickedSlide: true,
-
+// effect: "flip",
   modules: [ Autoplay, Navigation, Pagination],
   speed: 2000,
   autoplay: {
@@ -50,7 +50,7 @@ const swiper = new Swiper(".swiper", {
 
 // console.log(swiper);
 swiper.on('slideChange', function () {
-  console.log('slide changed');
+  // console.log('slide changed');
 });
 }
 
