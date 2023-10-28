@@ -1,13 +1,18 @@
 .about {
-  // @include colored-bg;
-
   & .about-container {
-    // display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 30px;
+    // justify-content: space-between;
+    position: relative;
 
     @media (min-width: $desktop-width) {
       flex-direction: row;
+      background-image: url('../images/svg/album.svg');
+      background-repeat: no-repeat;
+      background-position: 90% 250px;
+      background-size: 450px;
+      // padding: 0;
     }
   }
 
@@ -15,19 +20,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-
-  &__image {
-    flex: 0 0 auto;
-    align-self: flex-start;
-
-    & img {
-      height: 600px;
-      margin: 0 auto;
-      @media (min-width: $desktop-width) {
-        margin: 0;
-      }
-    }
   }
 
   &__pre-text {
