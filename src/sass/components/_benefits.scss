@@ -1,15 +1,17 @@
 .benefits {
   position: relative;
+  max-width: $desktop-max-width;
+  margin: 0 auto;
+  @media (min-width: $desktop-width) {
+    background-image: url('../images/svg/hand-ok.svg'),
+      url('../images/svg/hand-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 50px, 100% 400px;
+    background-size: 320px, 420px;
+  }
 
   .section-container {
-    position: relative;
-    // padding-top: 40px;
     @media (min-width: $desktop-width) {
-      background-image: url('../images/svg/hand-ok.svg'),
-        url('../images/svg/hand-bottom.svg');
-      background-repeat: no-repeat;
-      background-position: 100% 0, 100% 385px;
-      background-size: 320px, 420px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -18,44 +20,28 @@
 
   &-container {
     display: flex;
-    gap: 100px;
     flex-direction: column;
-    @media (min-width: $desktop-width) {
+    gap: 20px;
+    @media (min-width: $tablet-width) {
       flex-direction: row;
-      // width: 80vw;
-    }
-  }
-
-  &__image {
-    // flex: 0 0 auto;
-    // align-self: flex-start;ç
-    // height: 800px;
-    // flex-basis: 25%;
-    // width: 250px;
-    flex-basis: 18%;
-
-    & img {
-      // width: 30px;
-      margin: 0 auto;
-      @media (min-width: $desktop-width) {
-        margin: 0;
-      }
     }
   }
 
   &-text {
-    @media (min-width: $desktop-width) {
-      // max-width: 700px;
-      flex-basis: 42%;
-    }
+    // flex: 1;
+    // width: 430px;
+    // @media (min-width: $desktop-width) {
+    max-width: 700px;
+    //   // flex-basis: 42%;
+    // }
   }
 
   &-header {
     @include header-text;
     font-size: 32px;
     @media (min-width: $tablet-width) {
-      // max-width: 700px;
-      margin-bottom: 20px;
+      max-width: 700px;
+      margin-bottom: 30px;
     }
   }
 
@@ -70,7 +56,6 @@
 
     @media (min-width: $desktop-width) {
       gap: 50px;
-      // width: 56%;
     }
 
     &-item h3 {
@@ -92,6 +77,34 @@
       bottom: -10px;
       background-image: url('../images/svg/underline.svg');
     }
+  }
+
+  .falling {
+    animation-name: falling;
+  }
+
+  .falling2 {
+    animation-name: falling2;
+  }
+
+  .fallingRight {
+    animation-name: fallingRight;
+  }
+
+  .benefits-animation {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 710px;
+    right: 285px;
+  }
+
+  .photocard {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(0);
+    pointer-events: none;
   }
 
   @keyframes falling {

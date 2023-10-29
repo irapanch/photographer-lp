@@ -14,17 +14,12 @@ export const photocardsAnimation = () => {
     const photoCard = document.createElement('div');
     photoCard.classList.add(`photocard${i + 1}`);
     photoCard.classList.add('photocard');
-    photoCard.style.position = 'absolute';
-    photoCard.style.top = '700px';
-    photoCard.style.right = '300px';
-    photoCard.style.transform = 'translateY(0)';
     photoCard.style.animation = `${photoSizes[i].animationClass} ${
       (i + 1) * 1.5
     }s infinite`;
     photoCard.style.width = photoSizes[i].width;
     photoCard.style.height = photoSizes[i].height;
     photoCard.style.backgroundImage = `url(${imageUrl})`;
-    photoCard.style.pointerEvents = 'none';
     setContainer.appendChild(photoCard);
   }
 };
