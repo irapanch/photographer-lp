@@ -8,9 +8,10 @@
     gap: 70px;
     // justify-content: space-between;
     position: relative;
-
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       flex-direction: row;
+    }
+    @media (min-width: $desktop-width) {
       background-image: url('../images/svg/album.svg');
       background-repeat: no-repeat;
       background-position: 90% 250px;
@@ -20,15 +21,15 @@
   }
 
   &__image {
-    display: none;
+    // display: none;
 
-    @media (min-width: $desktop-width) {
-      display: flex;
-      flex: 0 0 auto;
-      height: 600px;
-      overflow: hidden;
-      // filter: drop-shadow(1px 1px 2px rgb(147, 146, 146));
-    }
+    // @media (min-width: $desktop-width) {
+    display: flex;
+    flex: 0 0 auto;
+    height: 600px;
+    overflow: hidden;
+    // filter: drop-shadow(1px 1px 2px rgb(147, 146, 146));
+    // }
     & img {
       width: 100%;
       height: 100%;
@@ -91,30 +92,6 @@
     &-header {
       @include header-text;
       display: block;
-      font-size: 34px;
-    }
-  }
-}
-.order-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  .order-title {
-    @include header-text;
-    font-size: 34px;
-    margin-bottom: 20px;
-    align-self: center;
-    text-align: center;
-  }
-
-  .order-text {
-    font-size: 16px;
-    margin-bottom: 8px;
-    text-transform: uppercase;
-
-    @media (min-width: $desktop-width) {
       font-size: 34px;
     }
   }
