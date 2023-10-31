@@ -2,14 +2,17 @@
   position: relative;
   max-width: $desktop-max-width;
   margin: 0 auto;
-  background-image: url('../images/svg/hand-ok.svg'),
-    url('../images/svg/hand-bottom.svg');
+  // background-image: url('../images/svg/hand-ok.svg'),
+  //   url('../images/svg/hand-bottom.svg');
   background-repeat: no-repeat;
   @media (min-width: $tablet-width) {
-    background-position: 100% 130px, 100% 600px;
-    background-size: 300px, 380px;
+    // background-image: url('../images/svg/hand-bottom.svg');
+    // background-position: 110% 50px;
+    // background-size: 350px;
   }
   @media (min-width: $desktop-width) {
+    background-image: url('../images/svg/hand-ok.svg'),
+      url('../images/svg/hand-bottom.svg');
     background-position: 100% 50px, 100% 400px;
     background-size: 320px, 420px;
   }
@@ -29,16 +32,16 @@
     @media (min-width: $tablet-width) {
       flex-direction: row;
     }
+    @media (min-width: $desktop-width) {
+    }
   }
 
   &-text {
-    // flex: 1;
     @media (min-width: $tablet-width) {
-      // max-width: 450px;
+      // max-width: 508px;
     }
     @media (min-width: $desktop-width) {
       max-width: 700px;
-      //   // flex-basis: 42%;
     }
   }
 
@@ -59,16 +62,20 @@
     display: flex;
     flex-direction: column;
     gap: 60px;
+    // width: 500px;
+    @media (min-width: $desktop-width) {
+      width: 100%;
+    }
 
     @media (min-width: $desktop-width) {
       gap: 50px;
     }
 
     &-item:first-of-type {
-      width: 450px;
+      // width: 450px;
     }
     &-item:nth-child(2) {
-      width: 600px;
+      // width: 600px;
     }
 
     &-item h3 {
@@ -108,8 +115,14 @@
     position: absolute;
     width: 100%;
     height: 1px;
-    top: 710px;
-    right: 285px;
+    top: 300px;
+    right: 190px;
+    display: none;
+    @media (min-width: $desktop-width) {
+      display: block;
+      top: 710px;
+      right: 285px;
+    }
   }
 
   .photocard {
