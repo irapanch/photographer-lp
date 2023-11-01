@@ -1,11 +1,11 @@
-const business = require('../../images/jpg/business.jpg');
-const content = require('../../images/jpg/content.jpg');
-const family = require('../../images/jpg/family.jpg');
-const forBlog = require('../../images/jpg/for-blog.jpg');
-const loveStory = require('../../images/jpg/love-story.jpg');
-const sacraments = require('../../images/jpg/sacraments.jpg');
-const wedding = require('../../images/jpg/wedding.jpg');
-const womanPortrait = require('../../images/jpg/woman-portrait.jpg');
+const business = require('../../images/jpg/business.jpeg');
+const content = require('../../images/jpg/content.jpeg');
+const family = require('../../images/jpg/family.jpeg');
+const forBlog = require('../../images/jpg/for-blog.jpeg');
+const loveStory = require('../../images/jpg/love-story.jpeg');
+const sacraments = require('../../images/jpg/sacraments.jpeg');
+const wedding = require('../../images/jpg/wedding.jpeg');
+const womanPortrait = require('../../images/jpg/woman-portrait.jpeg');
 
 export const sliderContent = [
   {
