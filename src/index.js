@@ -11,4 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
   slider();
   accordion();
   faq();
+
+  // function reportWindowSize() {
+  //   console.log(window.innerHeight);
+  //   console.log(window.innerWidth);
+  // }
+
+  // window.addEventListener('resize', reportWindowSize);
 });

@@ -2,7 +2,6 @@ import { benefitsContent } from '../content/benefits';
 
 export const benefits = () => {
   const benefitsList = document.querySelector('.benefits__list');
-  console.log('BEN');
 
   let html = '';
 

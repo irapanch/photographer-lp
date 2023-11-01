@@ -1,30 +1,36 @@
 .about {
   max-width: $desktop-max-width;
   margin: 0 auto;
-
-  background-image: url('../images/svg/hand-bottom.svg'),
-    url('../images/svg/album.svg');
-  background-position: 100% 170px, 90% 600px;
-  background-size: 300px, 300px;
-  background-repeat: no-repeat;
-
-  @media (min-width: $desktop-width) {
-    background-image: none;
-  }
+  position: relative;
 
   & .about-container {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 45px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 240px;
 
+    background-image: url('../images/svg/hand-ok.svg'),
+      url('../images/svg/hand-bottom.svg'), url('../images/svg/album.svg');
+    background-position: 100% 70px, 100% 275px, 70% 830px;
+    background-size: 180px, 220px, 300px;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      gap: 70px;
+      padding-bottom: 20px;
+      background-position: 100% 0px, 105% 330px, 90% 950px;
+      background-size: 300px, 400px, 400px;
+    }
     @media (min-width: $desktop-width) {
       display: grid;
       grid-template-columns: 1fr 1fr 2fr;
       background-image: url('../images/svg/album.svg');
-      background-repeat: no-repeat;
       background-position: 90% 250px;
       background-size: 450px;
+      padding-bottom: 0;
     }
   }
 
@@ -32,9 +38,11 @@
     display: flex;
     flex: 0 0 auto;
     overflow: hidden;
-    height: 600px;
-    order: 2;
+    height: 350px;
 
+    @media (min-width: $tablet-width) {
+      height: 680px;
+    }
     @media (min-width: $desktop-width) {
       height: 600px;
       grid-row-start: 1;
@@ -57,17 +65,35 @@
   }
 
   &__pre-text {
-    // margin-bottom: 50px;
-    text-align: center;
     font-size: 2rem;
-    margin: 0 auto;
+    text-align: left;
+    order: -1;
 
     @media (min-width: $desktop-width) {
       grid-row-start: 1;
       grid-column-start: 2;
+      text-align: center;
+      order: 0;
     }
 
     & span {
+      display: block;
+      @media (min-width: $desktop-width) {
+        display: block;
+      }
+    }
+    & span:first-child {
+      font-size: 24px;
+      line-height: 32px;
+      @media (min-width: $tablet-width) {
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+
+    & span:last-of-type,
+    & span:nth-of-type(2) {
+      display: inline;
       @media (min-width: $desktop-width) {
         display: block;
       }
@@ -80,27 +106,23 @@
     text-align: center;
     display: flex;
     align-items: center;
-    gap: 20px;
-    flex-basis: 100%;
-    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    font-size: 20px;
+    align-self: center;
+
+    @media (min-width: $tablet-width) {
+      gap: 20px;
+      align-self: flex-start;
+    }
 
     @media (min-width: $desktop-width) {
-      flex-direction: column;
       font-size: 20px;
       justify-content: space-between;
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 2;
       grid-row-end: 3;
-    }
-
-    &-item > span + span {
-      display: inline-block;
-      font-size: 15px;
-
-      @media (min-width: $desktop-width) {
-        font-size: 20px;
-      }
     }
 
     &-header {
