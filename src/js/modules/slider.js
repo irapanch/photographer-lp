@@ -1,18 +1,7 @@
-import Swiper, {
-  Autoplay,
-  Navigation,
-  Pagination,
-  Thumbs,
-  Virtual,
-} from 'swiper';
+import Swiper, { Autoplay, Navigation, Pagination } from 'swiper';
 import { Navigation, Pagination } from 'swiper';
-// import Swiper and modules styles
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper-bundle.min.js';
-// import 'swiper/swiper-element-bundle.min.css';
-// import 'swiper/swiper-element-bundle.min.js';
-// import 'swiper/modules/autoplay.min.css';
-// import {Autoplay} from  'swiper/modules/autoplay.js';
 
 import { sliderContent } from '../content/slider';
 
@@ -26,7 +15,6 @@ export const slider = () => {
     keyboardControl: true,
     updateOnWindowResize: true,
     slideToClickedSlide: true,
-    // effect: "flip",
     modules: [Autoplay, Navigation, Pagination],
     speed: 2000,
     autoplay: {
@@ -55,7 +43,6 @@ export const slider = () => {
   });
 
   const swiperWrapper = document.querySelector('.swiper-wrapper');
-  console.log(sliderContent);
 
   let slides = '';
 

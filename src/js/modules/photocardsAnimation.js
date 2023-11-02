@@ -11,7 +11,6 @@ const imageUrl = require('../../images/svg/icon-photo.svg');
 export const photocardsAnimation = () => {
   const setContainer = document.querySelector('.photo-animation');
 
-  // console.log(setContainer);
   for (let i = 0; i < photoSizes.length; i++) {
     const photoCard = document.createElement('div');
     photoCard.classList.add(`photocard${i + 1}`);
