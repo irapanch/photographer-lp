@@ -1,0 +1,27 @@
+.form {
+  & .container {
+    & form#contact-us {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      gap: 10px;
+
+      & input:not([type='submit']),
+      & textarea {
+        border: 1px $accent-color solid;
+        background-color: $bg-color;
+        padding: 10px;
+      }
+
+      & input:focus,
+      & textarea:focus {
+        outline-color: $secondary-color;
+      }
+
+      & textarea {
+        resize: none;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+<section class="form">
+  <div class="container">
+    <h2 class="price-header">Залишайте свою заявку</h2>
+    <form id="contact-us" action="/apply/" method="POST">
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Ім'я"
+        required
+        autofocus
+      />
+
+      <input
+        type="phone"
+        name="phone"
+        id="phone"
+        placeholder="Номер телефону"
+        required
+      />
+
+      <textarea
+        placeholder="Ваше питання або запит..."
+        id="story"
+        name="story"
+        rows="5"
+      ></textarea>
+
+      <input
+        type="submit"
+        class="submit-form__btn button button-order"
+        value="Відправити заявку"
+      />
+    </form>
+  </div>
+</section>
