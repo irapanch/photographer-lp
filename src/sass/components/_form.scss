@@ -23,5 +23,8 @@
         margin-bottom: 20px;
       }
     }
+    @media (min-width: $desktop-width) {
+      max-width: 782px;
+    }
   }
 }
