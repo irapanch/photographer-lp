@@ -1,10 +1,25 @@
 .form {
+  &__header {
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    margin-bottom: 30px;
+  }
+
   & .container {
     & form#contact-us {
       display: flex;
       flex-direction: column;
       margin: 0 auto;
       gap: 10px;
+
+      & input::placeholder {
+        font-size: 14px;
+        @media (min-width: $tablet-width) {
+          font-size: 16px;
+        }
+      }
 
       & input:not([type='submit']),
       & textarea {

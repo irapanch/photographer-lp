@@ -1,5 +1,6 @@
 footer {
-  background: $main-color;
+  @include colored-bg;
+  // background: $secondary-color;
   color: $light-text-color;
 
   .container {
@@ -25,7 +26,7 @@ footer {
       line-height: 52.92px;
       text-transform: uppercase;
       color: $footer-color;
-
+      gap: 30px;
       @media (min-width: $tablet-width) {
         font-size: 100px;
         line-height: 80px;
@@ -62,28 +63,6 @@ footer {
       margin-bottom: 16px;
       @media (min-width: $tablet-width) {
         margin-bottom: 24px;
-      }
-    }
-  }
-
-  .contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-
-    &__social {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 24px;
-
-      & a {
-        width: 48px;
-        height: 48px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
       }
     }
   }

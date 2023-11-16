@@ -32,8 +32,6 @@ export const form = () => {
       message += `${label}: ${value} \n`;
     }
 
-    // console.log(message);
-
     sendMessageToTelegram(message);
   }
 

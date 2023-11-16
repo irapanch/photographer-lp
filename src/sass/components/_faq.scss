@@ -10,7 +10,6 @@
   }
   .tab {
     width: 100%;
-    // color: rgb(121, 19, 19);
     box-shadow: 4px 4px -2px rgba(0, 0, 0, 0.5);
     overflow: hidden;
 
@@ -21,11 +20,8 @@
     }
     &-label {
       display: flex;
-      // justify-content: space-between;
       padding: 1em;
       gap: 20px;
-      // background: black;
-      // font-weight: bold;
       cursor: pointer;
       /* Icon */
       &:hover {
