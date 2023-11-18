@@ -5,6 +5,7 @@ import { faq } from './js/modules/faq';
 import { photocardsAnimation } from './js/modules/photocardsAnimation';
 import { slider } from './js/modules/slider';
 import { form } from './js/modules/form';
+import { burger } from './js/modules/burger';
 
 document.addEventListener('DOMContentLoaded', () => {
   benefits();
@@ -14,4 +15,5 @@ document.addEventListener('DOMContentLoaded', () => {
   accordion();
   faq();
   form();
+  burger('.nav', '.mobile-menu__button');
 });

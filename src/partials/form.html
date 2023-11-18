@@ -10,13 +10,21 @@
       <p>Заповніть форму нижче, та я сконтактую з Вами якнайшвидше</p>
     </div>
     <form id="contact-us">
-      <input type="text" name="name" id="name" placeholder="Ім'я" required />
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Ім'я"
+        aria-label="Введіть Ваше ім'я"
+        required
+      />
 
       <input
         type="phone"
         name="phone"
         id="phone"
         placeholder="Номер телефону або логін Telegram"
+        aria-label="Введіть номер телефону або логін Telegram"
         required
       />
 
@@ -25,12 +33,14 @@
         id="message"
         name="message"
         rows="5"
+        aria-label="Напишіть Ваше питання або запит"
       ></textarea>
 
       <input
         type="submit"
         class="submit-form__btn button button-order"
         value="Відправити заявку"
+        aria-label="Відправити форму зворотнього зв'язку"
       />
     </form>
   </div>
