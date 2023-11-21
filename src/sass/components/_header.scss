@@ -95,7 +95,7 @@
   }
   #hamburger {
     color: $main-color;
-    border-top: 2px solid;
+    border-top: 1px solid;
     width: 28px;
     display: block;
   }
@@ -103,9 +103,9 @@
   #hamburger::before {
     content: '';
     display: block;
-    height: 2px;
+    height: 1px;
     width: 28px;
-    background-color: currentColor;
+    background-color: $accent-color;
     margin-top: 8px;
     transition: 0.3s;
     position: relative;
