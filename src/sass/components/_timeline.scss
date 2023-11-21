@@ -46,7 +46,8 @@
       }
     }
 
-    & .accordion-item:hover {
+    & .accordion-item:hover,
+    & .accordion-item:focus {
       background: $secondary-color;
     }
 
@@ -104,7 +105,8 @@
       color: $main-color;
     }
 
-    & .accordion-item.active:hover {
+    & .accordion-item.active:hover,
+    & .accordion-item.active:focus {
       background: $light-text-color;
     }
 

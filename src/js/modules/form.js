@@ -3,7 +3,7 @@ export const form = () => {
   const CHAT_ID = '-1002038976037';
   const URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
-  const form = document.querySelector('form');
+  // const form = document.querySelector('form');
 
   const sendMessageToTelegram = message => {
     fetch(URL, {
@@ -18,7 +18,9 @@ export const form = () => {
       }),
     })
       .then(res => res.json())
-      .then(res => console.log(res))
+      .then(res => {
+        console.log('res');
+      })
       .catch(err => console.error(err));
   };
 
@@ -35,11 +37,16 @@ export const form = () => {
     sendMessageToTelegram(message);
   }
 
-  function handleFormSubmit(event) {
-    event.preventDefault();
-    serializeForm(event.target);
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    serializeForm(e.target);
   }
 
-  const applicantForm = document.getElementById('contact-us');
-  applicantForm.addEventListener('submit', handleFormSubmit);
+  const applicantForm = document.querySelector('#contact-us');
+
+  if (applicantForm) {
+    applicantForm.addEventListener('submit', handleFormSubmit);
+  } else {
+    console.error('Form not found');
+  }
 };

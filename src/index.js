@@ -6,14 +6,16 @@ import { photocardsAnimation } from './js/modules/photocardsAnimation';
 import { slider } from './js/modules/slider';
 import { form } from './js/modules/form';
 import { burger } from './js/modules/burger';
+import { modals } from './js/modules/modals';
 
 document.addEventListener('DOMContentLoaded', () => {
+  modals();
+  form();
   benefits();
   photocardsAnimation();
   slider();
   timeline();
   accordion();
   faq();
-  form();
   burger('.nav', '.mobile-menu__button');
 });

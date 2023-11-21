@@ -24,7 +24,8 @@
       gap: 20px;
       cursor: pointer;
       /* Icon */
-      &:hover {
+      &:hover,
+      &:focus {
         // background: darken(black, 10%);
       }
       &::before {
