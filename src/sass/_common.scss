@@ -280,12 +280,13 @@ img {
 
       &__footer {
         // stroke: $light-text-color;
-        fill: $light-text-color;
+        // fill: $light-text-color;
+        fill: $secondary-color;
       }
       &__header {
-        fill: transparent;
-        stroke: $accent-color;
+        // fill: transparent;
         // stroke: $accent-color;
+        fill: $secondary-color;
       }
     }
 

@@ -32,7 +32,6 @@
 
     #menu {
       display: flex;
-      gap: 50px;
       @media (max-width: 1199px) {
         position: absolute;
         width: 100%;
@@ -65,8 +64,9 @@
 
     .nav-item__link {
       position: relative;
-      padding-bottom: 2rem;
-      padding-top: 2rem;
+      // padding-bottom: 2rem;
+      // padding-top: 2rem;
+      padding: 2rem 34px;
     }
 
     /* New pseudo-element for the transition */
@@ -86,7 +86,7 @@
 
     .nav-item__link.active::before,
     .nav-item__link:hover::before,
-    .nav-item__link:focus::before  {
+    .nav-item__link:focus::before {
       opacity: 1; /* Show the element on hover or when active */
     }
   }
@@ -95,8 +95,8 @@
     align-self: center;
   }
   #hamburger {
-    color: $main-color;
-    border-top: 1px solid;
+    color: $secondary-color;
+    border-top: 2px solid;
     width: 28px;
     display: block;
   }
@@ -104,9 +104,9 @@
   #hamburger::before {
     content: '';
     display: block;
-    height: 1px;
+    height: 2px;
     width: 28px;
-    background-color: $accent-color;
+    background-color: $secondary-color;
     margin-top: 8px;
     transition: 0.3s;
     position: relative;
@@ -122,6 +122,6 @@
 
   .nav.active #hamburger::after {
     transform: rotate(-135deg);
-    top: -7px;
+    top: -10px;
   }
 }

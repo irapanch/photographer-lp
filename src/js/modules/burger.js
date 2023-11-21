@@ -10,9 +10,25 @@ export const burger = (menuSelector, burgerSelector) => {
 
   burgerElement.addEventListener('click', () => {
     menu.classList.toggle('active');
+    const navList = document.querySelector('.nav-list');
+
+    if (menu.classList.contains('active')) {
+      document.body.style.overflow = 'hidden';
+
+      navList.addEventListener('click', closeMobileMenu);
+    } else {
+      document.body.style.overflow = '';
+    }
+
+    function closeMobileMenu(e) {
+      if (e.target.getAttribute('href')) {
+        menu.classList.remove('active');
+        document.body.style.overflow = '';
+        navList.removeEventListener('click', closeMobileMenu);
+      }
+    }
 
     // Add accessability to mobile menu button
-
     const active = menu.classList.contains('active');
     if (active) {
       burgerElement.setAttribute(

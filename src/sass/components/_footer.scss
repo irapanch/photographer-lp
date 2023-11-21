@@ -1,8 +1,7 @@
 footer {
-  @include colored-bg;
-  // background: $secondary-color;
-  color: $light-text-color;
-
+  // @include colored-bg;
+  background: $bg-color;
+  color: $main-color;
   .container {
     position: relative;
     padding-top: 60px;
