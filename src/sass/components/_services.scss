@@ -146,4 +146,8 @@
     display: block;
     margin: 0 auto;
   }
+
+  .tabButton.active {
+    background-color: aquamarine;
+  }
 }
