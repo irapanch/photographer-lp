@@ -10,14 +10,14 @@ export const slider = () => {
     spaceBetween: 30,
     centeredSlides: true,
     // slidesPerView: 1,
-    // loop: true,
+    loop: true,
     keyboardControl: true,
     updateOnWindowResize: true,
     slideToClickedSlide: true,
     modules: [Autoplay, Navigation, Pagination],
     grabCursor: true,
     // initialSlide: 1,
-    speed: 5000,
+    speed: 1000,
 
     autoplay: {
       delay: 3000,
@@ -37,6 +37,9 @@ export const slider = () => {
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
+      renderBullet: function (index, className) {
+        return `<span class="${className}">${sliderContent[index].title}</span>`;
+      },
     },
     navigation: {
       nextEl: '.swiper-button-next',
