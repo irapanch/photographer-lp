@@ -50,10 +50,11 @@ export const slider = () => {
   let slides = '';
 
   sliderContent.forEach(item => {
+    console.log(item.alt);
     slides += `
     <div class="swiper-slide" data-id=${item.id}>
           <div class="services__card">
-            <img src=${item.src} alt=${item.alt} />
+            <img src=${item.src} alt="${item.alt}" />
             <div class="content">
               <h2 class="content-header">${item.title}</h2>
               <div>
