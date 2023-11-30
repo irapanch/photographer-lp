@@ -40,6 +40,7 @@
     flex: 0 0 auto;
     overflow: hidden;
     height: 350px;
+    align-self: flex-start;
 
     @media (min-width: $tablet-width) {
       height: 680px;
