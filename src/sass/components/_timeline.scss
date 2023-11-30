@@ -11,9 +11,12 @@
   .accordion {
     @media (min-width: $tablet-width) {
       display: flex;
-      height: 300px;
+      height: 360px;
       justify-content: space-between;
       gap: 8px;
+    }
+    @media (min-width: $desktop-width) {
+      height: 300px;
     }
 
     & .accordion-item {
@@ -55,10 +58,15 @@
       display: none;
       padding-top: 20px;
       overflow: hidden;
+      max-width: 250px;
 
       @media (max-width: $mobile-and-table-only) {
         margin-right: auto;
         height: fit-content;
+      }
+
+      @media (min-width: $tablet-width) {
+        max-width: 100%;
       }
     }
 
@@ -97,7 +105,14 @@
       padding: 20px;
       flex-direction: column;
       @media (max-width: $mobile-and-table-only) {
-        height: 370px;
+        height: 450px;
+      }
+    }
+
+    & .accordion-item.active:last-of-type,
+    & .accordion-item.active:first-of-type {
+      @media (max-width: $mobile-and-table-only) {
+        height: 330px;
       }
     }
 
@@ -161,7 +176,8 @@
       width: 204px;
       height: 28px;
       position: absolute;
-      top: 30px;
+      // top: 30px;
+      bottom: 30px;
       right: 22px;
       @media (max-width: $mobile-and-table-only) {
         transform: rotate(90deg);
