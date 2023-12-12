@@ -47,20 +47,6 @@ export const form = () => {
   function handleFormSubmit(e) {
     e.preventDefault();
 
-    const phoneInput = document.getElementById('phone');
-    const phoneValue = phoneInput.value;
-
-    // Check if the phone number is complete based on the mask
-    const isPhoneComplete = /^\+38 \(\d{3}\) \d{3} \d{2} \d{2}$/.test(
-      phoneValue
-    );
-
-    if (!isPhoneComplete) {
-      // Display error message to the user (you can customize this part)
-      alert('Please fill in a valid phone number');
-      return; // Stop further processing
-    }
-
     serializeForm(e.target);
   }
 

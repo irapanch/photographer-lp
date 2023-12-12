@@ -90,7 +90,13 @@
     @include flex;
     flex-direction: column;
     margin: 0 auto;
-    gap: 10px;
+    add & input {
+      margin-bottom: 20px;
+    }
+
+    & .phone-input {
+      position: relative;
+    }
 
     & input::placeholder {
       font-size: 14px;
@@ -99,8 +105,23 @@
       }
     }
 
+    & .error-message {
+      position: absolute;
+      color: red;
+      font-size: 10px;
+      bottom: 0;
+      @media (min-width: $tablet-width) {
+        font-size: 12px;
+      }
+    }
+
+    & .error-hidden {
+      display: none;
+    }
+
     & input:not([type='submit']),
     & textarea {
+      width: 100%;
       border: 1px $accent-color solid;
       background-color: $bg-color;
       padding: 10px;
@@ -118,6 +139,10 @@
 
     & .submit-form__btn {
       width: 100%;
+
+      @media (min-width: $tablet-width) {
+        margin: 0 auto;
+      }
     }
   }
   @media (min-width: $desktop-width) {

@@ -32,6 +32,22 @@ export const mask = selector => {
         : a;
     });
 
+    // Check if the phone number is complete based on the mask
+    const isPhoneComplete = /^\+38 \(\d{3}\) \d{3} \d{2} \d{2}$/.test(
+      this.value
+    );
+    const phoneErrorMessage = document.getElementById('phone-error-message');
+
+    if (!isPhoneComplete) {
+      // Display error message if the phone number is incomplete
+      phoneErrorMessage.classList.remove('error-hidden');
+      phoneErrorMessage.textContent = 'Введіть 10 цифр номеру';
+    } else {
+      // Clear the error message if the phone number is complete
+      phoneErrorMessage.classList.add('error-hidden');
+      phoneErrorMessage.textContent = '';
+    }
+
     if (event.type === 'blur') {
       if (this.value.length == 2) {
         this.value = '';
