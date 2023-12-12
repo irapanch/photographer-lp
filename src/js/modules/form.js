@@ -3,8 +3,6 @@ export const form = () => {
   const CHAT_ID = '-1002038976037';
   const URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
-  // const form = document.querySelector('form');
-
   const sendMessageToTelegram = message => {
     fetch(URL, {
       method: 'POST',
@@ -18,11 +16,17 @@ export const form = () => {
       }),
     })
       .then(res => res.json())
-      .then(res => {
-        console.log('res');
-      })
+
       .catch(err => console.error(err));
   };
+
+  function closeModal() {
+    const modal = document.querySelector('.modal');
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+
+    document.querySelector('#contact-us').reset();
+  }
 
   function serializeForm(formNode) {
     const formData = new FormData(formNode);
@@ -35,10 +39,28 @@ export const form = () => {
     }
 
     sendMessageToTelegram(message);
+
+    // Close modal and clear form
+    closeModal();
   }
 
   function handleFormSubmit(e) {
     e.preventDefault();
+
+    const phoneInput = document.getElementById('phone');
+    const phoneValue = phoneInput.value;
+
+    // Check if the phone number is complete based on the mask
+    const isPhoneComplete = /^\+38 \(\d{3}\) \d{3} \d{2} \d{2}$/.test(
+      phoneValue
+    );
+
+    if (!isPhoneComplete) {
+      // Display error message to the user (you can customize this part)
+      alert('Please fill in a valid phone number');
+      return; // Stop further processing
+    }
+
     serializeForm(e.target);
   }
 

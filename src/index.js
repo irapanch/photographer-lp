@@ -7,6 +7,7 @@ import { slider } from './js/modules/slider';
 import { form } from './js/modules/form';
 import { burger } from './js/modules/burger';
 import { modals } from './js/modules/modals';
+import { mask } from './js/modules/mask';
 
 document.addEventListener('DOMContentLoaded', () => {
   modals();
@@ -18,4 +19,5 @@ document.addEventListener('DOMContentLoaded', () => {
   accordion();
   faq();
   burger('.nav', '.mobile-menu__button');
+  mask('[name="phone"]');
 });
