@@ -1,7 +1,13 @@
-<div id="myModal" class="modal">
+<div
+  id="myModal"
+  class="modal"
+  role="dialog"
+  aria-labelledby="модальне вікно"
+  aria-describedby="модальне вікно з формою зворотнього зв'язку"
+>
   <!-- Modal content -->
   <div class="modal-content">
-    <button type="button" class="close">&times;</button>
+    <button type="button" class="close" aria-label="Закрити">&times;</button>
     <div class="container form">
       <h2 class="price-header form__header">Залишайте свою заявку</h2>
 
@@ -30,11 +36,13 @@
             placeholder="Номер телефону"
             aria-label="Введіть номер телефону"
             required
+            aria-invalid="false"
           />
 
           <div
             class="error-message error-hidden"
             id="phone-error-message"
+            aria-live="assertive"
           ></div>
         </label>
         <textarea
