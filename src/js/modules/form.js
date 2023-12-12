@@ -1,3 +1,6 @@
+import Toastify from 'toastify-js';
+import 'toastify-js/src/toastify.css';
+
 export const form = () => {
   const TOKEN = '6601245170:AAHgGq7563Eg190N1_9ueIMCcCwmxa3nfv4';
   const CHAT_ID = '-1002038976037';
@@ -22,10 +25,17 @@ export const form = () => {
 
   function closeModal() {
     const modal = document.querySelector('.modal');
-    modal.style.display = 'none';
+    modal.classList.add('hide');
     document.body.style.overflow = '';
 
     document.querySelector('#contact-us').reset();
+
+    modal.addEventListener('animationend', () => {
+      if (modal.classList.contains('hide')) {
+        modal.style.display = 'none';
+        modal.classList.remove('hide');
+      }
+    });
   }
 
   function serializeForm(formNode) {
@@ -42,6 +52,20 @@ export const form = () => {
 
     // Close modal and clear form
     closeModal();
+
+    Toastify({
+      text: 'Заявка відправлена!',
+      duration: 3500,
+      close: true,
+      gravity: 'top',
+      position: 'right',
+      stopOnFocus: true,
+      style: {
+        background: '#235f83',
+        paddingTop: '20px',
+        paddingBottom: '20px',
+      },
+    }).showToast();
   }
 
   function handleFormSubmit(e) {

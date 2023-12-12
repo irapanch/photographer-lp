@@ -15,14 +15,20 @@ export const modals = () => {
     });
 
     close.addEventListener('click', () => {
-      modal.style.display = 'none';
+      modal.classList.add('hide');
       document.body.style.overflow = '';
     });
 
     modal.addEventListener('click', e => {
       if (e.target === modal) {
-        modal.style.display = 'none';
+        modal.classList.add('hide');
         document.body.style.overflow = '';
+      }
+    });
+    modal.addEventListener('animationend', () => {
+      if (modal.classList.contains('hide')) {
+        modal.style.display = 'none';
+        modal.classList.remove('hide');
       }
     });
   }

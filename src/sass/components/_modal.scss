@@ -10,6 +10,12 @@
   overflow-y: auto;
   background-color: rgba(0, 0, 0, 0.4);
   animation: fadeInOut 0.3s ease;
+  // opacity: 0;
+
+  &.hide {
+    animation: fadeOut 0.3s ease;
+    animation-fill-mode: forwards;
+  }
 }
 
 .modal-content {
@@ -18,7 +24,7 @@
   margin: 30px auto;
   padding: 30px 20px;
   border: 1px solid #888;
-  width: 80svw;
+  width: 80vw;
   max-width: 900px;
 
   @media (min-width: $tablet-width) {
@@ -56,9 +62,22 @@
 @keyframes fadeInOut {
   from {
     opacity: 0;
+    transform: translateY(-100%);
   }
   to {
     opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100%);
   }
 }
 
@@ -90,7 +109,7 @@
     @include flex;
     flex-direction: column;
     margin: 0 auto;
-    add & input {
+    & input {
       margin-bottom: 20px;
     }
 
