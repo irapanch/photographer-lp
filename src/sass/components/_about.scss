@@ -10,7 +10,7 @@
     flex-wrap: wrap;
     gap: 45px;
     flex-direction: column;
-    align-items: flex-start;
+    // align-items: flex-start;
     padding-bottom: 240px;
 
     background-image: url('../images/svg/hand-ok.svg'),
@@ -38,10 +38,10 @@
   &__image {
     display: block;
     // flex: 0 0 auto;
+    margin-right: auto;
     overflow: hidden;
     height: 350px;
-    margin-right: auto;
-    width: fit-content;
+    // width: 111px;
     // align-self: flex-start;
 
     @media (min-width: $tablet-width) {
