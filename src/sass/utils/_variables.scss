@@ -9,25 +9,20 @@ $desktop-max-width: 1440px;
 // ---Colors---
 
 $main-color: #000000;
-$footer-color: #a2885e;
+$footer-color: #efefef1e;
+$hover-color: #efefefa6;
+$transparent-color: #d4d4d430;
 $bg-color: #efefef;
 $accent-color: #235f83;
 $light-text-color: #ffffff;
 $secondary-color: #133246;
-$extra: #1a3f78;
-// $main-color: #000000;
-// $footer-color: #ffffff20;
-// $bg-color: #efefef;
-// $accent-color: #0065fd;
-// $light-text-color: #ffffff;
-// $secondary-color: #2b68c7;
-// $extra: #1a3f78;
 
 // ---Fonts---
 $main-font: 'Kharkiv', sans-serif;
-// $secondary-font: 'Cormorant', serif;
 
 // ---Transition---
 
 $transition-duration: 250ms;
 $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+$dist: 480px;

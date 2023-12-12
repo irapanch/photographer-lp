@@ -15,9 +15,6 @@
       color: $accent-color;
     }
     & .nav {
-      // font-style: normal;
-      // font-weight: 400;
-
       .mobile-menu__button {
         background-color: transparent;
         border: none;
@@ -33,12 +30,32 @@
       }
     }
 
-    .nav-list {
-      display: none;
-      gap: 4rem;
-      @media (min-width: $desktop-width) {
-        display: flex;
+    #menu {
+      display: flex;
+      @media (max-width: 1199px) {
+        position: absolute;
+        width: 100%;
+        padding: 63px;
+        top: 63px;
+        left: -100%;
+        height: calc(100vh - 63px);
+        z-index: 999;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        background-color: $bg-color;
+        transition: left 0.5s $transition-timing-function;
+        overflow-y: auto;
+        // display: block;
+        // visibility: hidden;
       }
+    }
+
+    .nav.active #menu {
+      display: flex;
+      left: 0;
+      // visibility: visible;
     }
 
     .nav-item {
@@ -47,14 +64,15 @@
 
     .nav-item__link {
       position: relative;
-      padding-bottom: 2rem;
-      padding-top: 2rem;
+      // padding-bottom: 2rem;
+      // padding-top: 2rem;
+      padding: 2rem 34px;
     }
 
     /* New pseudo-element for the transition */
     .nav-item__link::before {
       content: '';
-      width: 162px;
+      width: 160px;
       height: 51px;
       position: absolute;
       left: 50%;
@@ -67,12 +85,43 @@
     }
 
     .nav-item__link.active::before,
-    .nav-item__link:hover::before {
+    .nav-item__link:hover::before,
+    .nav-item__link:focus::before {
       opacity: 1; /* Show the element on hover or when active */
     }
   }
 
   .phone-header {
     align-self: center;
+  }
+  #hamburger {
+    color: $secondary-color;
+    border-top: 2px solid;
+    width: 28px;
+    display: block;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 28px;
+    background-color: $secondary-color;
+    margin-top: 8px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  .nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  .nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  .nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -10px;
   }
 }

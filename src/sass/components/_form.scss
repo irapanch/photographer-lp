@@ -1,0 +1,45 @@
+.form {
+  &__header {
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    margin-bottom: 30px;
+  }
+
+  & .container {
+    & form#contact-us {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      gap: 10px;
+
+      & input::placeholder {
+        font-size: 14px;
+        @media (min-width: $tablet-width) {
+          font-size: 16px;
+        }
+      }
+
+      & input:not([type='submit']),
+      & textarea {
+        border: 1px $accent-color solid;
+        background-color: $bg-color;
+        padding: 10px;
+      }
+
+      & input:focus,
+      & textarea:focus {
+        outline-color: $secondary-color;
+      }
+
+      & textarea {
+        resize: none;
+        margin-bottom: 20px;
+      }
+    }
+    @media (min-width: $desktop-width) {
+      max-width: 782px;
+    }
+  }
+}

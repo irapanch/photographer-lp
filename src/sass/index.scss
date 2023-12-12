@@ -1,4 +1,5 @@
 // @import './fonts/fonts';
+
 @import './utils/variables';
 
 @import './common';
@@ -7,10 +8,13 @@
 @import './components/hero';
 @import './components/benefits';
 @import './components/about';
+@import './components/call-to-action';
 @import './components/services';
 @import './components/timeline';
 @import './components/price';
 @import './components/faq';
+// @import './components/form';
+@import './components/modal';
 @import './components/footer';
 
 @font-face {

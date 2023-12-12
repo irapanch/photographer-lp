@@ -1,0 +1,27 @@
+.call-to-action {
+  @include colored-bg;
+  .order-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .order-text {
+      font-size: 16px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+
+      @media (min-width: $desktop-width) {
+        font-size: 34px;
+      }
+    }
+
+    .order-title {
+      @include header-text;
+      font-size: 34px;
+      margin-bottom: 20px;
+      align-self: center;
+      text-align: center;
+    }
+  }
+}

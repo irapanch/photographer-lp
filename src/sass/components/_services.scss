@@ -1,9 +1,26 @@
 .services {
+  &-header {
+    @include header-text;
+  }
+
+  &-subheader {
+    margin-bottom: 40px;
+  }
+
   & .swiper {
+    position: relative;
     width: 100%;
     height: 100%;
     margin-bottom: 30px;
-    padding-bottom: 30px
+    // margin-top: 30px;
+    padding-top: 150px;
+    @media (min-width: $tablet-width) {
+      padding-top: 80px;
+    }
+  }
+
+  & .swiper-wrapper {
+    padding-top: 50px;
   }
 
   & .swiper-slide {
@@ -31,6 +48,16 @@
     background: #ffffff;
     color: #000000;
     text-align: left;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 30%;
+      width: 100%;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+    }
   }
 
   &__card * {
@@ -55,10 +82,11 @@
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
   }
 
   &__card .content > div {
-    height: 20%;
+    height: 33%;
     overflow: hidden;
     width: 100%;
     position: absolute;
@@ -75,7 +103,7 @@
   }
 
   &__card .content-header {
-    color: #ffffff;
+    color: $light-text-color;
     font-weight: 400;
     text-transform: uppercase;
     top: 80%;
@@ -84,21 +112,18 @@
     position: relative;
   }
 
-  & .content-header::after {
-    content: url('../images/svg/arrow-right.svg');
-    position: absolute;
-    top: 0;
-    right: 30px;
-    width: 62px;
-    height: 19px;
-  }
-
   &__card p {
     opacity: 0;
-    font-size: 0.8em;
-    font-weight: 500;
-    -webkit-transform: translate3d(0%, -150%, 0);
-    transform: translate3d(0%, -150%, 0);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    -webkit-transform: translate3d(0%, -90%, 0);
+    transform: translate3d(0%, -90%, 0);
+    @media (min-width: $tablet-width) {
+      font-size: 0.8em;
+      font-weight: 500;
+      line-height: 21px;
+    }
   }
 
   &__card a {
@@ -110,6 +135,7 @@
   }
 
   &__card:hover img,
+  &__card:focus img,
   &__card.hover img {
     opacity: 0.3;
     -webkit-filter: grayscale(100%);
@@ -117,14 +143,16 @@
   }
 
   &__card:hover .content h2,
+  &__card:focus .content h2,
   &__card.hover .content h2 {
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-250%);
+    transform: translateY(-250%);
     opacity: 0.9;
     color: #000000;
   }
 
   &__card:hover .content p,
+  &__card:focus .content p,
   &__card.hover .content p {
     opacity: 0.7;
     -webkit-transform: translateY(0);
@@ -134,7 +162,7 @@
   & .swiper-button-next,
   & .swiper-button-prev {
     visibility: hidden;
-    @media (min-width: $tablet-width){
+    @media (min-width: $tablet-width) {
       visibility: visible;
     }
   }
@@ -142,5 +170,47 @@
   .center-button {
     display: block;
     margin: 0 auto;
+  }
+
+  & .swiper-pagination {
+    text-align: start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: fit-content;
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    @media (min-width: $desktop-width) {
+      font-size: 22px;
+    }
+
+    & .swiper-pagination-bullet {
+      padding: 7px 10px 5px;
+      background-color: $accent-color;
+      color: $light-text-color;
+
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        opacity: 0.7;
+      }
+    }
+  }
+  & .swiper-button-next,
+  & .swiper-button-prev {
+    background-color: $transparent-color;
+    width: 50px;
+    height: 50px;
+    transition: background-color,
+      $transition-duration $transition-timing-function;
+  }
+
+  & .swiper-button-next:hover,
+  & .swiper-button-prev:hover,
+  & .swiper-button-next:focus,
+  & .swiper-button-prev:focus {
+    background-color: $hover-color;
   }
 }

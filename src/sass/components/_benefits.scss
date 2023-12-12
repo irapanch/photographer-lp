@@ -1,20 +1,38 @@
 .benefits {
   position: relative;
+  max-width: $desktop-max-width;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    background-image: url('../images/svg/hand-ok.svg'),
+      url('../images/svg/hand-bottom.svg');
+    background-position: 100% 50px, 100% 450px;
+    background-size: 320px, 420px;
+    background-repeat: no-repeat;
+  }
 
   .section-container {
-    position: relative;
-    padding-top: 40px;
     @media (min-width: $desktop-width) {
-      background-image: url('../images/svg/hand-ok.svg'),
-        url('../images/svg/hand-bottom.svg');
-      background-repeat: no-repeat;
-      background-position: 100% 0, 100% 385px;
-      background-size: 320px, 420px;
-      // padding: 0;
-      height: 725px;
       display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &-container {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 20px;
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+    }
+    @media (min-width: $desktop-width) {
+    }
+  }
+
+  &-text {
+    @media (min-width: $desktop-width) {
+      max-width: 700px;
     }
   }
 
@@ -23,21 +41,24 @@
     font-size: 32px;
     @media (min-width: $tablet-width) {
       max-width: 700px;
+      margin-bottom: 30px;
     }
   }
 
   &-subheader {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 
   &__list {
     display: flex;
     flex-direction: column;
     gap: 60px;
+    @media (min-width: $desktop-width) {
+      width: 100%;
+    }
 
     @media (min-width: $desktop-width) {
       gap: 50px;
-      width: 56%;
     }
 
     &-item h3 {
@@ -60,19 +81,4 @@
       background-image: url('../images/svg/underline.svg');
     }
   }
-}
-
-.sault-animation {
-  position: absolute;
-  top: 700px;
-  right: 312px;
-  width: 1px;
-  height: 1px;
-  overflow: visible;
-}
-
-.circle {
-  position: absolute;
-  background-color: black;
-  border-radius: 50%;
 }
