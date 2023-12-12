@@ -40,15 +40,14 @@
     // flex: 0 0 auto;
     margin-right: auto;
     overflow: hidden;
-    height: 350px;
     width: 111px;
     // align-self: flex-start;
 
     @media (min-width: $tablet-width) {
-      height: 680px;
+      width: 216px;
     }
     @media (min-width: $desktop-width) {
-      height: 600px;
+      width: 190px;
       grid-row-start: 1;
       grid-row-end: 3;
     }
