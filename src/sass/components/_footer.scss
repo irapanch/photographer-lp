@@ -17,7 +17,7 @@ footer {
     user-select: none;
 
     .footer__title {
-      display: flex;
+      @include flex;
       flex-direction: column;
       font-style: normal;
       font-weight: 400;

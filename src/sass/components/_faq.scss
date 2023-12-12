@@ -19,7 +19,7 @@
       z-index: -1;
     }
     &-label {
-      display: flex;
+      @include flex;
       padding: 1em;
       gap: 20px;
       cursor: pointer;

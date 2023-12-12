@@ -24,10 +24,10 @@
   }
 
   & .swiper-slide {
+    @include flex;
     text-align: center;
     font-size: 18px;
     background: #fff;
-    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -179,7 +179,7 @@
     left: 0;
     height: fit-content;
     font-size: 18px;
-    display: flex;
+    @include flex;
     flex-wrap: wrap;
     row-gap: 10px;
     @media (min-width: $desktop-width) {

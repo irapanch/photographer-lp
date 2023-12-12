@@ -156,6 +156,13 @@ img {
   mix-blend-mode: darken;
 }
 
+@mixin flex {
+  display: -webkit-box; /* Safari/WebKit */
+  display: -moz-box; /* Firefox */
+  display: -ms-flexbox; /* Internet Explorer 10 */
+  display: -webkit-flex; /* Chrome */
+  display: flex; /* Standard syntax */
+}
 .falling {
   animation-name: falling;
 }

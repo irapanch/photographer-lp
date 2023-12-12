@@ -6,7 +6,7 @@
 .hero {
   max-width: $desktop-max-width;
   margin: 0 auto;
-  display: flex;
+  @include flex;
   align-items: flex-end;
   background: linear-gradient(
       0deg,
@@ -24,7 +24,7 @@
   }
 
   .hero-container {
-    display: flex;
+    @include flex;
     flex-direction: column;
     width: $desktop-max-width;
     padding: 0 15px;
@@ -37,7 +37,7 @@
   }
 
   &__title {
-    display: flex;
+    @include flex;
     flex-direction: column;
     font-style: normal;
     font-weight: 400;

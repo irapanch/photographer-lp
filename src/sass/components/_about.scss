@@ -5,17 +5,11 @@
   padding-top: 0;
 
   & .about-container {
+    @include flex;
     position: relative;
-    display: -webkit-box; /* Safari/WebKit */
-    display: -moz-box; /* Firefox */
-    display: -ms-flexbox; /* Internet Explorer 10 */
-    display: -webkit-flex; /* Chrome */
-    display: flex; /* Standard syntax */
     flex-wrap: wrap;
     gap: 45px;
     flex-direction: column;
-    // -webkit-flex-flow: column;
-    // align-items: flex-start;
     padding-bottom: 240px;
 
     background-image: url('../images/svg/hand-ok.svg'),
@@ -42,11 +36,9 @@
 
   &__image {
     display: block;
-    // flex: 0 0 auto;
     margin-right: auto;
     overflow: hidden;
     width: 111px;
-    // align-self: flex-start;
 
     @media (min-width: $tablet-width) {
       width: 216px;
@@ -66,7 +58,7 @@
   }
 
   &__content {
-    display: flex;
+    @include flex;
     flex-direction: column;
     @media (min-width: $desktop-width) {
       justify-content: space-between;
@@ -110,10 +102,10 @@
   }
 
   &__text {
+    @include flex;
     position: relative;
     left: 0;
     text-align: center;
-    display: flex;
     align-items: center;
     gap: 10px;
     flex-direction: column;

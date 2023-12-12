@@ -13,14 +13,14 @@
 
   .section-container {
     @media (min-width: $desktop-width) {
-      display: flex;
+      @include flex;
       flex-direction: column;
       justify-content: center;
     }
   }
 
   &-container {
-    display: flex;
+    @include flex;
     flex-direction: column;
     gap: 20px;
     @media (min-width: $tablet-width) {
@@ -50,7 +50,7 @@
   }
 
   &__list {
-    display: flex;
+    @include flex;
     flex-direction: column;
     gap: 60px;
     @media (min-width: $desktop-width) {
