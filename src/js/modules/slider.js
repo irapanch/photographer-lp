@@ -1,70 +1,57 @@
-import Swiper from 'swiper';
-import { Navigation, Pagination, Autoplay } from 'swiper';
+import Swiper, { Autoplay, EffectCoverflow, Navigation, Pagination, Thumbs, Virtual } from 'swiper';
+import { Navigation, Pagination } from 'swiper';
+// import Swiper and modules styles
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper-bundle.min.js';
-
-import { sliderContent } from '../content/slider';
+// import 'swiper/swiper-element-bundle.min.css';
+// import 'swiper/swiper-element-bundle.min.js';
+// import 'swiper/modules/autoplay.min.css';
+// import {Autoplay} from  'swiper/modules/autoplay.js';
 
 export const slider = () => {
-  const swiper = new Swiper('.swiper', {
-    spaceBetween: 30,
-    centeredSlides: true,
-    keyboardControl: true,
-    updateOnWindowResize: true,
-    slideToClickedSlide: true,
-    modules: [Autoplay, Navigation, Pagination],
-    grabCursor: true,
-    initialSlide: 1,
-    speed: 1000,
+const swiper = new Swiper(".swiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  slidesPerView: 1,
+  loop: true,
+  mousewheelControl: true,
+  keyboardControl: true,
+  updateOnWindowResize: true,
+  slideToClickedSlide: true,
 
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-      pauseOnMouseEnter: true,
+  modules: [ Autoplay, Navigation, Pagination],
+  speed: 2000,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+  breakpoints: {
+
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
     },
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 20,
     },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      renderBullet: function (index, className) {
-        return `<span class="${className} swiper-pagination-clickable">${sliderContent[index].title}</span>`;
-      },
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
-  const swiperWrapper = document.querySelector('.swiper-wrapper');
 
-  let slides = '';
+// console.log(swiper);
+swiper.on('slideChange', function () {
+  console.log('slide changed');
+});
+}
 
-  sliderContent.forEach(item => {
-    slides += `
-    <div class="swiper-slide" data-id=${item.id}>
-          <div class="services__card">
-            <img src=${item.src} alt="${item.alt}" />
-            <div class="content">
-              <h2 class="content-header">${item.title}</h2>
-              <div>
-                <p>${item.description}</p>
-              </div>
-              <a href="#"></a>
-            </div>
-          </div>
-        </div>
-    `;
-  });
 
-  swiperWrapper.insertAdjacentHTML('beforeend', slides);
-};

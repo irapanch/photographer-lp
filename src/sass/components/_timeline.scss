@@ -2,6 +2,7 @@
   @include colored-bg;
   &-header {
     @include header-text;
+    // margin-bottom: 60px;
   }
 
   &-subheader {
@@ -9,14 +10,11 @@
   }
   /*Define Accordion box*/
   .accordion {
+    // overflow: hidden;
     @media (min-width: $tablet-width) {
       display: flex;
-      height: 360px;
-      justify-content: space-between;
-      gap: 8px;
-    }
-    @media (min-width: $desktop-width) {
       height: 300px;
+      justify-content: space-between;
     }
 
     & .accordion-item {
@@ -44,13 +42,12 @@
         padding-top: 10px;
         padding-left: 0;
         margin-top: 0;
-        width: 68px;
+        width: 5%;
         transition-property: width, color, background-color;
       }
     }
 
-    & .accordion-item:hover,
-    & .accordion-item:focus {
+    & .accordion-item:hover {
       background: $secondary-color;
     }
 
@@ -58,15 +55,11 @@
       display: none;
       padding-top: 20px;
       overflow: hidden;
-      max-width: 250px;
 
       @media (max-width: $mobile-and-table-only) {
+        width: 80%;
         margin-right: auto;
         height: fit-content;
-      }
-
-      @media (min-width: $tablet-width) {
-        max-width: 100%;
       }
     }
 
@@ -105,14 +98,7 @@
       padding: 20px;
       flex-direction: column;
       @media (max-width: $mobile-and-table-only) {
-        height: 450px;
-      }
-    }
-
-    & .accordion-item.active:last-of-type,
-    & .accordion-item.active:first-of-type {
-      @media (max-width: $mobile-and-table-only) {
-        height: 330px;
+        height: 500px;
       }
     }
 
@@ -120,8 +106,7 @@
       color: $main-color;
     }
 
-    & .accordion-item.active:hover,
-    & .accordion-item.active:focus {
+    & .accordion-item.active:hover {
       background: $light-text-color;
     }
 
@@ -146,7 +131,7 @@
       color: $light-text-color;
 
       @media (min-width: $tablet-width) {
-        width: 230px;
+        width: 250px;
         margin-left: 0;
         transform: rotate(90deg) translateX(33%);
       }
@@ -176,8 +161,7 @@
       width: 204px;
       height: 28px;
       position: absolute;
-      // top: 30px;
-      bottom: 30px;
+      top: 30px;
       right: 22px;
       @media (max-width: $mobile-and-table-only) {
         transform: rotate(90deg);

@@ -4,33 +4,35 @@
 }
 
 .hero {
-  max-width: $desktop-max-width;
+  height: calc(100vh - 63px);
   margin: 0 auto;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   background: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.3) 0%,
       rgba(0, 0, 0, 0.3) 100%
     ),
-    url(../images/hero2.jpeg),
-    lightgray -421.946px 0px / 234.371% 100% no-repeat;
+    url(../images/hero.jpg), lightgray -421.946px 0px / 234.371% 100% no-repeat;
+  background-attachment: fixed;
   background-position: top right;
   background-size: cover;
 
   @media (min-width: $desktop-width) {
     background-position: center;
-    max-width: 1920px;
+    height: calc(100vh - 70px);
   }
 
   .hero-container {
     display: flex;
     flex-direction: column;
+    align-self: flex-end;
     width: $desktop-max-width;
     padding: 0 15px;
 
     @media (min-width: $desktop-width) {
       padding: 0 40px;
+      gap: 25vh;
       align-self: center;
       gap: 0;
     }
@@ -61,7 +63,6 @@
     }
 
     & .title__second-word {
-      margin-left: auto;
       @media (min-width: $desktop-width) {
         align-self: flex-end;
       }
@@ -76,7 +77,6 @@
     color: $light-text-color;
     font-style: normal;
     font-weight: 400;
-    padding-top: 150px;
 
     @media (min-width: $desktop-width) {
       margin-bottom: 0;
@@ -92,11 +92,21 @@
     font-size: 1.6rem;
     color: $light-text-color;
     line-height: 19.2px;
-    margin-bottom: 150px;
+    margin-bottom: 30vh;
     @media (min-width: $desktop-width) {
       font-size: 18px;
       text-align: left;
-      margin-bottom: 100px;
+      margin-bottom: 0;
+    }
+  }
+
+  .hero__bottom {
+    @media (min-width: $desktop-width) {
+      width: 908px;
+      display: flex;
+      margin-left: auto;
+      gap: 100px;
+      align-items: center;
     }
   }
 }

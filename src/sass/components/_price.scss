@@ -6,20 +6,18 @@
 
   &-amount {
     display: block;
-    font-size: 42px;
+    font-size: 64px;
     text-transform: uppercase;
     position: relative;
-    // padding-inline: 28px;
-    padding: 28px;
-    padding-left: 32px;
-    margin-top: 20px;
-    text-wrap: nowrap;
+    padding-left: 41px;
+    padding-right: 41px;
+    margin-top: 10px;
   }
 
   &-amount::before {
     display: block;
-    width: 315px;
-    height: 110px;
+    width: 277px;
+    height: 97px;
     position: absolute;
     top: 50%;
     left: 0;
@@ -45,7 +43,7 @@
 
     .text-wrapper {
       @media (min-width: $tablet-width) {
-        flex-basis: 50%;
+        flex-basis: 70%;
       }
     }
 

@@ -1,21 +1,21 @@
-import { benefits } from './js/modules/benefits';
-import { timeline } from './js/modules/timeline';
 import { accordion } from './js/modules/accordion';
-import { faq } from './js/modules/faq';
-import { photocardsAnimation } from './js/modules/photocardsAnimation';
-import { slider } from './js/modules/slider';
-import { form } from './js/modules/form';
-import { burger } from './js/modules/burger';
-import { modals } from './js/modules/modals';
+import {faq} from './js/modules/faq';
+import {saultAnimation} from './js/modules/sault-animation';
+import {slider} from './js/modules/slider'
 
-document.addEventListener('DOMContentLoaded', () => {
-  modals();
-  form();
-  benefits();
-  photocardsAnimation();
+document.addEventListener("DOMContentLoaded", () => {
+  // console.log(saultAnimation);
+  saultAnimation();
+
+  // $(".hover").mouseleave(
+  //   function() {
+  //     $(this).removeClass("hover");
+  //   }
+  // );
+
+
   slider();
-  timeline();
   accordion();
   faq();
-  burger('.nav', '.mobile-menu__button');
+
 });
