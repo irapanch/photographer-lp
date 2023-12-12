@@ -27,17 +27,20 @@
 }
 
 .close {
-  color: $accent-color;
   position: absolute;
   top: 10px;
   right: 10px;
-  font-size: 28px;
-  cursor: pointer;
   width: 32px;
   height: 32px;
-  // display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: $accent-color;
+
+  font-size: 28px;
+
   border: 2px solid $accent-color;
-  // border-radius: 50%;
+  cursor: pointer;
   transition-property: color, background-color;
   transition-duration: $transition-duration;
   transition-timing-function: $transition-timing-function;
