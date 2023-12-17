@@ -15,7 +15,7 @@ export const mask = selector => {
   };
 
   function createMask(event) {
-    let matrix = '+38 (___) ___ __ __',
+    let matrix = '+380 (__) ___ __ __',
       i = 0,
       def = matrix.replace(/\D/g, ''),
       val = this.value.replace(/\D/g, '');
@@ -33,7 +33,7 @@ export const mask = selector => {
     });
 
     // Check if the phone number is complete based on the mask
-    const isPhoneComplete = /^\+38 \(\d{3}\) \d{3} \d{2} \d{2}$/.test(
+    const isPhoneComplete = /^\+380 \(\d{2}\) \d{3} \d{2} \d{2}$/.test(
       this.value
     );
     const phoneErrorMessage = document.getElementById('phone-error-message');
@@ -58,7 +58,7 @@ export const mask = selector => {
   }
 
   let inputs = document.querySelectorAll(selector);
-  console.log(inputs);
+  // console.log(inputs);
 
   inputs.forEach(input => {
     input.addEventListener('input', createMask);
