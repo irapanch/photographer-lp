@@ -15,7 +15,7 @@ export const slider = () => {
     modules: [Autoplay, Navigation, Pagination],
     grabCursor: true,
     initialSlide: 1,
-    speed: 1000,
+    speed: 500,
 
     autoplay: {
       delay: 3000,

@@ -14,12 +14,12 @@
 
     background-image: url('../images/svg/hand-ok.svg'),
       url('../images/svg/hand-bottom.svg'), url('../images/svg/album.svg');
-    background-position: 100% 70px, 100% 275px, 70% 830px;
-    background-size: 180px, 220px, 300px;
+    background-position: 100% 107px, 100% 275px, 70% 830px;
+    background-size: 160px, 220px, 300px;
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      gap: 70px;
+      gap: 74px;
       padding-bottom: 20px;
       background-position: 100% 0px, 105% 330px, 90% 950px;
       background-size: 300px, 400px, 400px;
@@ -28,7 +28,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr 2fr;
       background-image: url('../images/svg/album.svg');
-      background-position: 90% 250px;
+      background-position: 90% 185px;
       background-size: 450px;
       padding-bottom: 0;
     }
@@ -44,7 +44,7 @@
       width: 216px;
     }
     @media (min-width: $desktop-width) {
-      width: 190px;
+      width: 170px;
       grid-row-start: 1;
       grid-row-end: 3;
     }
@@ -89,6 +89,10 @@
       @media (min-width: $tablet-width) {
         font-size: 30px;
         line-height: 40px;
+      }
+      @media (min-width: $desktop-width) {
+        font-size: 24px;
+        line-height: 32px;
       }
     }
 
