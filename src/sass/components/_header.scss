@@ -1,6 +1,12 @@
 .header {
+  position: fixed;
+  width: 100%;
   height: 63px;
+  background-color: $bg-color;
+  z-index: 100;
+  border-bottom: 1px solid $underline-color;
   @media (min-width: $desktop-width) {
+    position: relative;
     height: 70px;
   }
   .header-container {
@@ -58,8 +64,18 @@
       // visibility: visible;
     }
 
+    .nav-list__contacts {
+      display: block;
+    }
+
     .nav-item {
       display: inline-flex;
+
+      &__nested {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+      }
     }
 
     .nav-item__link {
