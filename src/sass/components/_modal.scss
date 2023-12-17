@@ -125,6 +125,7 @@
     }
 
     & .error-message {
+      display: block;
       position: absolute;
       color: red;
       font-size: 10px;
