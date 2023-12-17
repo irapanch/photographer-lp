@@ -1,7 +1,6 @@
 .faq {
   @include colored-bg;
   &-header {
-    @include header-text;
     margin-bottom: 60px;
   }
 

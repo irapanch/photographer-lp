@@ -1,0 +1,21 @@
+@mixin header-text {
+  font-size: 4rem;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+@mixin colored-bg {
+  background: url(../images/noise.png);
+  background-color: $accent-color;
+  color: $bg-color;
+  mix-blend-mode: darken;
+}
+
+@mixin flex {
+  display: -webkit-box; /* Safari/WebKit */
+  display: -moz-box; /* Firefox */
+  display: -ms-flexbox; /* Internet Explorer 10 */
+  display: -webkit-flex; /* Chrome */
+  display: flex; /* Standard syntax */
+}
