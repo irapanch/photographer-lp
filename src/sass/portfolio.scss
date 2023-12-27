@@ -22,6 +22,7 @@
 }
 @import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
 
+// @import '~node_modules/baguettebox.js/dist/baguetteBox.min.css';
 main {
   padding-top: 63px;
 }
@@ -63,8 +64,8 @@ main {
   // opacity: 0.6;
 }
 .item:hover img {
-  transform: scale(1.2);
-  opacity: 1;
+  transform: scale(1.1);
+  opacity: 0.8;
 }
 .vertical {
   grid-column: span 2;
@@ -95,4 +96,8 @@ main {
     grid-column: span 3;
     grid-row: span 2;
   }
+}
+
+.baguetteBox-open {
+  overflow-y: hidden;
 }
