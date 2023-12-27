@@ -27,6 +27,4 @@ document.addEventListener('DOMContentLoaded', () => {
     buttons: true,
     // animation: 'fadeIn',
   });
-
-  document.body.style.overflow = 'hidden';
 });
