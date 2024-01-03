@@ -23,30 +23,35 @@ const getImageOrientation = (index, odd) => {
   if (odd) {
     switch (index) {
       case 1:
-        return 'vertical';
-      case 3:
-        return 'vertical';
-      case 4:
-        return 'big';
-      case 5:
-        return 'vertical';
-      default:
         return 'horizontal';
-    }
-  } else {
-    switch (index) {
-      case 1:
-        return 'big';
-      case 2:
-        return 'vertical';
       case 3:
+        return 'big';
+      case 4:
+        return 'horizontal';
+      case 5:
         return 'vertical';
       case 6:
         return 'vertical';
       default:
+        return '';
+    }
+  } else {
+    switch (index) {
+      case 2:
         return 'horizontal';
+      case 3:
+        return 'horizontal';
+      case 4:
+        return 'big';
+      case 5:
+        return 'vertical';
+      case 6:
+        return 'vertical';
+      default:
+        return '';
     }
   }
+  return;
 };
 
 export const portfolio = () => {
