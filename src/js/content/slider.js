@@ -1,7 +1,7 @@
 const business = require('../../images/jpg/business.jpeg');
 const content = require('../../images/jpg/content.jpeg');
 const family = require('../../images/jpg/family.jpeg');
-const forBlog = require('../../images/jpg/for-blog.jpeg');
+const product = require('../../images/jpg/for-blog.jpeg');
 const loveStory = require('../../images/jpg/love-story.jpeg');
 const sacraments = require('../../images/jpg/sacraments.jpeg');
 const wedding = require('../../images/jpg/wedding.jpeg');
@@ -22,7 +22,7 @@ export const sliderContent = [
     alt: 'Підставка з епоксидної смоли з сухоцвітами в руці',
     title: 'Контентна',
     description:
-      'Якісні знімки ваших товарів для соціальних мереж, вебсайтів, для друку тощо. Підходить як блогерам, так і підприємцям чи творчим особистостям для просування бренду або профілю.',
+      'Покажіть Ваш світ та свою експертність вашим читачам через ваші дописи у соцмережах чи блогах, доповнюючи їх професійним фото-контентом. Ваш блог стане ще більш неповторним!',
   },
   {
     id: 3,
@@ -34,11 +34,11 @@ export const sliderContent = [
   },
   {
     id: 4,
-    src: forBlog,
+    src: product,
     alt: 'Дівчина в помаранчевому піджаку стоїть з планшетом',
-    title: 'Для блогу',
+    title: 'Предметна',
     description:
-      'Покажіть Ваш світ та свою експертність вашим читачам через ваші дописи у соцмережах чи блогах, доповнюючи їх професійним фото-контентом. Ваш блог стане ще більш неповторним!',
+      'Зйомка для товарного бізнесу: взуття, одяг, аксесуари, ювелірні вироби, біжутерія, витвори мистецтва, посуд, фуд зйомка тощо',
   },
   {
     id: 5,
