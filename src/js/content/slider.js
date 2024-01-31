@@ -4,8 +4,8 @@ const family = require('../../images/jpg/family.jpeg');
 const product = require('../../images/jpg/for-blog.jpeg');
 const loveStory = require('../../images/jpg/love-story.jpeg');
 const sacraments = require('../../images/jpg/sacraments.jpeg');
-const wedding = require('../../images/jpg/wedding.jpeg');
-const womanPortrait = require('../../images/jpg/woman-portrait.jpeg');
+// const wedding = require('../../images/jpg/wedding.jpeg');
+const portrait = require('../../images/jpg/woman-portrait.jpeg');
 
 export const sliderContent = [
   {
@@ -66,7 +66,7 @@ export const sliderContent = [
   // },
   {
     id: 7,
-    src: womanPortrait,
+    src: portrait,
     alt: 'Дівчина малює біля вікна',
     title: 'Портретна',
     description:
