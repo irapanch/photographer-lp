@@ -9,6 +9,11 @@
     position: relative;
     height: 70px;
   }
+
+  &.header-portfolio {
+    position: fixed;
+  }
+
   .header-container {
     @include flex;
     justify-content: space-between;

@@ -11,6 +11,7 @@ export const sliderContent = [
   {
     id: 1,
     src: business,
+    name: 'business',
     alt: 'Дівчина архітектор креслить схеми креслення',
     title: 'Бізнес зйомка',
     description:
@@ -19,6 +20,7 @@ export const sliderContent = [
   {
     id: 2,
     src: content,
+    name: 'content',
     alt: 'Підставка з епоксидної смоли з сухоцвітами в руці',
     title: 'Контентна',
     description:
@@ -27,6 +29,7 @@ export const sliderContent = [
   {
     id: 3,
     src: family,
+    name: 'family',
     alt: 'Жінка, чоловік та дитина сидять на пікніку в лісі',
     title: 'Cімейна',
     description:
@@ -35,6 +38,7 @@ export const sliderContent = [
   {
     id: 4,
     src: product,
+    name: 'product',
     alt: 'Дівчина в помаранчевому піджаку стоїть з планшетом',
     title: 'Предметна',
     description:
@@ -43,6 +47,7 @@ export const sliderContent = [
   {
     id: 5,
     src: loveStory,
+    name: 'loveStory',
     alt: 'Закохана пара обіймається',
     title: 'Love Story',
     description:
@@ -51,6 +56,7 @@ export const sliderContent = [
   {
     id: 6,
     src: sacraments,
+    name: 'sacraments',
     alt: 'Пара стоїть в церкві перед вівтарем',
     title: 'Таїнства',
     description:
@@ -67,6 +73,7 @@ export const sliderContent = [
   {
     id: 7,
     src: portrait,
+    name: 'portrait',
     alt: 'Дівчина малює біля вікна',
     title: 'Портретна',
     description:

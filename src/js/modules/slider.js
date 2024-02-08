@@ -59,7 +59,7 @@ export const slider = () => {
               <div>
                 <p>${item.description}</p>
               </div>
-              <a href="#"></a>
+              <a href="/portfolio.html#${item.name}"></a>
             </div>
           </div>
         </div>

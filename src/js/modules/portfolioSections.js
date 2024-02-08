@@ -62,7 +62,7 @@ export const portfolio = () => {
   portfolioContent.forEach((item, sectionIndex) => {
     const odd = sectionIndex % 2 === 0;
     html += `
-    <section class="${item.id} ${odd ? '' : 'colored'}">
+    <section class="${item.id} ${odd ? '' : 'colored'}" id="${item.id}">
     <div class="container">
       <h2 class="title portfolio-header">${item.title}</h2>
       <div class="cont ${odd ? '' : 'reversed'}">
