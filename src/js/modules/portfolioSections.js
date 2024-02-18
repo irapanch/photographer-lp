@@ -78,9 +78,14 @@ export const portfolio = () => {
     ${item.images
       .map(
         (image, index) => `
-    <a href="${image.src}" data-caption="Image caption" class="figure${
+    <a href="${image.src}" data-caption="${image.name ?? ''}" class="figure${
           index + 1
-        } item ${getImageOrientation(index + 1, odd)}">
+        } item ${getImageOrientation(index + 1, odd)}"
+
+        data-at-375="img/thumbs/2-1.jpg"
+    data-at-768="img/small/2-1.jpg"
+    data-at-1200="${image.src}"
+        >
       <img class="figure-img" src="${image.src}" alt="${image.alt}">
     </a>
   `
