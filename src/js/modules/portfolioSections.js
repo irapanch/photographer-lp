@@ -54,7 +54,16 @@ const getImageOrientation = (index, odd) => {
   return;
 };
 
-export const portfolio = () => {
+// export const titlePortfolio = () => {
+//   const portfolioWrapper = document.querySelector('.portfolio-wrapper');
+//   const list = document.createElement('ul');
+//   list.classList.add = 'categories';
+
+//   portfolioWrapper.append(list);
+//   // newDiv.innerHTML = '<h1>Привет!</h1>';
+// };
+
+export const dataPortfolio = () => {
   const wrapper = document.querySelector('.wrapper');
 
   let html = '';

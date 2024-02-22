@@ -17,5 +17,7 @@ export const faq = () => {
     }, '');
   };
 
-  tabsWrapper.insertAdjacentHTML('beforeend', renderFaq());
+  if (tabsWrapper) {
+    tabsWrapper.insertAdjacentHTML('beforeend', renderFaq());
+  }
 };

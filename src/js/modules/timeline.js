@@ -14,6 +14,8 @@ export const timeline = () => {
     `;
   });
 
-  accordionList.insertAdjacentHTML('beforeend', html);
-  accordionList.children[0].classList.add('active');
+  if (accordionList) {
+    accordionList.insertAdjacentHTML('beforeend', html);
+    accordionList.children[0].classList.add('active');
+  }
 };

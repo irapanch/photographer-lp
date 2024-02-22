@@ -66,5 +66,7 @@ export const slider = () => {
     `;
   });
 
-  swiperWrapper.insertAdjacentHTML('beforeend', slides);
+  if (swiperWrapper) {
+    swiperWrapper.insertAdjacentHTML('beforeend', slides);
+  }
 };

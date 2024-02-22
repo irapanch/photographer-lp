@@ -7,7 +7,8 @@ import { form } from './js/modules/form';
 import { burger } from './js/modules/burger';
 import { modals } from './js/modules/modals';
 import { mask } from './js/modules/mask';
-import { portfolio } from './js/modules/portfolioSections';
+import { dataPortfolio } from './js/modules/portfolioSections';
+// import { titlePortfolio } from './js/modules/portfolioSections';
 import baguetteBox from 'baguettebox.js';
 import 'baguettebox.js/dist/baguetteBox.min.css';
 
@@ -19,7 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // timeline();
   // accordion();
   // faq();
-  portfolio();
+  // titlePortfolio();
+  dataPortfolio();
   burger('.nav', '.mobile-menu__button');
   mask('[name="phone"]');
   baguetteBox.run('.gallery', {

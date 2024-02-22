@@ -1,17 +1,26 @@
 const business = require('../../images/jpg/business.jpeg');
-const content = require('../../images/jpg/content.jpeg');
+const product = require('../../images/jpg/content.jpeg');
 const family = require('../../images/jpg/family.jpeg');
-const product = require('../../images/jpg/for-blog.jpeg');
+const content = require('../../images/jpg/for-blog.jpeg');
 const loveStory = require('../../images/jpg/love-story.jpeg');
 const sacraments = require('../../images/jpg/sacraments.jpeg');
 // const wedding = require('../../images/jpg/wedding.jpeg');
 const portrait = require('../../images/jpg/woman-portrait.jpeg');
 
+export const categories = [
+  'business',
+  'content',
+  'family',
+  'product',
+  'loveStory',
+  'sacraments',
+];
+
 export const sliderContent = [
   {
     id: 1,
     src: business,
-    name: 'business',
+    name: categories[0],
     alt: 'Дівчина архітектор креслить схеми креслення',
     title: 'Бізнес зйомка',
     description:
@@ -20,7 +29,7 @@ export const sliderContent = [
   {
     id: 2,
     src: content,
-    name: 'content',
+    name: categories[1],
     alt: 'Підставка з епоксидної смоли з сухоцвітами в руці',
     title: 'Контентна',
     description:
@@ -29,7 +38,7 @@ export const sliderContent = [
   {
     id: 3,
     src: family,
-    name: 'family',
+    name: categories[2],
     alt: 'Жінка, чоловік та дитина сидять на пікніку в лісі',
     title: 'Cімейна',
     description:
@@ -38,7 +47,7 @@ export const sliderContent = [
   {
     id: 4,
     src: product,
-    name: 'product',
+    name: categories[3],
     alt: 'Дівчина в помаранчевому піджаку стоїть з планшетом',
     title: 'Предметна',
     description:
@@ -47,7 +56,7 @@ export const sliderContent = [
   {
     id: 5,
     src: loveStory,
-    name: 'loveStory',
+    name: categories[4],
     alt: 'Закохана пара обіймається',
     title: 'Love Story',
     description:
@@ -56,7 +65,7 @@ export const sliderContent = [
   {
     id: 6,
     src: sacraments,
-    name: 'sacraments',
+    name: categories[5],
     alt: 'Пара стоїть в церкві перед вівтарем',
     title: 'Таїнства',
     description:
@@ -73,7 +82,7 @@ export const sliderContent = [
   {
     id: 7,
     src: portrait,
-    name: 'portrait',
+    name: categories[6],
     alt: 'Дівчина малює біля вікна',
     title: 'Портретна',
     description:
