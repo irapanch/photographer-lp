@@ -81,12 +81,8 @@ export const portfolio = () => {
     <a href="${image.src}" data-caption="${image.name ?? ''}" class="figure${
           index + 1
         } item ${getImageOrientation(index + 1, odd)}"
-
-        data-at-375="img/thumbs/2-1.jpg"
-    data-at-768="img/small/2-1.jpg"
-    data-at-1200="${image.src}"
         >
-      <img class="figure-img" src="${image.src}" alt="${image.alt}">
+      <img class="figure-img" src="${image.mobileSrc}" alt="${image.alt}">
     </a>
   `
       )

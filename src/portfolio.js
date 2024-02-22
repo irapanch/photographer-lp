@@ -25,5 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
   baguetteBox.run('.gallery', {
     buttons: true,
     // animation: 'fadeIn',
+    // async: true,
   });
 });

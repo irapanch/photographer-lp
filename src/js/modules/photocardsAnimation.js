@@ -21,6 +21,6 @@ export const photocardsAnimation = () => {
     photoCard.style.width = photoSizes[i].width;
     photoCard.style.height = photoSizes[i].height;
     photoCard.style.backgroundImage = `url(${imageUrl})`;
-    setContainer.appendChild(photoCard);
+    photoCard ?? setContainer.appendChild(photoCard);
   }
 };

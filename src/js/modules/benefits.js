@@ -14,5 +14,5 @@ export const benefits = () => {
     `;
   });
 
-  benefitsList.insertAdjacentHTML('beforeend', html);
+  html ?? benefitsList.insertAdjacentHTML('beforeend', html);
 };
