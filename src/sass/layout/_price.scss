@@ -19,12 +19,12 @@
   &-amount::before {
     content: '';
     display: block;
-    width: 315px;
-    height: 110px;
+    width: 195px;
+    height: 68px;
     position: absolute;
     top: 50%;
-    left: 0;
-    transform: translateY(-57%);
+    left: 130px;
+    transform: translateY(-60%);
     background-size: cover;
     background-image: url(../images/svg/chosen-big.svg);
     background-repeat: no-repeat;
