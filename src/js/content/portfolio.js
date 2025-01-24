@@ -5,6 +5,8 @@ const business4 = require('../../images/jpg/business/business4.jpg');
 const business5 = require('../../images/jpg/business/business5.jpg');
 const business6 = require('../../images/jpg/business/business6.jpg');
 
+
+
 const mobileBusiness1 = require('../../images/jpg/forMobile/business1.webp');
 const mobileBusiness2 = require('../../images/jpg/forMobile/business2.webp');
 const mobileBusiness3 = require('../../images/jpg/forMobile/business3.webp');
@@ -18,6 +20,7 @@ const content3 = require('../../images/jpg/content/content3.jpg');
 const content4 = require('../../images/jpg/content/content4.jpg');
 const content5 = require('../../images/jpg/content/content5.jpg');
 const content6 = require('../../images/jpg/content/content6.jpg');
+
 
 const mobileContent1 = require('../../images/jpg/forMobile/content1.webp');
 const mobileContent2 = require('../../images/jpg/forMobile/content2.webp');
@@ -96,6 +99,19 @@ const mobilePortrait4 = require('../../images/jpg/forMobile/portrait4.webp');
 const mobilePortrait5 = require('../../images/jpg/forMobile/portrait5.webp');
 const mobilePortrait6 = require('../../images/jpg/forMobile/portrait6.webp');
 
+
+const blueStartTabsLeft = require('../../images/tabs/bsl.png');
+const blueTabsRight = require('../../images/tabs/br.png');
+const blueTabsLeft = require('../../images/tabs/bl.png');
+const blueFinishTabsRight = require('../../images/tabs/bfr.png');
+
+const whiteStartTabsLeft = require('../../images/tabs/wsl.png');
+const whiteTabsRight = require('../../images/tabs/wr.png');
+const whiteTabsLeft = require('../../images/tabs/wl.png');
+const whiteFinishTabsRight = require('../../images/tabs/wfr.png');
+
+
+
 // const images = {};
 
 // // Define the categories and counts
@@ -120,8 +136,73 @@ const mobilePortrait6 = require('../../images/jpg/forMobile/portrait6.webp');
 // });
 
 // console.log(images);
-
+export const tabsOptions = {
+  blue: {
+    startLeft: blueStartTabsLeft,
+    right: blueTabsRight,
+    left: blueTabsLeft,
+    finishRight: blueFinishTabsRight,
+  },
+  white: {
+    startLeft: whiteStartTabsLeft,
+    right: whiteTabsRight,
+    left: whiteTabsLeft,
+    finishRight: whiteFinishTabsRight,
+  },
+};
 export const portfolioContent = [
+  {
+    id: 'content',
+    title: 'Контентна / Для блогу',
+    description: [
+      'Контентна зйомка - це важлива складова стратегії бренду та маркетингової комунікації, оскільки дозволяє ефективно представляти продукти, послуги чи ідеї. Для соціальних мереж, вебсайтів, інтернет-магазинів або для друку!',
+      'Цей тип зйомки ідеально підійде для підприємців або творчих особистостей, які бажають ефективно просувати свій бренд, товари, послуги та/або профіль.',
+      'Можливі різні варіанти локацій - студійна зйомка, фото у вас на локації або на відкритому повітрі.',
+      'Довірте мені створення професійного контенту, щоб підняти Ваш власний бренд на новий рівень!',
+    ],
+    images: [
+      {
+        id: 1,
+        src: content3,
+        mobileSrc: mobileContent3,
+        alt: 'Чоловік сидить за столом і друкує на друкарській машинці',
+      },
+      {
+        id: 2,
+        src: content1,
+        mobileSrc: mobileContent1,
+        alt: 'Чоловік читає книгу',
+      },
+      {
+        id: 3,
+        src: content5,
+        mobileSrc: mobileContent5,
+        alt: 'Дівчина сидить на підвіконні і дивиться у вікно',
+      },
+      {
+        id: 4,
+        src: content6,
+        mobileSrc: mobileContent6,
+        alt: 'Чоловік стоїть біля столу і друкує на друкарській машинці',
+      },
+      {
+        id: 5,
+        src: content4,
+        mobileSrc: mobileContent4,
+        alt: 'Дівчина малює картину фарбами',
+      },
+      {
+        id: 6,
+        src: content2,
+        mobileSrc: mobileContent2,
+        alt: 'Руки, які друкують на друкарській машинці',
+      },
+    ],
+    bgTabsLeft: tabsOptions.white.startLeft,
+    bgTabsRight: tabsOptions.white.right,
+    tabsTitle: "Контент",
+    
+  },
   {
     id: 'business',
     title: 'Бізнес-зйомка',
@@ -175,55 +256,11 @@ export const portfolioContent = [
         name: 'Бізнес-зйомка для дизайнерки',
       },
     ],
+    bgTabsLeft: tabsOptions.white.left,
+    bgTabsRight: tabsOptions.white.right,
+    tabsTitle: "Бізнес",
   },
-  {
-    id: 'content',
-    title: 'Контентна / Для блогу',
-    description: [
-      'Контентна зйомка - це важлива складова стратегії бренду та маркетингової комунікації, оскільки дозволяє ефективно представляти продукти, послуги чи ідеї. Для соціальних мереж, вебсайтів, інтернет-магазинів або для друку!',
-      'Цей тип зйомки ідеально підійде для підприємців або творчих особистостей, які бажають ефективно просувати свій бренд, товари, послуги та/або профіль.',
-      'Можливі різні варіанти локацій - студійна зйомка, фото у вас на локації або на відкритому повітрі.',
-      'Довірте мені створення професійного контенту, щоб підняти Ваш власний бренд на новий рівень!',
-    ],
-    images: [
-      {
-        id: 1,
-        src: content3,
-        mobileSrc: mobileContent3,
-        alt: 'Чоловік сидить за столом і друкує на друкарській машинці',
-      },
-      {
-        id: 2,
-        src: content1,
-        mobileSrc: mobileContent1,
-        alt: 'Чоловік читає книгу',
-      },
-      {
-        id: 3,
-        src: content5,
-        mobileSrc: mobileContent5,
-        alt: 'Дівчина сидить на підвіконні і дивиться у вікно',
-      },
-      {
-        id: 4,
-        src: content6,
-        mobileSrc: mobileContent6,
-        alt: 'Чоловік стоїть біля столу і друкує на друкарській машинці',
-      },
-      {
-        id: 5,
-        src: content4,
-        mobileSrc: mobileContent4,
-        alt: 'Дівчина малює картину фарбами',
-      },
-      {
-        id: 6,
-        src: content2,
-        mobileSrc: mobileContent2,
-        alt: 'Руки, які друкують на друкарській машинці',
-      },
-    ],
-  },
+  
   {
     id: 'family',
     title: 'Cімейна',
@@ -270,6 +307,9 @@ export const portfolioContent = [
         alt: 'Тато тримає сина на плечах',
       },
     ],
+    bgTabsLeft: tabsOptions.white.left,
+    bgTabsRight: tabsOptions.white.right,
+    tabsTitle: 'Cімейна',
   },
   {
     id: 'product',
@@ -317,6 +357,9 @@ export const portfolioContent = [
         alt: 'Тато тримає сина на плечах',
       },
     ],
+    bgTabsLeft: tabsOptions.white.left,
+    bgTabsRight: tabsOptions.white.right,
+    tabsTitle: 'Предметна',
   },
   {
     id: 'loveStory',
@@ -364,6 +407,9 @@ export const portfolioContent = [
         alt: 'Тато тримає сина на плечах',
       },
     ],
+    bgTabsLeft: tabsOptions.white.left,
+    bgTabsRight: tabsOptions.white.right,
+    tabsTitle: 'Love-Story',
   },
   {
     id: 'sacraments',
@@ -411,6 +457,9 @@ export const portfolioContent = [
         alt: 'Тато тримає сина на плечах',
       },
     ],
+    bgTabsLeft: tabsOptions.white.left,
+    bgTabsRight: tabsOptions.white.right,
+    tabsTitle: 'Таїнства',
   },
   {
     id: 'portrait',
@@ -458,5 +507,8 @@ export const portfolioContent = [
         alt: 'Тато тримає сина на плечах',
       },
     ],
+    bgTabsLeft: tabsOptions.white.left,
+    bgTabsRight: tabsOptions.white.finishRight,
+    tabsTitle: 'Портретна',
   },
 ];

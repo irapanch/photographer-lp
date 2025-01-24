@@ -1,5 +1,7 @@
 import { portfolioContent } from '../content/portfolio';
 
+import { tabsOptions } from '../content/portfolio';
+
 {
   /* <a
 href="./images/jpg/${id}/business3.jpg"
@@ -70,9 +72,26 @@ export const dataPortfolio = () => {
 
   portfolioContent.forEach((item, sectionIndex) => {
     const odd = sectionIndex % 2 === 0;
+    const isContentSection = item.id === 'content';
+    const activeTabClass = isContentSection ? 'active-tab' : '';
+
+
     html += `
     <section class="${item.id} ${odd ? '' : 'colored'}" id="${item.id}">
-    <div class="container">
+    <div class="container  ">
+    <div class="tabs ${activeTabClass}">
+    <img class="tabs-left" src="${
+      isContentSection && activeTabClass === 'active-tab'
+        ? tabsOptions.blue.startLeft // Меняем src для активной вкладки
+        : item.bgTabsLeft // Используем белый src для неактивной вкладки
+    }">
+    <p class="tabs-text">${item.tabsTitle}</p>
+   <img class="tabs-right" src="${
+     isContentSection && activeTabClass === 'active-tab'
+       ? tabsOptions.blue.right // Меняем src для активной вкладки content
+       : item.bgTabsRight // Иначе используем обычный src
+   }">
+    </div>
       <h2 class="title portfolio-header">${item.title}</h2>
       <div class="cont ${odd ? '' : 'reversed'}">
       <div class="portfolio-description">
@@ -103,4 +122,53 @@ export const dataPortfolio = () => {
   });
 
   wrapper.insertAdjacentHTML('beforeend', html);
+  const allTabs = document.querySelectorAll('.tabs');
+
+  allTabs.forEach(tab =>
+    tab.addEventListener('click', e => {
+      if (!tab.classList.contains('active-tab')) {
+      const contentSection = tab.closest('section').id === 'content';
+      const portraitSection = tab.closest('section').id === 'portrait';
+      // Тоггл класса active-tab
+      if (tab.classList.contains('active-tab')) {
+        tab.classList.remove('active-tab');
+        tab.closest('section').style.zIndex = '';
+
+        if (contentSection) {
+          tab.querySelector('.tabs-left').src = tabsOptions.white.startLeft;
+          tab.querySelector('.tabs-right').src = tabsOptions.white.right;
+        }
+      } else {
+        // Скидання класів і стилів для всіх вкладок
+        allTabs.forEach(el => {
+          el.classList.remove('active-tab');
+          el.closest('section').style.zIndex = '';
+          el.querySelector('.tabs-left').src = tabsOptions.white.left;
+            el.querySelector('.tabs-right').src = tabsOptions.white.right;
+
+          if (el.closest('section').id === 'content') {
+            el.querySelector('.tabs-left').src = tabsOptions.white.startLeft;
+            el.querySelector('.tabs-right').src = tabsOptions.white.right;
+          }
+          if (el.closest('section').id === 'portrait') {
+            el.querySelector('.tabs-right').src = tabsOptions.white.finishRight;
+          }
+        });
+
+        // Додавання активного класу до поточної вкладки
+        tab.classList.add('active-tab');
+        tab.closest('section').style.zIndex = '10';
+        tab.querySelector('.tabs-left').src = tabsOptions.blue.left;
+        tab.querySelector('.tabs-right').src = tabsOptions.blue.right;
+
+        if (contentSection) {
+          tab.querySelector('.tabs-left').src = tabsOptions.blue.startLeft;
+          tab.querySelector('.tabs-right').src = tabsOptions.blue.right;
+        }
+        if (portraitSection) {
+          tab.querySelector('.tabs-right').src = tabsOptions.blue.finishRight;
+        }
+      }
+    }})
+  );
 };

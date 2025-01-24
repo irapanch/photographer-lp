@@ -49,11 +49,222 @@ main {
     // justify-content: end;
   }
 }
-
+// ----------------------
+// ---------------------------
 .colored {
-  @include colored-bg;
+  // @include colored-bg;
+}
+.main{
+  position: relative;
+}
+.wrapper-tab{
+position: relative;
+min-height: 1159px;
+}
+.hidden-tab{
+  display: none;
 }
 
+.tabs{
+  position: absolute;
+  top: -73px;
+  left: -1px;
+  display: flex;
+  width: auto;
+  height: 73px;
+  z-index: -1;
+  
+  
+}
+.tabs-text{ 
+  background: #fff;
+color: #235f83 ;
+font-size: 18px;
+text-transform: uppercase;
+padding-top: 20px;
+border-top: 1px solid #235f83 ;
+}
+
+.active-tab {
+  // background-color: rgb(51, 255, 0);
+}
+.active-tab .tabs-text {
+  background-color: #235f83;
+  color: transparent;
+}
+
+
+
+
+// ------------------------------------------
+.content{
+  position: absolute;
+  top: 144px;
+  left: 50%; 
+  transform: translateX(-51.5%);
+  width: 1358px;
+  z-index: 8;
+  padding: 0 4rem;
+}
+.content >.container {
+  @include colored-bg;
+  border-radius: 0 35px 35px 35px;
+  position: relative;
+  background:none;
+  background: white;
+    border-left: 1px solid #235f83;
+    border-right: 1px solid #235f83;
+}
+
+// -----------------------------------------------
+.business{
+  position: absolute;
+  top: 144px;
+  left: 50%; 
+  transform: translateX(-51.5%);
+  width: 1358px;
+  z-index: 7;
+  padding: 0 4rem;
+}
+.business >.container {
+ 
+  @include colored-bg;
+  border-radius: 35px;
+  position: relative;
+}
+.business  >.container>.tabs{
+  left: 138px;
+}
+// --------------------------------
+.family {
+  position: absolute;
+  top: 144px;
+  left: 50%; 
+  transform: translateX(-51.5%);
+  width: 1358px;
+  z-index: 6;
+  padding: 0 4rem;
+}
+.family>.container {
+ 
+  @include colored-bg;
+  border-radius: 35px;
+  position: relative;
+}
+.family >.container>.tabs{
+  left: 301px;
+  top: -73px;
+}
+// ----------------------------------
+
+.product {
+  position: absolute;
+  top: 144px;
+  left: 50%; 
+  transform: translateX(-51.5%);
+  width: 1358px;
+  z-index: 5;
+  padding: 0 4rem;
+}
+.product>.container {
+ 
+  @include colored-bg;
+  border-radius: 35px;
+  position: relative;
+}
+.product >.container>.tabs{
+  left: 484px;
+  top: -73px;
+}
+// ---------------------------------------
+.loveStory  {
+  position: absolute;
+  top: 144px;
+  left: 50%; 
+  transform: translateX(-51%);
+  width: 1372px;
+  z-index: 4;
+  padding: 0 4rem;
+}
+.loveStory >.container {
+ 
+  @include colored-bg;
+  border-radius: 35px;
+  position: relative;
+  background:none;
+  background: white;
+    border-left: 1px solid #235f83;
+    border-right: 1px solid #235f83;
+}
+.loveStory  >.container>.tabs{
+  left: 692px;
+  top: -73px;
+}
+
+
+// ---------------------------------------
+.sacraments  {
+  position: absolute;
+  top: 144px;
+  left: 50%; 
+  transform: translateX(-50.5%);
+  width: 1386px;
+  z-index: 3;
+  padding: 0 4rem;
+}
+.sacraments >.container {
+ 
+  @include colored-bg;
+  border-radius: 35px;
+  position: relative;
+  background:none;
+  background: white;
+    border-left: 1px solid #235f83;
+    border-right: 1px solid #235f83;
+}
+.sacraments  >.container>.tabs{
+  left: 901px;
+  top: -73px;
+}
+// -----------------------------------
+
+.portrait   {
+  position: absolute;
+  top: 144px;
+  left: 50%; 
+  transform: translateX(-50%);
+  width: 1400px;
+  z-index: 2;
+  padding: 0 4rem;
+}
+.portrait  >.container {
+ 
+  @include colored-bg;
+  border-radius: 35px 0  35px 35px;
+  position: relative;
+  background:none;
+  background: white;
+    border-left: 1px solid #235f83;
+    border-right: 1px solid #235f83;
+}
+.portrait   >.container>.tabs{
+   top: -73px;
+  left: 1082px;
+  
+}
+.portrait>.active-tab .tabs-text {
+ width: 200px;
+}
+
+// ------------------------------------------
+
+
+.container:has(.active-tab) {
+  background:none;
+  @include colored-bg;
+  border-right: 1px solid #235f83;
+}
+// ---------------------------------
 .item {
   overflow: hidden;
   border: 2px solid #fff;
