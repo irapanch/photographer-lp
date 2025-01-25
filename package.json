@@ -1,21 +1,21 @@
 {
-  "name": "photographer-landing",
+  "name": "photographer-lp",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Veronikanos.github.io/photographer-landing",
+  "homepage": "https://irapanch.github.io/photographer-lp",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /photographer-landing/"
+    "build": "parcel build src/*.html --public-url /photographer-lp/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Veronikanos/photographer-landing.git"
+    "url": "git+https://github.com/irapanch/photographer-lp.git"
   },
   "keywords": [],
   "author": "Veronika Tlostiuk",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Veronikanos/photographer-landing/issues"
+    "url": "https://github.com/irapanch/photographer-lp/issues"
   },
   "dependencies": {
     "baguettebox.js": "^1.11.1",
