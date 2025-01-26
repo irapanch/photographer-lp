@@ -71,6 +71,17 @@ export const dataPortfolio = () => {
   let html = '';
 
   portfolioContent.forEach((item, sectionIndex) => {
+    function getGridArea(index) {
+      const areas = [
+        '1 / 1 / 3 / 2', // div1
+        '1 / 2 / 3 / 3', // div2
+        '1 / 3 / 2 / 4', // div3
+        '3 / 1 / 4 / 3', // div4
+        '2 / 3 / 4 / 4', // div5
+      ];
+      return areas[index % areas.length];
+    }
+    
     const odd = sectionIndex % 2 === 0;
     const isContentSection = item.id === 'content';
     const activeTabClass = isContentSection ? 'active-tab' : '';
@@ -85,6 +96,7 @@ export const dataPortfolio = () => {
         ? tabsOptions.blue.startLeft // Меняем src для активной вкладки
         : item.bgTabsLeft // Используем белый src для неактивной вкладки
     }">
+ 
     <p class="tabs-text">${item.tabsTitle}</p>
    <img class="tabs-right" src="${
      isContentSection && activeTabClass === 'active-tab'
@@ -92,12 +104,45 @@ export const dataPortfolio = () => {
        : item.bgTabsRight // Иначе используем обычный src
    }">
     </div>
+    
       <h2 class="title portfolio-header">${item.title}</h2>
+      <h3 class="portfolio-subtitle">${item.subtitle}</h3>
+      
       <div class="cont ${odd ? '' : 'reversed'}">
       <div class="portfolio-description">
+      <h4>${item.description}</h4>
+      </div>
+      <div class="portfolio-forWhom">
       ${
-        Array.isArray(item.description)
-          ? item.description.map(p => `<p>${p}</p>`).join('')
+        Array.isArray(item.forWhom)
+          ? item.forWhom.map(p => `
+            <img class="icon-forWhom" src="${p.icon}"
+            <p>${p.desc}</p>`).join('')
+          : ''
+      }
+      </div>
+      <div class="portfolio-description">
+      <h4>${item.servicesTitle}</h4>
+      </div>
+      <div class="portfolio-points">
+      ${
+        Array.isArray(item.services)
+          ? item.services.map(p => `
+            
+            <p class="points-text"><img class="icon-dash" src="${p.icon}  alt="${p.alt}"">${p.text}</p>`).join('')
+          : ''
+      }
+      </div>
+
+      <div class="portfolio-description">
+      <h4>${item.locationTitle}</h4>
+      </div>
+      <div class="portfolio-points">
+      ${
+        Array.isArray(item.location)
+          ? item.location.map(p => `
+            
+            <p class="points-text"><img class="icon-dash" src="${p.icon} alt="${p.alt}"">${p.text}</p>`).join('')
           : ''
       }
       </div>
@@ -108,7 +153,7 @@ export const dataPortfolio = () => {
         (image, index) => `
     <a href="${image.src}" data-caption="${image.name ?? ''}" class="figure${
           index + 1
-        } item ${getImageOrientation(index + 1, odd)}"
+        } item ${getImageOrientation(index + 1, odd)}" style="grid-area: ${getGridArea(index + 1)};"
         >
       <img class="figure-img" src="${image.mobileSrc}" alt="${image.alt}">
     </a>
@@ -116,8 +161,11 @@ export const dataPortfolio = () => {
       )
       .join('')}
     </div>
+
+    
     </div>
     </div>
+    
   </section>`;
   });
 

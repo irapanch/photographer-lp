@@ -28,12 +28,21 @@ main {
 }
 
 .info1 {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
-  grid-auto-rows: minmax(100px, 250px);
-  grid-auto-flow: dense;
+  // display: grid;
+  // grid-gap: 10px;
+  // grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+  // grid-auto-rows: minmax(100px, 250px);
+  // grid-auto-flow: dense;
   // background: linear-gradient(to right, #000000, #434343);
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 1.5fr;
+  grid-template-rows: 1fr 0.2fr 1.2fr;
+  grid-gap: 8px;
+
+  max-height: 330px;
+  padding-bottom: 60px;
+  margin-top: auto;
 
   @media (min-width: $tablet-width) {
     // grid-auto-rows: minmax(100px, 300px);
@@ -51,223 +60,632 @@ main {
 }
 // ----------------------
 // ---------------------------
+
+.figure-img {
+  border: none;
+}
 .colored {
   // @include colored-bg;
 }
-.main{
+.main {
   position: relative;
 }
-.wrapper-tab{
-position: relative;
-min-height: 1159px;
-}
-.hidden-tab{
-  display: none;
-}
 
-.tabs{
-  position: absolute;
-  top: -73px;
-  left: -1px;
-  display: flex;
-  width: auto;
-  height: 73px;
-  z-index: -1;
-  
-  
-}
-.tabs-text{ 
-  background: #fff;
-color: #235f83 ;
-font-size: 18px;
-text-transform: uppercase;
-padding-top: 20px;
-border-top: 1px solid #235f83 ;
-}
+// $phone-width: 375px;
+// $tablet-width: 768px;
+// $mobile-and-table-only: 767px;
+// $desktop-width: 1200px;
+// $desktop-max-width: 1440px;
 
 .active-tab {
   // background-color: rgb(51, 255, 0);
+}
+.wrapper-tab {
+  position: relative;
+  min-height: 940px;
+}
+
+.tabs {
+  position: absolute;
+  display: flex;
+  height: 40px;
+  z-index: -1;
+  top: 41px;
+  right: -77px;
+  transform: rotate(90deg);
+}
+
+.tabs-text {
+  background: #fff;
+  color: #235f83;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding-top: 10px;
+  border-top: 1px solid #235f83;
+}
+.portfolio-header {
+  padding-top: 40px;
+  margin-bottom: 12px;
+  max-width: 370px;
+}
+.cont {
+  display: flex;
+  flex-direction: column;
+  min-height: 685px;
+}
+.portfolio-forWhom {
+  display: none;
+}
+.portfolio-subtitle {
+  max-width: 370px;
+  line-height: 1.2;
+  margin-bottom: 32px;
+}
+.portfolio-description {
+  max-width: 370px;
+  margin-top: 30px;
+}
+.portfolio-description > h4 {
+  line-height: 1.5;
+}
+.portfolio-points {
+  margin-top: 7px;
+  display: grid;
+  grid-template-columns: 45% 1fr;
+  gap: 0 5px;
+}
+.icon-dash {
+  display: inline;
+  margin-right: 5px;
 }
 .active-tab .tabs-text {
   background-color: #235f83;
   color: transparent;
 }
 
-
-
-
 // ------------------------------------------
-.content{
+.content {
+  min-height: 895px;
   position: absolute;
-  top: 144px;
-  left: 50%; 
-  transform: translateX(-51.5%);
-  width: 1358px;
+  top: 65px;
+  left: 0;
+  // left: 50%;
+  // transform: translateX(-50%);
   z-index: 8;
-  padding: 0 4rem;
+  padding: 0 2rem;
 }
-.content >.container {
+.content > .container {
   @include colored-bg;
-  border-radius: 0 35px 35px 35px;
+  height: 100%;
+  border-radius: 35px 0 35px 35px;
   position: relative;
-  background:none;
+  background: none;
   background: white;
-    border-left: 1px solid #235f83;
-    border-right: 1px solid #235f83;
+  border-top: 1px solid #235f83;
+  padding: 0 30px;
+  margin: auto;
 }
 
 // -----------------------------------------------
-.business{
+.business {
+  min-height: 895px;
   position: absolute;
-  top: 144px;
-  left: 50%; 
-  transform: translateX(-51.5%);
-  width: 1358px;
+  top: 65px;
+  left: 0;
   z-index: 7;
-  padding: 0 4rem;
+  padding: 0 2rem;
 }
-.business >.container {
- 
+.business > .container {
+  min-height: 895px;
   @include colored-bg;
+  height: 100%;
   border-radius: 35px;
   position: relative;
 }
-.business  >.container>.tabs{
-  left: 138px;
+.business > .container > .tabs {
+  top: 137px;
+  right: -84px;
 }
 // --------------------------------
 .family {
+  min-height: 895px;
   position: absolute;
-  top: 144px;
-  left: 50%; 
-  transform: translateX(-51.5%);
-  width: 1358px;
+  top: 65px;
+  left: 0;
+  left: 0;
   z-index: 6;
-  padding: 0 4rem;
+  padding: 0 2rem;
 }
-.family>.container {
- 
+.family > .container {
   @include colored-bg;
+  min-height: 895px;
+  height: 100%;
   border-radius: 35px;
   position: relative;
 }
-.family >.container>.tabs{
-  left: 301px;
-  top: -73px;
+.family > .container > .tabs {
+  top: 245px;
+  right: -94px;
 }
 // ----------------------------------
 
 .product {
   position: absolute;
-  top: 144px;
-  left: 50%; 
-  transform: translateX(-51.5%);
-  width: 1358px;
+  min-height: 895px;
+  top: 65px;
+  left: 0;
   z-index: 5;
-  padding: 0 4rem;
+  padding: 0 2rem;
 }
-.product>.container {
- 
+.product > .container {
+  min-height: 895px;
   @include colored-bg;
+  height: 100%;
   border-radius: 35px;
   position: relative;
 }
-.product >.container>.tabs{
-  left: 484px;
-  top: -73px;
+.product > .container > .tabs {
+  top: 371px;
+  right: -106px;
 }
 // ---------------------------------------
-.loveStory  {
+.loveStory {
   position: absolute;
-  top: 144px;
-  left: 50%; 
-  transform: translateX(-51%);
-  width: 1372px;
+  min-height: 895px;
+  top: 65px;
+  left: 0;
   z-index: 4;
-  padding: 0 4rem;
+  padding: 0 2rem;
 }
-.loveStory >.container {
- 
+.loveStory > .container {
   @include colored-bg;
+  min-height: 895px;
+  height: 100%;
   border-radius: 35px;
   position: relative;
-  background:none;
-  background: white;
-    border-left: 1px solid #235f83;
-    border-right: 1px solid #235f83;
 }
-.loveStory  >.container>.tabs{
-  left: 692px;
-  top: -73px;
+.loveStory > .container > .tabs {
+  top: 509px;
+  right: -105px;
 }
-
 
 // ---------------------------------------
-.sacraments  {
+.sacraments {
   position: absolute;
-  top: 144px;
-  left: 50%; 
-  transform: translateX(-50.5%);
-  width: 1386px;
+  min-height: 895px;
+  top: 65px;
+  left: 0;
   z-index: 3;
-  padding: 0 4rem;
+  padding: 0 2rem;
 }
-.sacraments >.container {
- 
+.sacraments > .container {
   @include colored-bg;
+  height: 100%;
   border-radius: 35px;
   position: relative;
-  background:none;
-  background: white;
-    border-left: 1px solid #235f83;
-    border-right: 1px solid #235f83;
 }
-.sacraments  >.container>.tabs{
-  left: 901px;
-  top: -73px;
+.sacraments > .container > .tabs {
+  top: 642px;
+  right: -98px;
 }
 // -----------------------------------
 
-.portrait   {
+.portrait {
   position: absolute;
-  top: 144px;
-  left: 50%; 
-  transform: translateX(-50%);
-  width: 1400px;
+  min-height: 895px;
+  top: 65px;
+  left: 0;
   z-index: 2;
-  padding: 0 4rem;
+  padding: 0 2rem;
 }
-.portrait  >.container {
- 
+.portrait > .container {
   @include colored-bg;
-  border-radius: 35px 0  35px 35px;
+  min-height: 895px;
+  border-radius: 35px 0 35px 35px;
   position: relative;
-  background:none;
+  background: none;
   background: white;
-    border-left: 1px solid #235f83;
-    border-right: 1px solid #235f83;
+  border-left: 1px solid #235f83;
+  border-right: 1px solid #235f83;
 }
-.portrait   >.container>.tabs{
-   top: -73px;
-  left: 1082px;
-  
+.portrait > .container > .tabs {
+  top: 760px;
+  right: -97px;
 }
-.portrait>.active-tab .tabs-text {
- width: 200px;
+.portrait > .active-tab .tabs-text {
+  width: 200px;
+}
+.portrait > .container > .cont {
+  margin-top: 75px;
 }
 
 // ------------------------------------------
+// ++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++++++++
+.active-tab {
+  // background-color: rgb(144, 27, 223);
+}
+@media (min-width: $tablet-width) {
+  .portfolio-forWhom {
+    display: block;
+  }
+  .tabs {
+    left: -1px;
+    top: -45px;
+    height: 45px;
+    transform: rotate(0deg);
+    width: auto;
+    max-width: 100px;
+  }
+  .tabs-text {
+    font-size: 14px;
+    padding-top: 16px;
+    text-transform: capitalize;
+    // line-height: 2.86;
+   
+  }
 
+  // ------------------------------------------
+  .content {
+    position: absolute;
+    top: 144px;
+    left: 50%;
+    transform: translateX(-51.5%);
+    width: 1358px;
+    z-index: 8;
+    padding: 0 4rem;
+  }
+  .content > .container {
+    @include colored-bg;
+    border-radius: 0 35px 35px 35px;
+    position: relative;
+    background: none;
+    background: white;
+    border-left: 1px solid #235f83;
+    border-right: 1px solid #235f83;
+  }
+
+  // -----------------------------------------------
+  .business {
+    position: absolute;
+    top: 144px;
+    left: 50%;
+    transform: translateX(-51.5%);
+    width: 1358px;
+    z-index: 7;
+    padding: 0 4rem;
+  }
+  .business > .container {
+    @include colored-bg;
+    border-radius: 35px;
+    position: relative;
+  }
+  .business > .container > .tabs {
+    left: 82px;
+    top: -45px;
+    height: 45px;
+  }
+  // --------------------------------
+  .family {
+    position: absolute;
+    top: 144px;
+    left: 50%;
+    transform: translateX(-51.5%);
+    width: 1358px;
+    z-index: 6;
+    padding: 0 4rem;
+  }
+  .family > .container {
+    @include colored-bg;
+    border-radius: 35px;
+    position: relative;
+  }
+  .family > .container > .tabs {
+    left: 164px;
+    top: -45px;
+    height: 45px;
+  }
+  // ----------------------------------
+
+  .product {
+    position: absolute;
+    top: 144px;
+    left: 50%;
+    transform: translateX(-51.5%);
+    width: 1358px;
+    z-index: 5;
+    padding: 0 4rem;
+  }
+  .product > .container {
+    @include colored-bg;
+    border-radius: 35px;
+    position: relative;
+  }
+  .product > .container > .tabs {
+    top: -45px;
+    left: 266px;
+    height: 45px;
+  }
+  // ---------------------------------------
+  .loveStory {
+    position: absolute;
+    top: 144px;
+    left: 50%;
+    transform: translateX(-51%);
+    width: 1372px;
+    z-index: 4;
+    padding: 0 4rem;
+  }
+  .loveStory > .container {
+    @include colored-bg;
+    border-radius: 35px;
+    position: relative;
+    background: none;
+    background: white;
+    border-left: 1px solid #235f83;
+    border-right: 1px solid #235f83;
+  }
+  .loveStory > .container > .tabs {
+    top: -45px;
+    left: 402px;
+    height: 45px;
+  }
+  .loveStory > .container > .tabs > .tabs-text {
+   min-width: 90px;
+  }
+
+  // ---------------------------------------
+  .sacraments {
+    position: absolute;
+    top: 144px;
+    left: 50%;
+    transform: translateX(-50.5%);
+    width: 1386px;
+    z-index: 3;
+    padding: 0 4rem;
+  }
+  .sacraments > .container {
+    @include colored-bg;
+    border-radius: 35px;
+    position: relative;
+    background: none;
+    background: white;
+    border-left: 1px solid #235f83;
+    border-right: 1px solid #235f83;
+  }
+  .sacraments > .container > .tabs {
+    top: -45px;
+    left: 487px;
+    height: 45px;
+
+  }
+  // -----------------------------------
+
+  .portrait {
+    position: absolute;
+    top: 144px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1400px;
+    z-index: 2;
+    padding: 0 4rem;
+  }
+  .portrait > .container {
+    @include colored-bg;
+    border-radius: 35px 0 35px 35px;
+    position: relative;
+    background: none;
+    background: white;
+    border-left: 1px solid #235f83;
+    border-right: 1px solid #235f83;
+  }
+  .portrait > .container > .tabs {
+    top: -45px;
+    left: 600px;
+    height: 45px;
+  }
+  .portrait > .active-tab .tabs-text {
+    width: 100px;
+  }
+}
 
 .container:has(.active-tab) {
-  background:none;
+  background: none;
   @include colored-bg;
   border-right: 1px solid #235f83;
 }
 // ---------------------------------
+// ------------------------------------
+@media (min-width: $desktop-width) {
+  .tabs {
+    position: absolute;
+    top: -73px;
+    left: -1px;
+    display: flex;
+    height: 73px;
+    z-index: -1;
+    width: auto;
+    max-width: 200px;
+  }
+  .tabs-text {
+    background: #fff;
+    color: #235f83;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-top: 20px;
+    border-top: 1px solid #235f83;
+  }
+
+  .active-tab .tabs-text {
+    background-color: #235f83;
+    color: transparent;
+  }
+
+  // ------------------------------------------
+  .content {
+    position: absolute;
+    top: 144px;
+    left: 50%;
+    transform: translateX(-51.5%);
+    width: 1358px;
+    z-index: 8;
+    padding: 0 4rem;
+  }
+  .content > .container {
+    @include colored-bg;
+    border-radius: 0 35px 35px 35px;
+    position: relative;
+    background: none;
+    background: white;
+    border-left: 1px solid #235f83;
+    border-right: 1px solid #235f83;
+  }
+
+  // -----------------------------------------------
+  .business {
+    position: absolute;
+    top: 144px;
+    left: 50%;
+    transform: translateX(-51.5%);
+    width: 1358px;
+    z-index: 7;
+    padding: 0 4rem;
+  }
+  .business > .container {
+    @include colored-bg;
+    border-radius: 35px;
+    position: relative;
+  }
+  .business > .container > .tabs {
+    left: 138px;
+  }
+  // --------------------------------
+  .family {
+    position: absolute;
+    top: 144px;
+    left: 50%;
+    transform: translateX(-51.5%);
+    width: 1358px;
+    z-index: 6;
+    padding: 0 4rem;
+  }
+  .family > .container {
+    @include colored-bg;
+    border-radius: 35px;
+    position: relative;
+  }
+  .family > .container > .tabs {
+    left: 301px;
+    top: -73px;
+  }
+  // ----------------------------------
+
+  .product {
+    position: absolute;
+    top: 144px;
+    left: 50%;
+    transform: translateX(-51.5%);
+    width: 1358px;
+    z-index: 5;
+    padding: 0 4rem;
+  }
+  .product > .container {
+    @include colored-bg;
+    border-radius: 35px;
+    position: relative;
+  }
+  .product > .container > .tabs {
+    left: 484px;
+    top: -73px;
+  }
+  // ---------------------------------------
+  .loveStory {
+    position: absolute;
+    top: 144px;
+    left: 50%;
+    transform: translateX(-51%);
+    width: 1372px;
+    z-index: 4;
+    padding: 0 4rem;
+  }
+  .loveStory > .container {
+    @include colored-bg;
+    border-radius: 35px;
+    position: relative;
+    background: none;
+    background: white;
+    border-left: 1px solid #235f83;
+    border-right: 1px solid #235f83;
+  }
+  .loveStory > .container > .tabs {
+    left: 692px;
+    top: -73px;
+  }
+  .loveStory > .container > .tabs > .tabs-text {
+    min-width: 142px;
+   }
+ 
+  // ---------------------------------------
+  .sacraments {
+    position: absolute;
+    top: 144px;
+    left: 50%;
+    transform: translateX(-50.5%);
+    width: 1386px;
+    z-index: 3;
+    padding: 0 4rem;
+  }
+  .sacraments > .container {
+    @include colored-bg;
+    border-radius: 35px;
+    position: relative;
+    background: none;
+    background: white;
+    border-left: 1px solid #235f83;
+    border-right: 1px solid #235f83;
+  }
+  .sacraments > .container > .tabs {
+    left: 901px;
+    top: -73px;
+  }
+  // -----------------------------------
+
+  .portrait {
+    position: absolute;
+    top: 144px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1400px;
+    z-index: 2;
+    padding: 0 4rem;
+  }
+  .portrait > .container {
+    @include colored-bg;
+    border-radius: 35px 0 35px 35px;
+    position: relative;
+    background: none;
+    background: white;
+    border-left: 1px solid #235f83;
+    border-right: 1px solid #235f83;
+  }
+  .portrait > .container > .tabs {
+    top: -73px;
+    left: 1082px;
+  }
+  .portrait > .active-tab .tabs-text {
+    width: 200px;
+  }
+}
+
+.container:has(.active-tab) {
+  background: none;
+  @include colored-bg;
+  border-right: 1px solid #235f83;
+}
+// ---------------------------------
+
 .item {
   overflow: hidden;
-  border: 2px solid #fff;
   position: relative;
 }
 
@@ -318,40 +736,8 @@ border-top: 1px solid #235f83 ;
   overflow-y: hidden;
 }
 
-.portfolio-header {
-  margin-bottom: 30px;
-}
-
-.portfolio-description {
-  @media (min-width: $desktop-width) {
-    // font-size: 23px;
-    margin: auto 0;
-    max-width: 400px;
-  }
-
-  @media (min-width: $desktop-max-width) {
-    max-width: 500px;
-  }
-}
-
-.portfolio-description > p {
-  margin-bottom: 30px;
-}
-
-.cont {
-  // flex-direction: row-reverse;
-  @media (min-width: $desktop-width) {
-    display: flex;
-    gap: 20px;
-  }
-
-  @media (min-width: $desktop-max-width) {
-    gap: 40px;
-  }
-}
-
 .reversed {
-  flex-direction: row-reverse;
+  // flex-direction: row-reverse;
 }
 
 .big {

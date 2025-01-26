@@ -5,8 +5,6 @@ const business4 = require('../../images/jpg/business/business4.jpg');
 const business5 = require('../../images/jpg/business/business5.jpg');
 const business6 = require('../../images/jpg/business/business6.jpg');
 
-
-
 const mobileBusiness1 = require('../../images/jpg/forMobile/business1.webp');
 const mobileBusiness2 = require('../../images/jpg/forMobile/business2.webp');
 const mobileBusiness3 = require('../../images/jpg/forMobile/business3.webp');
@@ -20,7 +18,6 @@ const content3 = require('../../images/jpg/content/content3.jpg');
 const content4 = require('../../images/jpg/content/content4.jpg');
 const content5 = require('../../images/jpg/content/content5.jpg');
 const content6 = require('../../images/jpg/content/content6.jpg');
-
 
 const mobileContent1 = require('../../images/jpg/forMobile/content1.webp');
 const mobileContent2 = require('../../images/jpg/forMobile/content2.webp');
@@ -99,6 +96,15 @@ const mobilePortrait4 = require('../../images/jpg/forMobile/portrait4.webp');
 const mobilePortrait5 = require('../../images/jpg/forMobile/portrait5.webp');
 const mobilePortrait6 = require('../../images/jpg/forMobile/portrait6.webp');
 
+const iconForWhom1 = require('../../images/iconsForWhom/1.png');
+const iconForWhom2 = require('../../images/iconsForWhom/2.png');
+const iconForWhom3 = require('../../images/iconsForWhom/3.png');
+const iconForWhom4 = require('../../images/iconsForWhom/4.png');
+const iconForWhom5 = require('../../images/iconsForWhom/5.png');
+const iconForWhom6 = require('../../images/iconsForWhom/6.png');
+const iconForWhom7 = require('../../images/iconsForWhom/7.png');
+
+const iconDash = require('../../images/dash.png');
 
 const blueStartTabsLeft = require('../../images/tabs/bsl.png');
 const blueTabsRight = require('../../images/tabs/br.png');
@@ -109,8 +115,6 @@ const whiteStartTabsLeft = require('../../images/tabs/wsl.png');
 const whiteTabsRight = require('../../images/tabs/wr.png');
 const whiteTabsLeft = require('../../images/tabs/wl.png');
 const whiteFinishTabsRight = require('../../images/tabs/wfr.png');
-
-
 
 // const images = {};
 
@@ -153,12 +157,71 @@ export const tabsOptions = {
 export const portfolioContent = [
   {
     id: 'content',
-    title: 'Контентна / Для блогу',
-    description: [
-      'Контентна зйомка - це важлива складова стратегії бренду та маркетингової комунікації, оскільки дозволяє ефективно представляти продукти, послуги чи ідеї. Для соціальних мереж, вебсайтів, інтернет-магазинів або для друку!',
-      'Цей тип зйомки ідеально підійде для підприємців або творчих особистостей, які бажають ефективно просувати свій бренд, товари, послуги та/або профіль.',
-      'Можливі різні варіанти локацій - студійна зйомка, фото у вас на локації або на відкритому повітрі.',
-      'Довірте мені створення професійного контенту, щоб підняти Ваш власний бренд на новий рівень!',
+    title: 'Контентна (Для блогу)',
+    subtitle: 'Ідеальна, щоб підняти ваш бренд на новий рівень!',
+    forWhom: [
+      {
+        id: 1,
+        icon: iconForWhom7,
+        desc: 'підприємцям',
+        alt: 'Іконка',
+      },
+      {
+        id: 2,
+        icon: iconForWhom6,
+        desc: 'творчим особистостям',
+        alt: 'Іконка',
+      },
+    ],
+    description: ['Допоможе ефективно представити продукт, послуги чи ідеї'],
+
+    servicesTitle: 'Фото підійдуть для:',
+    services: [
+      {
+        id: 1,
+        icon: iconDash,
+        text: 'соцмереж',
+        alt: 'Іконка',
+      },
+      {
+        id: 2,
+        icon: iconDash,
+        text: 'інтернет-магазинів',
+        alt: 'Іконка',
+      },
+      {
+        id: 3,
+        icon: iconDash,
+        text: 'вебсайтів',
+        alt: 'Іконка',
+      },
+      {
+        id: 4,
+        icon: iconDash,
+        text: 'друку',
+        alt: 'Іконка',
+      },
+    ],
+    locationTitle: 'Локації для зйомки:',
+    location: [
+      {
+        id: 1,
+        icon: iconDash,
+        text: 'фотостудія',
+        alt: 'Іконка',
+      },
+      {
+        id: 2,
+        icon: iconDash,
+        text: 'вулична зйомка',
+        alt: 'Іконка',
+      },
+      {
+        id: 3,
+        icon: iconDash,
+        text: 'ваша локація',
+        alt: 'Іконка',
+      },
     ],
     images: [
       {
@@ -191,26 +254,98 @@ export const portfolioContent = [
         mobileSrc: mobileContent4,
         alt: 'Дівчина малює картину фарбами',
       },
-      {
-        id: 6,
-        src: content2,
-        mobileSrc: mobileContent2,
-        alt: 'Руки, які друкують на друкарській машинці',
-      },
+      // {
+      //   id: 6,
+      //   src: content2,
+      //   mobileSrc: mobileContent2,
+      //   alt: 'Руки, які друкують на друкарській машинці',
+      // },
     ],
     bgTabsLeft: tabsOptions.white.startLeft,
     bgTabsRight: tabsOptions.white.right,
-    tabsTitle: "Контент",
-    
+    tabsTitle: 'Контент',
   },
   {
     id: 'business',
     title: 'Бізнес-зйомка',
+    subtitle: 'Найкращий спосіб показати свої професійні сторони',
+
+    forWhom: [
+      {
+        id: 1,
+        icon: iconForWhom5,
+        desc: 'компаніям',
+        alt: 'Іконка',
+      },
+      {
+        id: 2,
+        icon: iconForWhom7,
+        desc: 'підприємцям',
+        alt: 'Іконка',
+      },
+    ],
     description: [
-      'Від корпоративних портретів до виробничих процесів - бізнес-зйомка — це найкращий спосіб показати свої професійні сторони.',
-      'За допомогою бізнес-зйомки ви отримаєте знімки для резюме, презентацій, професійного блогу, профілю в LinkedIn, корпоративного сайту або просто в профіль аватару робочого email, які будуть говорити про вашу експертність та професіоналізм.',
-      'Потрібні знімки робочого процесу або цілого колективу? Не проблема! В офісі, на виробництві, в студії або на вулиці - місце зйомки ви обираєте під ваш запит.',
-      'Незалежно від того, чи ви обираєте стиль бізнес портретів або запальних кадрів робочого колективу, ми спільно створимо вражаючий образ вашого бізнесу!',
+      'Бізнес-портрети, кадри робочого колективу — аби передати вражаючий образ вашого бізнесу!',
+    ],
+    servicesTitle: 'Фото підійдуть для:',
+    services: [
+      {
+        id: 1,
+        icon: iconDash,
+        text: 'резюме',
+        alt: 'Іконка',
+      },
+      {
+        id: 2,
+        icon: iconDash,
+        text: 'корпоративного сайту',
+        alt: 'Іконка',
+      },
+      {
+        id: 3,
+        icon: iconDash,
+        text: 'LinkedIn',
+        alt: 'Іконка',
+      },
+      {
+        id: 4,
+        icon: iconDash,
+        text: 'професійного блогу',
+        alt: 'Іконка',
+      },
+      {
+        id: 5,
+        icon: iconDash,
+        text: 'email-аватара',
+        alt: 'Іконка',
+      },
+    ],
+    locationTitle: 'Локації для зйомки:',
+    location: [
+      {
+        id: 1,
+        icon: iconDash,
+        text: 'офіс',
+        alt: 'Іконка',
+      },
+      {
+        id: 2,
+        icon: iconDash,
+        text: 'виробництво',
+        alt: 'Іконка',
+      },
+      {
+        id: 3,
+        icon: iconDash,
+        text: 'студія',
+        alt: 'Іконка',
+      },
+      {
+        id: 4,
+        icon: iconDash,
+        text: 'прогулянка',
+        alt: 'Іконка',
+      },
     ],
     images: [
       {
@@ -248,26 +383,81 @@ export const portfolioContent = [
         alt: 'Дівчина з планшетом дивиться в камеру',
         name: 'Бізнес-зйомка для дизайнерки',
       },
-      {
-        id: 6,
-        src: business5,
-        mobileSrc: mobileBusiness5,
-        alt: 'Креслення плану приміщення',
-        name: 'Бізнес-зйомка для дизайнерки',
-      },
     ],
     bgTabsLeft: tabsOptions.white.left,
     bgTabsRight: tabsOptions.white.right,
-    tabsTitle: "Бізнес",
+    tabsTitle: 'Бізнес',
   },
-  
+
   {
     id: 'family',
     title: 'Cімейна',
+    subtitle:
+      'Хочете поповнити сімейний архів або лишити спогади від родинної події?',
+    forWhom: [
+      {
+        id: 1,
+        icon: iconForWhom4,
+        desc: 'сімʼям',
+        alt: 'Іконка',
+      },
+    ],
     description: [
-      'Хочете поповнити сімейний архів або лишити спогади від родинної події? Якнайкраще для цього підійде сімейна фотосесія!',
-      'Родинне свято, пікнік, випускний в садочку чи спільна прогулянка - кожна сімейна фотосесія - це шанс перетворити найцінніші миті в вашу родинну історію.',
-      'Особливий підхід до чоловіків, адже я знаю, наскільки іноді важко їх вмовити на спільну сімейну зйомку :)',
+      'Сімейна зйомка створена аби зафіксувати ваші емоції у кадрах',
+    ],
+    servicesTitle: 'Фото найцінніших митей:',
+    services: [
+      {
+        id: 1,
+        icon: iconDash,
+        text: 'свята',
+        alt: 'Іконка',
+      },
+      {
+        id: 2,
+        icon: iconDash,
+        text: 'випускний в садочку',
+        alt: 'Іконка',
+      },
+      {
+        id: 3,
+        icon: iconDash,
+        text: 'сімейний пікнік',
+        alt: 'Іконка',
+      },
+      {
+        id: 4,
+        icon: iconDash,
+        text: 'спільна прогулянка',
+        alt: 'Іконка',
+      },
+      {
+        id: 5,
+        icon: iconDash,
+        text: 'будь-яка подія',
+        alt: 'Іконка',
+      },
+    ],
+    locationTitle: 'Локації для зйомки:',
+    location: [
+      {
+        id: 1,
+        icon: iconDash,
+        text: 'прогулянка',
+        alt: 'Іконка',
+      },
+      {
+        id: 2,
+        icon: iconDash,
+        text: 'студія',
+        alt: 'Іконка',
+      },
+      {
+        id: 3,
+        icon: iconDash,
+        text: 'ваша локація',
+        alt: 'Іконка',
+      },
     ],
     images: [
       {
@@ -300,13 +490,8 @@ export const portfolioContent = [
         mobileSrc: mobileFamily4,
         alt: 'Долоні дорослих обіймають дитячі долоні',
       },
-      {
-        id: 6,
-        src: family6,
-        mobileSrc: mobileFamily6,
-        alt: 'Тато тримає сина на плечах',
-      },
     ],
+
     bgTabsLeft: tabsOptions.white.left,
     bgTabsRight: tabsOptions.white.right,
     tabsTitle: 'Cімейна',
@@ -314,10 +499,94 @@ export const portfolioContent = [
   {
     id: 'product',
     title: 'Предметна',
-    description: [
-      'Чудовий вибір для бізнесу, що працює як онлайн так і офлайн, магазинів, а також для особистих творчих проектів.',
-      'Підійде для фотозйомки взуття, одягу, аксесуарів, ювелірних виробів, біжутерії, витворів мистецтва, посуду, фуд зйомки і так далі.',
-      'Предметні фотографії це невідʼємна частина будь-якого товарного бізнесу. Маючи якісні і професійні знімки вашого товару  або продукції, ви збільшуєте коефіцієнт конверсії Вашого каналу продаж, що прямо впливає на Ваш прибуток.',
+    subtitle:
+      'Якісні знімки вашої продукції — перший крок до збільшення продажів!',
+    forWhom: [
+      {
+        id: 1,
+        icon: iconForWhom3,
+        desc: 'онлайн бізнесам',
+        alt: 'Іконка',
+      },
+      {
+        id: 2,
+        icon: iconForWhom5,
+        desc: 'офлайн бізнесам',
+        alt: 'Іконка',
+      },
+      {
+        id: 3,
+        icon: iconForWhom6,
+        desc: 'особистим проектам',
+        alt: 'Іконка',
+      },
+    ],
+    description: [''],
+    servicesTitle: 'Підійде для фотозйомки:',
+    services: [
+      {
+        id: 1,
+        icon: iconDash,
+        text: 'біжутерії',
+        alt: 'Іконка',
+      },
+      {
+        id: 2,
+        icon: iconDash,
+        text: 'одягу та взуття',
+        alt: 'Іконка',
+      },
+      {
+        id: 3,
+        icon: iconDash,
+        text: 'посуду',
+        alt: 'Іконка',
+      },
+      {
+        id: 4,
+        icon: iconDash,
+        text: 'витворів мистецтва',
+        alt: 'Іконка',
+      },
+      {
+        id: 5,
+        icon: iconDash,
+        text: 'фудзйомки',
+        alt: 'Іконка',
+      },
+      {
+        id: 6,
+        icon: iconDash,
+        text: 'ювелірних виробів',
+        alt: 'Іконка',
+      },
+      {
+        id: 7,
+        icon: iconDash,
+        text: 'будь-якої іншої продукції',
+        alt: 'Іконка',
+      },
+    ],
+    locationTitle: 'Локації для зйомки:',
+    location: [
+      {
+        id: 1,
+        icon: iconDash,
+        text: 'прогулянка',
+        alt: 'Іконка',
+      },
+      {
+        id: 2,
+        icon: iconDash,
+        text: 'студія',
+        alt: 'Іконка',
+      },
+      {
+        id: 3,
+        icon: iconDash,
+        text: 'ваша локація',
+        alt: 'Іконка',
+      },
     ],
     images: [
       {
@@ -350,12 +619,6 @@ export const portfolioContent = [
         mobileSrc: mobileProduct5,
         alt: 'Долоні дорослих обіймають дитячі долоні',
       },
-      {
-        id: 6,
-        src: product3,
-        mobileSrc: mobileProduct3,
-        alt: 'Тато тримає сина на плечах',
-      },
     ],
     bgTabsLeft: tabsOptions.white.left,
     bgTabsRight: tabsOptions.white.right,
@@ -364,10 +627,59 @@ export const portfolioContent = [
   {
     id: 'loveStory',
     title: 'Love Story',
+    subtitle:
+      'Отримайте незабутні миті, які стануть скарбом у вашій колекції спогадів',
+    forWhom: [
+      {
+        id: 1,
+        icon: iconForWhom2,
+        desc: 'закоханим',
+        alt: 'Іконка',
+      },
+      {
+        id: 2,
+        icon: iconForWhom4,
+        desc: 'сімейним парам',
+        alt: 'Іконка',
+      },
+    ],
     description: [
-      'Ця особлива фотосесія - це магія, яка перетворює вашу історію кохання в живописні кадри, наповнені емоціями та теплом. Кожна посмішка, погляд та легеньке доторкання будуть дбайливо збережені у світлинах, перетворюючись на неповторні миті, які залишаться у вас назавжди.',
-      'Зйомка може проходити як в студії, так і на вулиці під теплими променями сонця чи в затишному кафе з атмосферою, яка дихає коханням. Або, можливо, ваша історія розгортається на вулицях мальовничого міста під час заходу сонця, створюючи чарівний фон для відповідних знімків.',
-      'Отримайте незабутні миті, які стануть скарбом у вашій колекції спогадів. ',
+      'Ця особлива фотосесія — це магія, яка перетворює вашу історію кохання в живописні кадри, наповнені емоціями та теплом',
+    ],
+    servicesTitle: '',
+    services: [],
+    locationTitle: 'Локації для зйомки:',
+    location: [
+      {
+        id: 1,
+        icon: iconDash,
+        text: 'студія',
+        alt: 'Іконка',
+      },
+      {
+        id: 2,
+        icon: iconDash,
+        text: 'прогулянка',
+        alt: 'Іконка',
+      },
+      {
+        id: 3,
+        icon: iconDash,
+        text: 'кафе',
+        alt: 'Іконка',
+      },
+      {
+        id: 4,
+        icon: iconDash,
+        text: 'вечірнє місто',
+        alt: 'Іконка',
+      },
+      {
+        id: 5,
+        icon: iconDash,
+        text: 'ваша локація',
+        alt: 'Іконка',
+      },
     ],
     images: [
       {
@@ -400,24 +712,38 @@ export const portfolioContent = [
         mobileSrc: mobileLoveStory3,
         alt: 'Долоні дорослих обіймають дитячі долоні',
       },
-      {
-        id: 6,
-        src: loveStory6,
-        mobileSrc: mobileLoveStory6,
-        alt: 'Тато тримає сина на плечах',
-      },
     ],
     bgTabsLeft: tabsOptions.white.left,
     bgTabsRight: tabsOptions.white.right,
     tabsTitle: 'Love-Story',
   },
+
   {
     id: 'sacraments',
     title: 'Таїнства',
+    subtitle:
+      'Нехай подія перетвориться на сокровенну таємницю, проявлену на ваших фотографіях',
+    forWhom: [
+      {
+        id: 1,
+        icon: iconForWhom1,
+        desc: 'усім охочим',
+        alt: 'Іконка',
+      },
+    ],
     description: [
-      'Від урочистого хрещення до весільного вінчання, моя мета - зафіксувати кожну таїнственну подію з враженням, яке несе в собі святість та відчуття.',
-      'Кожна фотографія стає своєрідною іконoю часу, а кожна подія - таємницею, що розкривається лише на ваших фотографіях. Із великою повагою до вашого вибору та традицій, я створюю відображення, які вражають душу, запамʼятовуючи найважливіші моменти в вашому житті.',
-      'Дозвольте мені бути свідком таємниць, які зростають в вашому серці, і створити неперевершений альбом спогадів, який буде тлумачити вашу унікальну історію любові та віри.',
+      'Із великою повагою до вашого вибору та традицій, я створюю відображення, які вражають душу, запамʼятовуючи найважливіші моменти в вашому житті',
+    ],
+    servicesTitle: '',
+    services: [],
+    locationTitle: 'Локації для зйомки:',
+    location: [
+      {
+        id: 1,
+        icon: iconDash,
+        text: 'ваша локація',
+        alt: 'Іконка',
+      },
     ],
     images: [
       {
@@ -450,12 +776,7 @@ export const portfolioContent = [
         mobileSrc: mobileSacraments5,
         alt: 'Долоні дорослих обіймають дитячі долоні',
       },
-      {
-        id: 6,
-        src: sacraments6,
-        mobileSrc: mobileSacraments6,
-        alt: 'Тато тримає сина на плечах',
-      },
+      
     ],
     bgTabsLeft: tabsOptions.white.left,
     bgTabsRight: tabsOptions.white.right,
@@ -464,12 +785,63 @@ export const portfolioContent = [
   {
     id: 'portrait',
     title: 'Портретна',
-    description: [
-      'Портретна зйомка - це не лише фотографія, це історія вашої особистості у кожному кадрі.',
-      'Процес зйомки - це особиста подорож, де ми спільно розкриваємо вашу сутність через вибір відповідного стилю, атмосфери та місця зйомки. Не переймайтесь, якщо це ваша перша фотозйомка - я допоможу та надам рекомендації по позуванню, локації та образу, щоб кожен кадр відображав вашу індивідуальність та виразність.',
-      'Відкрийте нові горизонти свого образу через обʼєктив камери та залиштеся в захопленні результатами, які ви отримаєте.',
+    subtitle: 'Зйомка, яка подарує не тільки фото, а ще й незабутні емоції',
+    forWhom: [
+      {
+        id: 1,
+        icon: iconForWhom1,
+        desc: 'усім охочим',
+        alt: 'Іконка',
+      },
+      
     ],
-    images: [
+    description: [
+      'Портретна зйомка — це не лише фотографія, це історія вашої особистості у кожному кадрі',
+    ],
+    servicesTitle: 'За потреби надам рекомендації щодо:',
+    services: [
+      {
+        id: 1,
+        icon: iconDash,
+        text: 'вибору образу',
+        alt: 'Іконка',
+      },
+      {
+        id: 2,
+        icon: iconDash,
+        text: 'локації',
+        alt: 'Іконка',
+      },
+      {
+        id: 3,
+        icon: iconDash,
+        text: 'позування',
+        alt: 'Іконка',
+      },
+      
+    ],
+    locationTitle: 'Локації для зйомки:',
+    location: [
+      {
+        id: 1,
+        icon: iconDash,
+        text: 'прогулянка',
+        alt: 'Іконка',
+      },
+      {
+        id: 2,
+        icon: iconDash,
+        text: 'студія',
+        alt: 'Іконка',
+      },
+      {
+        id: 3,
+        icon: iconDash,
+        text: 'ваша локація',
+        alt: 'Іконка',
+      },
+    ],
+            images: [
       {
         id: 1,
         src: portrait1,
