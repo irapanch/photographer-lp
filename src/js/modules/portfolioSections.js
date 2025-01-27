@@ -89,7 +89,7 @@ export const dataPortfolio = () => {
 
     html += `
     <section class="${item.id} ${odd ? '' : 'colored'}" id="${item.id}">
-    <div class="container-p ">
+    <div class="container ">
     <div class="tabs ${activeTabClass}">
     <img class="tabs-left" src="${
       isContentSection && activeTabClass === 'active-tab'
@@ -128,8 +128,9 @@ export const dataPortfolio = () => {
       ${
         Array.isArray(item.services)
           ? item.services.map(p => `
-            
-            <p class="points-text"><img class="icon-dash" src="${p.icon}  alt="${p.alt}"">${p.text}</p>`).join('')
+            <div class="points-wrap">
+            <img class="icon-dash" src="${p.icon}  alt="${p.alt}"">
+            <p class="points-text">${p.text}</p></div>`).join('')
           : ''
       }
       </div>
@@ -141,8 +142,9 @@ export const dataPortfolio = () => {
       ${
         Array.isArray(item.location)
           ? item.location.map(p => `
-            
-            <p class="points-text"><img class="icon-dash" src="${p.icon} alt="${p.alt}"">${p.text}</p>`).join('')
+             <div class="points-wrap">
+             <img class="icon-dash" src="${p.icon} alt="${p.alt}"">
+            <p class="points-text">${p.text}</p></div>`).join('')
           : ''
       }
       </div>
@@ -173,7 +175,7 @@ export const dataPortfolio = () => {
   const allTabs = document.querySelectorAll('.tabs');
 
   allTabs.forEach(tab =>
-    tab.addEventListener('click', e => {
+    tab.addEventListener('pointerdown', e => {
       if (!tab.classList.contains('active-tab')) {
       const contentSection = tab.closest('section').id === 'content';
       const portraitSection = tab.closest('section').id === 'portrait';
