@@ -89,7 +89,9 @@ main {
     min-height: 1040px;}
   @media (min-width: 575px){
     margin: auto;
+    width: 575px;
    }
+
 
 
 }
@@ -189,8 +191,11 @@ main {
   
 }
 .points-wrap{
-  display: flex;
-  gap: 5px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0 5px;
+  align-items: center;
+ 
 }
 .icon-dash {
   object-fit: none

@@ -67,6 +67,7 @@ const getImageOrientation = (index, odd) => {
 
 export const dataPortfolio = () => {
   const wrapper = document.querySelector('.wrapper');
+ 
 
   let html = '';
 
@@ -88,7 +89,7 @@ export const dataPortfolio = () => {
 
 
     html += `
-    <section class="${item.id} ${odd ? '' : 'colored'}" id="${item.id}">
+    <section class="${item.id} " id="${item.id}">
     <div class="container ">
     <div class="tabs ${activeTabClass}">
     <img class="tabs-left" src="${
@@ -172,6 +173,7 @@ export const dataPortfolio = () => {
   });
 
   wrapper.insertAdjacentHTML('beforeend', html);
+  
   const allTabs = document.querySelectorAll('.tabs');
 
   allTabs.forEach(tab =>
@@ -190,6 +192,7 @@ export const dataPortfolio = () => {
         }
       } else {
         // Скидання класів і стилів для всіх вкладок
+        
         allTabs.forEach(el => {
           el.classList.remove('active-tab');
           el.closest('section').style.zIndex = '';
