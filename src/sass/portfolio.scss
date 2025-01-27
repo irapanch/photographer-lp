@@ -122,7 +122,7 @@ main {
   display: flex;
   height: 40px;
   top: 41px;
-  right: -77px;
+  right: -80px;
   transform: rotate(90deg);
   
 }
@@ -368,7 +368,7 @@ main {
 }
 .product > .container > .tabs {
   top: 371px;
-  right: -106px;
+  right: -105px;
 }
 // ---------------------------------------
 .loveStory {
@@ -909,13 +909,18 @@ main {
 }
 .active-tab>.tabs-text {
   background-color: #235f83;
-  color: transparent;
+  color: #235f83;
   outline: 1px solid #235f83;
   outline-offset: -1px;
   box-shadow: -1px 4px 1px 4px #235f83;
+  
 }
 .container:has(.active-tab) {
   background: none;
   @include colored-bg;
   border-right: 1px solid #235f83;
+}
+
+.content > .container> .active-tab > .tabs-text {
+  box-shadow: none;
 }

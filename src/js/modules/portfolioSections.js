@@ -108,7 +108,7 @@ export const dataPortfolio = () => {
       <h2 class="title portfolio-header">${item.title}</h2>
       <h3 class="portfolio-subtitle">${item.subtitle}</h3>
       
-      <div class="cont ${odd ? '' : 'reversed'}">
+      <div class="cont ">
       <div class="portfolio-description">
       <h4>${item.description}</h4>
       </div>
@@ -129,7 +129,7 @@ export const dataPortfolio = () => {
         Array.isArray(item.services)
           ? item.services.map(p => `
             <div class="points-wrap">
-            <img class="icon-dash" src="${p.icon}  alt="${p.alt}"">
+            <img class="icon-dash" src="${p.icon}"  alt="${p.alt}"">
             <p class="points-text">${p.text}</p></div>`).join('')
           : ''
       }
@@ -143,7 +143,7 @@ export const dataPortfolio = () => {
         Array.isArray(item.location)
           ? item.location.map(p => `
              <div class="points-wrap">
-             <img class="icon-dash" src="${p.icon} alt="${p.alt}"">
+             <img class="icon-dash" src="${p.icon}" alt="${p.alt}"">
             <p class="points-text">${p.text}</p></div>`).join('')
           : ''
       }
