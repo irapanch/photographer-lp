@@ -84,27 +84,34 @@ main {
 .wrapper-tab {
   position: relative;
   min-height: 1020px;
-  // width: auto;
+
+  @media (max-width: 450px) {
+    min-height: 1040px;}
   @media (min-width: 575px){
     margin: auto;
    }
+
 
 }
 .wrapper-tab> section {
   @media (max-width: 767px) {
     padding: 0 0 0 2rem;
+    min-height: 895px;
    }
    @media (max-width: 556px) {
     max-width: 490px;
+    height: 1000px;
    }
    @media (max-width: 548px) {
     max-width: 460px;
    }
    @media (max-width: 518px) {
     max-width: 425px;
+   
    }
    @media (max-width: 485px) {
     max-width: 390px;
+    
    }
    @media (max-width: 450px) {
     max-width: 360px;
@@ -114,6 +121,7 @@ main {
    }
    @media (max-width: 390px) {
     max-width: 310px;
+    
    }
   
 }
@@ -170,7 +178,7 @@ main {
   line-height: 1.5;
 }
 .portfolio-points {
-  @media (max-width: 545px) {
+  @media (max-width: 550px) {
     display: block;
     margin-bottom: 10px;
    }
@@ -423,6 +431,7 @@ main {
 .portrait > .container {
   @include colored-bg;
   min-height: 895px;
+  height: 100%;
   border-radius: 35px 0 35px 35px;
   position: relative;
   background: none;
