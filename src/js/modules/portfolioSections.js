@@ -89,7 +89,7 @@ export const dataPortfolio = () => {
 
     html += `
     <section class="${item.id} ${odd ? '' : 'colored'}" id="${item.id}">
-    <div class="container  ">
+    <div class="container-p ">
     <div class="tabs ${activeTabClass}">
     <img class="tabs-left" src="${
       isContentSection && activeTabClass === 'active-tab'

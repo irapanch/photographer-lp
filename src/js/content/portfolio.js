@@ -104,7 +104,7 @@ const iconForWhom5 = require('../../images/iconsForWhom/5.png');
 const iconForWhom6 = require('../../images/iconsForWhom/6.png');
 const iconForWhom7 = require('../../images/iconsForWhom/7.png');
 
-const iconDash = require('../../images/dash.png');
+const iconDash = require('../../images/iconsForWhom/dash.png');
 
 const blueStartTabsLeft = require('../../images/tabs/bsl.png');
 const blueTabsRight = require('../../images/tabs/br.png');
@@ -265,622 +265,622 @@ export const portfolioContent = [
     bgTabsRight: tabsOptions.white.right,
     tabsTitle: 'Контент',
   },
-  {
-    id: 'business',
-    title: 'Бізнес-зйомка',
-    subtitle: 'Найкращий спосіб показати свої професійні сторони',
+  // {
+  //   id: 'business',
+  //   title: 'Бізнес-зйомка',
+  //   subtitle: 'Найкращий спосіб показати свої професійні сторони',
 
-    forWhom: [
-      {
-        id: 1,
-        icon: iconForWhom5,
-        desc: 'компаніям',
-        alt: 'Іконка',
-      },
-      {
-        id: 2,
-        icon: iconForWhom7,
-        desc: 'підприємцям',
-        alt: 'Іконка',
-      },
-    ],
-    description: [
-      'Бізнес-портрети, кадри робочого колективу — аби передати вражаючий образ вашого бізнесу!',
-    ],
-    servicesTitle: 'Фото підійдуть для:',
-    services: [
-      {
-        id: 1,
-        icon: iconDash,
-        text: 'резюме',
-        alt: 'Іконка',
-      },
-      {
-        id: 2,
-        icon: iconDash,
-        text: 'корпоративного сайту',
-        alt: 'Іконка',
-      },
-      {
-        id: 3,
-        icon: iconDash,
-        text: 'LinkedIn',
-        alt: 'Іконка',
-      },
-      {
-        id: 4,
-        icon: iconDash,
-        text: 'професійного блогу',
-        alt: 'Іконка',
-      },
-      {
-        id: 5,
-        icon: iconDash,
-        text: 'email-аватара',
-        alt: 'Іконка',
-      },
-    ],
-    locationTitle: 'Локації для зйомки:',
-    location: [
-      {
-        id: 1,
-        icon: iconDash,
-        text: 'офіс',
-        alt: 'Іконка',
-      },
-      {
-        id: 2,
-        icon: iconDash,
-        text: 'виробництво',
-        alt: 'Іконка',
-      },
-      {
-        id: 3,
-        icon: iconDash,
-        text: 'студія',
-        alt: 'Іконка',
-      },
-      {
-        id: 4,
-        icon: iconDash,
-        text: 'прогулянка',
-        alt: 'Іконка',
-      },
-    ],
-    images: [
-      {
-        id: 1,
-        src: business3,
-        mobileSrc: mobileBusiness3,
-        alt: 'Дівчина з планом дизайну квартири',
-        name: 'Бізнес-зйомка для дизайнерки',
-      },
-      {
-        id: 2,
-        src: business2,
-        mobileSrc: mobileBusiness2,
-        alt: 'Портрет задумливої дівчини, яка працює',
-        name: 'Бізнес-зйомка для дизайнерки',
-      },
-      {
-        id: 3,
-        src: business4,
-        mobileSrc: mobileBusiness4,
-        alt: 'Розгорнутий журнал з дизайну в руках',
-        name: 'Бізнес-зйомка для дизайнерки',
-      },
-      {
-        id: 4,
-        src: business6,
-        mobileSrc: mobileBusiness6,
-        alt: 'Дівчина-дизайнер сидить на дивані з блокнотом',
-        name: 'Бізнес-зйомка для дизайнерки',
-      },
-      {
-        id: 5,
-        src: business1,
-        mobileSrc: mobileBusiness1,
-        alt: 'Дівчина з планшетом дивиться в камеру',
-        name: 'Бізнес-зйомка для дизайнерки',
-      },
-    ],
-    bgTabsLeft: tabsOptions.white.left,
-    bgTabsRight: tabsOptions.white.right,
-    tabsTitle: 'Бізнес',
-  },
+  //   forWhom: [
+  //     {
+  //       id: 1,
+  //       icon: iconForWhom5,
+  //       desc: 'компаніям',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 2,
+  //       icon: iconForWhom7,
+  //       desc: 'підприємцям',
+  //       alt: 'Іконка',
+  //     },
+  //   ],
+  //   description: [
+  //     'Бізнес-портрети, кадри робочого колективу — аби передати вражаючий образ вашого бізнесу!',
+  //   ],
+  //   servicesTitle: 'Фото підійдуть для:',
+  //   services: [
+  //     {
+  //       id: 1,
+  //       icon: iconDash,
+  //       text: 'резюме',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 2,
+  //       icon: iconDash,
+  //       text: 'корпоративного сайту',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 3,
+  //       icon: iconDash,
+  //       text: 'LinkedIn',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 4,
+  //       icon: iconDash,
+  //       text: 'професійного блогу',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 5,
+  //       icon: iconDash,
+  //       text: 'email-аватара',
+  //       alt: 'Іконка',
+  //     },
+  //   ],
+  //   locationTitle: 'Локації для зйомки:',
+  //   location: [
+  //     {
+  //       id: 1,
+  //       icon: iconDash,
+  //       text: 'офіс',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 2,
+  //       icon: iconDash,
+  //       text: 'виробництво',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 3,
+  //       icon: iconDash,
+  //       text: 'студія',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 4,
+  //       icon: iconDash,
+  //       text: 'прогулянка',
+  //       alt: 'Іконка',
+  //     },
+  //   ],
+  //   images: [
+  //     {
+  //       id: 1,
+  //       src: business3,
+  //       mobileSrc: mobileBusiness3,
+  //       alt: 'Дівчина з планом дизайну квартири',
+  //       name: 'Бізнес-зйомка для дизайнерки',
+  //     },
+  //     {
+  //       id: 2,
+  //       src: business2,
+  //       mobileSrc: mobileBusiness2,
+  //       alt: 'Портрет задумливої дівчини, яка працює',
+  //       name: 'Бізнес-зйомка для дизайнерки',
+  //     },
+  //     {
+  //       id: 3,
+  //       src: business4,
+  //       mobileSrc: mobileBusiness4,
+  //       alt: 'Розгорнутий журнал з дизайну в руках',
+  //       name: 'Бізнес-зйомка для дизайнерки',
+  //     },
+  //     {
+  //       id: 4,
+  //       src: business6,
+  //       mobileSrc: mobileBusiness6,
+  //       alt: 'Дівчина-дизайнер сидить на дивані з блокнотом',
+  //       name: 'Бізнес-зйомка для дизайнерки',
+  //     },
+  //     {
+  //       id: 5,
+  //       src: business1,
+  //       mobileSrc: mobileBusiness1,
+  //       alt: 'Дівчина з планшетом дивиться в камеру',
+  //       name: 'Бізнес-зйомка для дизайнерки',
+  //     },
+  //   ],
+  //   bgTabsLeft: tabsOptions.white.left,
+  //   bgTabsRight: tabsOptions.white.right,
+  //   tabsTitle: 'Бізнес',
+  // },
 
-  {
-    id: 'family',
-    title: 'Cімейна',
-    subtitle:
-      'Хочете поповнити сімейний архів або лишити спогади від родинної події?',
-    forWhom: [
-      {
-        id: 1,
-        icon: iconForWhom4,
-        desc: 'сімʼям',
-        alt: 'Іконка',
-      },
-    ],
-    description: [
-      'Сімейна зйомка створена аби зафіксувати ваші емоції у кадрах',
-    ],
-    servicesTitle: 'Фото найцінніших митей:',
-    services: [
-      {
-        id: 1,
-        icon: iconDash,
-        text: 'свята',
-        alt: 'Іконка',
-      },
-      {
-        id: 2,
-        icon: iconDash,
-        text: 'випускний в садочку',
-        alt: 'Іконка',
-      },
-      {
-        id: 3,
-        icon: iconDash,
-        text: 'сімейний пікнік',
-        alt: 'Іконка',
-      },
-      {
-        id: 4,
-        icon: iconDash,
-        text: 'спільна прогулянка',
-        alt: 'Іконка',
-      },
-      {
-        id: 5,
-        icon: iconDash,
-        text: 'будь-яка подія',
-        alt: 'Іконка',
-      },
-    ],
-    locationTitle: 'Локації для зйомки:',
-    location: [
-      {
-        id: 1,
-        icon: iconDash,
-        text: 'прогулянка',
-        alt: 'Іконка',
-      },
-      {
-        id: 2,
-        icon: iconDash,
-        text: 'студія',
-        alt: 'Іконка',
-      },
-      {
-        id: 3,
-        icon: iconDash,
-        text: 'ваша локація',
-        alt: 'Іконка',
-      },
-    ],
-    images: [
-      {
-        id: 1,
-        src: family2,
-        mobileSrc: mobileFamily2,
-        alt: 'Хлопчик біжить в обійми батьків',
-      },
-      {
-        id: 2,
-        src: family1,
-        mobileSrc: mobileFamily1,
-        alt: 'Пара закоханих торкається чолами один одного',
-      },
-      {
-        id: 3,
-        src: family3,
-        mobileSrc: mobileFamily3,
-        alt: 'Жінка обіймає чоловіка',
-      },
-      {
-        id: 4,
-        src: family5,
-        mobileSrc: mobileFamily5,
-        alt: 'Сімʼя сидить на пікніку в лісі',
-      },
-      {
-        id: 5,
-        src: family4,
-        mobileSrc: mobileFamily4,
-        alt: 'Долоні дорослих обіймають дитячі долоні',
-      },
-    ],
+  // {
+  //   id: 'family',
+  //   title: 'Cімейна',
+  //   subtitle:
+  //     'Хочете поповнити сімейний архів або лишити спогади від родинної події?',
+  //   forWhom: [
+  //     {
+  //       id: 1,
+  //       icon: iconForWhom4,
+  //       desc: 'сімʼям',
+  //       alt: 'Іконка',
+  //     },
+  //   ],
+  //   description: [
+  //     'Сімейна зйомка створена аби зафіксувати ваші емоції у кадрах',
+  //   ],
+  //   servicesTitle: 'Фото найцінніших митей:',
+  //   services: [
+  //     {
+  //       id: 1,
+  //       icon: iconDash,
+  //       text: 'свята',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 2,
+  //       icon: iconDash,
+  //       text: 'випускний в садочку',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 3,
+  //       icon: iconDash,
+  //       text: 'сімейний пікнік',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 4,
+  //       icon: iconDash,
+  //       text: 'спільна прогулянка',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 5,
+  //       icon: iconDash,
+  //       text: 'будь-яка подія',
+  //       alt: 'Іконка',
+  //     },
+  //   ],
+  //   locationTitle: 'Локації для зйомки:',
+  //   location: [
+  //     {
+  //       id: 1,
+  //       icon: iconDash,
+  //       text: 'прогулянка',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 2,
+  //       icon: iconDash,
+  //       text: 'студія',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 3,
+  //       icon: iconDash,
+  //       text: 'ваша локація',
+  //       alt: 'Іконка',
+  //     },
+  //   ],
+  //   images: [
+  //     {
+  //       id: 1,
+  //       src: family2,
+  //       mobileSrc: mobileFamily2,
+  //       alt: 'Хлопчик біжить в обійми батьків',
+  //     },
+  //     {
+  //       id: 2,
+  //       src: family1,
+  //       mobileSrc: mobileFamily1,
+  //       alt: 'Пара закоханих торкається чолами один одного',
+  //     },
+  //     {
+  //       id: 3,
+  //       src: family3,
+  //       mobileSrc: mobileFamily3,
+  //       alt: 'Жінка обіймає чоловіка',
+  //     },
+  //     {
+  //       id: 4,
+  //       src: family5,
+  //       mobileSrc: mobileFamily5,
+  //       alt: 'Сімʼя сидить на пікніку в лісі',
+  //     },
+  //     {
+  //       id: 5,
+  //       src: family4,
+  //       mobileSrc: mobileFamily4,
+  //       alt: 'Долоні дорослих обіймають дитячі долоні',
+  //     },
+  //   ],
 
-    bgTabsLeft: tabsOptions.white.left,
-    bgTabsRight: tabsOptions.white.right,
-    tabsTitle: 'Cімейна',
-  },
-  {
-    id: 'product',
-    title: 'Предметна',
-    subtitle:
-      'Якісні знімки вашої продукції — перший крок до збільшення продажів!',
-    forWhom: [
-      {
-        id: 1,
-        icon: iconForWhom3,
-        desc: 'онлайн бізнесам',
-        alt: 'Іконка',
-      },
-      {
-        id: 2,
-        icon: iconForWhom5,
-        desc: 'офлайн бізнесам',
-        alt: 'Іконка',
-      },
-      {
-        id: 3,
-        icon: iconForWhom6,
-        desc: 'особистим проектам',
-        alt: 'Іконка',
-      },
-    ],
-    description: [''],
-    servicesTitle: 'Підійде для фотозйомки:',
-    services: [
-      {
-        id: 1,
-        icon: iconDash,
-        text: 'біжутерії',
-        alt: 'Іконка',
-      },
-      {
-        id: 2,
-        icon: iconDash,
-        text: 'одягу та взуття',
-        alt: 'Іконка',
-      },
-      {
-        id: 3,
-        icon: iconDash,
-        text: 'посуду',
-        alt: 'Іконка',
-      },
-      {
-        id: 4,
-        icon: iconDash,
-        text: 'витворів мистецтва',
-        alt: 'Іконка',
-      },
-      {
-        id: 5,
-        icon: iconDash,
-        text: 'фудзйомки',
-        alt: 'Іконка',
-      },
-      {
-        id: 6,
-        icon: iconDash,
-        text: 'ювелірних виробів',
-        alt: 'Іконка',
-      },
-      {
-        id: 7,
-        icon: iconDash,
-        text: 'будь-якої іншої продукції',
-        alt: 'Іконка',
-      },
-    ],
-    locationTitle: 'Локації для зйомки:',
-    location: [
-      {
-        id: 1,
-        icon: iconDash,
-        text: 'прогулянка',
-        alt: 'Іконка',
-      },
-      {
-        id: 2,
-        icon: iconDash,
-        text: 'студія',
-        alt: 'Іконка',
-      },
-      {
-        id: 3,
-        icon: iconDash,
-        text: 'ваша локація',
-        alt: 'Іконка',
-      },
-    ],
-    images: [
-      {
-        id: 1,
-        src: product1,
-        mobileSrc: mobileProduct1,
-        alt: 'Хлопчик біжить в обійми батьків',
-      },
-      {
-        id: 2,
-        src: product2,
-        mobileSrc: mobileProduct2,
-        alt: 'Пара закоханих торкається чолами один одного',
-      },
-      {
-        id: 3,
-        src: product4,
-        mobileSrc: mobileProduct4,
-        alt: 'Жінка обіймає чоловіка',
-      },
-      {
-        id: 4,
-        src: product6,
-        mobileSrc: mobileProduct6,
-        alt: 'Сімʼя сидить на пікніку в лісі',
-      },
-      {
-        id: 5,
-        src: product5,
-        mobileSrc: mobileProduct5,
-        alt: 'Долоні дорослих обіймають дитячі долоні',
-      },
-    ],
-    bgTabsLeft: tabsOptions.white.left,
-    bgTabsRight: tabsOptions.white.right,
-    tabsTitle: 'Предметна',
-  },
-  {
-    id: 'loveStory',
-    title: 'Love Story',
-    subtitle:
-      'Отримайте незабутні миті, які стануть скарбом у вашій колекції спогадів',
-    forWhom: [
-      {
-        id: 1,
-        icon: iconForWhom2,
-        desc: 'закоханим',
-        alt: 'Іконка',
-      },
-      {
-        id: 2,
-        icon: iconForWhom4,
-        desc: 'сімейним парам',
-        alt: 'Іконка',
-      },
-    ],
-    description: [
-      'Ця особлива фотосесія — це магія, яка перетворює вашу історію кохання в живописні кадри, наповнені емоціями та теплом',
-    ],
-    servicesTitle: '',
-    services: [],
-    locationTitle: 'Локації для зйомки:',
-    location: [
-      {
-        id: 1,
-        icon: iconDash,
-        text: 'студія',
-        alt: 'Іконка',
-      },
-      {
-        id: 2,
-        icon: iconDash,
-        text: 'прогулянка',
-        alt: 'Іконка',
-      },
-      {
-        id: 3,
-        icon: iconDash,
-        text: 'кафе',
-        alt: 'Іконка',
-      },
-      {
-        id: 4,
-        icon: iconDash,
-        text: 'вечірнє місто',
-        alt: 'Іконка',
-      },
-      {
-        id: 5,
-        icon: iconDash,
-        text: 'ваша локація',
-        alt: 'Іконка',
-      },
-    ],
-    images: [
-      {
-        id: 1,
-        src: loveStory1,
-        mobileSrc: mobileLoveStory1,
-        alt: 'Хлопчик біжить в обійми батьків',
-      },
-      {
-        id: 2,
-        src: loveStory2,
-        mobileSrc: mobileLoveStory2,
-        alt: 'Пара закоханих торкається чолами один одного',
-      },
-      {
-        id: 3,
-        src: loveStory5,
-        mobileSrc: mobileLoveStory5,
-        alt: 'Жінка обіймає чоловіка',
-      },
-      {
-        id: 4,
-        src: loveStory4,
-        mobileSrc: mobileLoveStory4,
-        alt: 'Сімʼя сидить на пікніку в лісі',
-      },
-      {
-        id: 5,
-        src: loveStory3,
-        mobileSrc: mobileLoveStory3,
-        alt: 'Долоні дорослих обіймають дитячі долоні',
-      },
-    ],
-    bgTabsLeft: tabsOptions.white.left,
-    bgTabsRight: tabsOptions.white.right,
-    tabsTitle: 'Love-Story',
-  },
+  //   bgTabsLeft: tabsOptions.white.left,
+  //   bgTabsRight: tabsOptions.white.right,
+  //   tabsTitle: 'Cімейна',
+  // },
+  // {
+  //   id: 'product',
+  //   title: 'Предметна',
+  //   subtitle:
+  //     'Якісні знімки вашої продукції — перший крок до збільшення продажів!',
+  //   forWhom: [
+  //     {
+  //       id: 1,
+  //       icon: iconForWhom3,
+  //       desc: 'онлайн бізнесам',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 2,
+  //       icon: iconForWhom5,
+  //       desc: 'офлайн бізнесам',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 3,
+  //       icon: iconForWhom6,
+  //       desc: 'особистим проектам',
+  //       alt: 'Іконка',
+  //     },
+  //   ],
+  //   description: [''],
+  //   servicesTitle: 'Підійде для фотозйомки:',
+  //   services: [
+  //     {
+  //       id: 1,
+  //       icon: iconDash,
+  //       text: 'біжутерії',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 2,
+  //       icon: iconDash,
+  //       text: 'одягу та взуття',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 3,
+  //       icon: iconDash,
+  //       text: 'посуду',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 4,
+  //       icon: iconDash,
+  //       text: 'витворів мистецтва',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 5,
+  //       icon: iconDash,
+  //       text: 'фудзйомки',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 6,
+  //       icon: iconDash,
+  //       text: 'ювелірних виробів',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 7,
+  //       icon: iconDash,
+  //       text: 'будь-якої іншої продукції',
+  //       alt: 'Іконка',
+  //     },
+  //   ],
+  //   locationTitle: 'Локації для зйомки:',
+  //   location: [
+  //     {
+  //       id: 1,
+  //       icon: iconDash,
+  //       text: 'прогулянка',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 2,
+  //       icon: iconDash,
+  //       text: 'студія',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 3,
+  //       icon: iconDash,
+  //       text: 'ваша локація',
+  //       alt: 'Іконка',
+  //     },
+  //   ],
+  //   images: [
+  //     {
+  //       id: 1,
+  //       src: product1,
+  //       mobileSrc: mobileProduct1,
+  //       alt: 'Хлопчик біжить в обійми батьків',
+  //     },
+  //     {
+  //       id: 2,
+  //       src: product2,
+  //       mobileSrc: mobileProduct2,
+  //       alt: 'Пара закоханих торкається чолами один одного',
+  //     },
+  //     {
+  //       id: 3,
+  //       src: product4,
+  //       mobileSrc: mobileProduct4,
+  //       alt: 'Жінка обіймає чоловіка',
+  //     },
+  //     {
+  //       id: 4,
+  //       src: product6,
+  //       mobileSrc: mobileProduct6,
+  //       alt: 'Сімʼя сидить на пікніку в лісі',
+  //     },
+  //     {
+  //       id: 5,
+  //       src: product5,
+  //       mobileSrc: mobileProduct5,
+  //       alt: 'Долоні дорослих обіймають дитячі долоні',
+  //     },
+  //   ],
+  //   bgTabsLeft: tabsOptions.white.left,
+  //   bgTabsRight: tabsOptions.white.right,
+  //   tabsTitle: 'Предметна',
+  // },
+  // {
+  //   id: 'loveStory',
+  //   title: 'Love Story',
+  //   subtitle:
+  //     'Отримайте незабутні миті, які стануть скарбом у вашій колекції спогадів',
+  //   forWhom: [
+  //     {
+  //       id: 1,
+  //       icon: iconForWhom2,
+  //       desc: 'закоханим',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 2,
+  //       icon: iconForWhom4,
+  //       desc: 'сімейним парам',
+  //       alt: 'Іконка',
+  //     },
+  //   ],
+  //   description: [
+  //     'Ця особлива фотосесія — це магія, яка перетворює вашу історію кохання в живописні кадри, наповнені емоціями та теплом',
+  //   ],
+  //   servicesTitle: '',
+  //   services: [],
+  //   locationTitle: 'Локації для зйомки:',
+  //   location: [
+  //     {
+  //       id: 1,
+  //       icon: iconDash,
+  //       text: 'студія',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 2,
+  //       icon: iconDash,
+  //       text: 'прогулянка',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 3,
+  //       icon: iconDash,
+  //       text: 'кафе',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 4,
+  //       icon: iconDash,
+  //       text: 'вечірнє місто',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 5,
+  //       icon: iconDash,
+  //       text: 'ваша локація',
+  //       alt: 'Іконка',
+  //     },
+  //   ],
+  //   images: [
+  //     {
+  //       id: 1,
+  //       src: loveStory1,
+  //       mobileSrc: mobileLoveStory1,
+  //       alt: 'Хлопчик біжить в обійми батьків',
+  //     },
+  //     {
+  //       id: 2,
+  //       src: loveStory2,
+  //       mobileSrc: mobileLoveStory2,
+  //       alt: 'Пара закоханих торкається чолами один одного',
+  //     },
+  //     {
+  //       id: 3,
+  //       src: loveStory5,
+  //       mobileSrc: mobileLoveStory5,
+  //       alt: 'Жінка обіймає чоловіка',
+  //     },
+  //     {
+  //       id: 4,
+  //       src: loveStory4,
+  //       mobileSrc: mobileLoveStory4,
+  //       alt: 'Сімʼя сидить на пікніку в лісі',
+  //     },
+  //     {
+  //       id: 5,
+  //       src: loveStory3,
+  //       mobileSrc: mobileLoveStory3,
+  //       alt: 'Долоні дорослих обіймають дитячі долоні',
+  //     },
+  //   ],
+  //   bgTabsLeft: tabsOptions.white.left,
+  //   bgTabsRight: tabsOptions.white.right,
+  //   tabsTitle: 'Love-Story',
+  // },
 
-  {
-    id: 'sacraments',
-    title: 'Таїнства',
-    subtitle:
-      'Нехай подія перетвориться на сокровенну таємницю, проявлену на ваших фотографіях',
-    forWhom: [
-      {
-        id: 1,
-        icon: iconForWhom1,
-        desc: 'усім охочим',
-        alt: 'Іконка',
-      },
-    ],
-    description: [
-      'Із великою повагою до вашого вибору та традицій, я створюю відображення, які вражають душу, запамʼятовуючи найважливіші моменти в вашому житті',
-    ],
-    servicesTitle: '',
-    services: [],
-    locationTitle: 'Локації для зйомки:',
-    location: [
-      {
-        id: 1,
-        icon: iconDash,
-        text: 'ваша локація',
-        alt: 'Іконка',
-      },
-    ],
-    images: [
-      {
-        id: 1,
-        src: sacraments1,
-        mobileSrc: mobileSacraments1,
-        alt: 'Хлопчик біжить в обійми батьків',
-      },
-      {
-        id: 2,
-        src: sacraments2,
-        mobileSrc: mobileSacraments2,
-        alt: 'Пара закоханих торкається чолами один одного',
-      },
-      {
-        id: 3,
-        src: sacraments3,
-        mobileSrc: mobileSacraments3,
-        alt: 'Жінка обіймає чоловіка',
-      },
-      {
-        id: 4,
-        src: sacraments4,
-        mobileSrc: mobileSacraments4,
-        alt: 'Сімʼя сидить на пікніку в лісі',
-      },
-      {
-        id: 5,
-        src: sacraments5,
-        mobileSrc: mobileSacraments5,
-        alt: 'Долоні дорослих обіймають дитячі долоні',
-      },
+  // {
+  //   id: 'sacraments',
+  //   title: 'Таїнства',
+  //   subtitle:
+  //     'Нехай подія перетвориться на сокровенну таємницю, проявлену на ваших фотографіях',
+  //   forWhom: [
+  //     {
+  //       id: 1,
+  //       icon: iconForWhom1,
+  //       desc: 'усім охочим',
+  //       alt: 'Іконка',
+  //     },
+  //   ],
+  //   description: [
+  //     'Із великою повагою до вашого вибору та традицій, я створюю відображення, які вражають душу, запамʼятовуючи найважливіші моменти в вашому житті',
+  //   ],
+  //   servicesTitle: '',
+  //   services: [],
+  //   locationTitle: 'Локації для зйомки:',
+  //   location: [
+  //     {
+  //       id: 1,
+  //       icon: iconDash,
+  //       text: 'ваша локація',
+  //       alt: 'Іконка',
+  //     },
+  //   ],
+  //   images: [
+  //     {
+  //       id: 1,
+  //       src: sacraments1,
+  //       mobileSrc: mobileSacraments1,
+  //       alt: 'Хлопчик біжить в обійми батьків',
+  //     },
+  //     {
+  //       id: 2,
+  //       src: sacraments2,
+  //       mobileSrc: mobileSacraments2,
+  //       alt: 'Пара закоханих торкається чолами один одного',
+  //     },
+  //     {
+  //       id: 3,
+  //       src: sacraments3,
+  //       mobileSrc: mobileSacraments3,
+  //       alt: 'Жінка обіймає чоловіка',
+  //     },
+  //     {
+  //       id: 4,
+  //       src: sacraments4,
+  //       mobileSrc: mobileSacraments4,
+  //       alt: 'Сімʼя сидить на пікніку в лісі',
+  //     },
+  //     {
+  //       id: 5,
+  //       src: sacraments5,
+  //       mobileSrc: mobileSacraments5,
+  //       alt: 'Долоні дорослих обіймають дитячі долоні',
+  //     },
       
-    ],
-    bgTabsLeft: tabsOptions.white.left,
-    bgTabsRight: tabsOptions.white.right,
-    tabsTitle: 'Таїнства',
-  },
-  {
-    id: 'portrait',
-    title: 'Портретна',
-    subtitle: 'Зйомка, яка подарує не тільки фото, а ще й незабутні емоції',
-    forWhom: [
-      {
-        id: 1,
-        icon: iconForWhom1,
-        desc: 'усім охочим',
-        alt: 'Іконка',
-      },
+  //   ],
+  //   bgTabsLeft: tabsOptions.white.left,
+  //   bgTabsRight: tabsOptions.white.right,
+  //   tabsTitle: 'Таїнства',
+  // },
+  // {
+  //   id: 'portrait',
+  //   title: 'Портретна',
+  //   subtitle: 'Зйомка, яка подарує не тільки фото, а ще й незабутні емоції',
+  //   forWhom: [
+  //     {
+  //       id: 1,
+  //       icon: iconForWhom1,
+  //       desc: 'усім охочим',
+  //       alt: 'Іконка',
+  //     },
       
-    ],
-    description: [
-      'Портретна зйомка — це не лише фотографія, це історія вашої особистості у кожному кадрі',
-    ],
-    servicesTitle: 'За потреби надам рекомендації щодо:',
-    services: [
-      {
-        id: 1,
-        icon: iconDash,
-        text: 'вибору образу',
-        alt: 'Іконка',
-      },
-      {
-        id: 2,
-        icon: iconDash,
-        text: 'локації',
-        alt: 'Іконка',
-      },
-      {
-        id: 3,
-        icon: iconDash,
-        text: 'позування',
-        alt: 'Іконка',
-      },
+  //   ],
+  //   description: [
+  //     'Портретна зйомка — це не лише фотографія, це історія вашої особистості у кожному кадрі',
+  //   ],
+  //   servicesTitle: 'За потреби надам рекомендації щодо:',
+  //   services: [
+  //     {
+  //       id: 1,
+  //       icon: iconDash,
+  //       text: 'вибору образу',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 2,
+  //       icon: iconDash,
+  //       text: 'локації',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 3,
+  //       icon: iconDash,
+  //       text: 'позування',
+  //       alt: 'Іконка',
+  //     },
       
-    ],
-    locationTitle: 'Локації для зйомки:',
-    location: [
-      {
-        id: 1,
-        icon: iconDash,
-        text: 'прогулянка',
-        alt: 'Іконка',
-      },
-      {
-        id: 2,
-        icon: iconDash,
-        text: 'студія',
-        alt: 'Іконка',
-      },
-      {
-        id: 3,
-        icon: iconDash,
-        text: 'ваша локація',
-        alt: 'Іконка',
-      },
-    ],
-            images: [
-      {
-        id: 1,
-        src: portrait1,
-        mobileSrc: mobilePortrait1,
-        alt: 'Хлопчик біжить в обійми батьків',
-      },
-      {
-        id: 2,
-        src: portrait2,
-        mobileSrc: mobilePortrait2,
-        alt: 'Пара закоханих торкається чолами один одного',
-      },
-      {
-        id: 3,
-        src: portrait3,
-        mobileSrc: mobilePortrait3,
-        alt: 'Жінка обіймає чоловіка',
-      },
-      {
-        id: 4,
-        src: portrait4,
-        mobileSrc: mobilePortrait4,
-        alt: 'Сімʼя сидить на пікніку в лісі',
-      },
-      {
-        id: 5,
-        src: portrait5,
-        mobileSrc: mobilePortrait5,
-        alt: 'Долоні дорослих обіймають дитячі долоні',
-      },
-      {
-        id: 6,
-        src: portrait6,
-        mobileSrc: mobilePortrait6,
-        alt: 'Тато тримає сина на плечах',
-      },
-    ],
-    bgTabsLeft: tabsOptions.white.left,
-    bgTabsRight: tabsOptions.white.finishRight,
-    tabsTitle: 'Портретна',
-  },
+  //   ],
+  //   locationTitle: 'Локації для зйомки:',
+  //   location: [
+  //     {
+  //       id: 1,
+  //       icon: iconDash,
+  //       text: 'прогулянка',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 2,
+  //       icon: iconDash,
+  //       text: 'студія',
+  //       alt: 'Іконка',
+  //     },
+  //     {
+  //       id: 3,
+  //       icon: iconDash,
+  //       text: 'ваша локація',
+  //       alt: 'Іконка',
+  //     },
+  //   ],
+  //           images: [
+  //     {
+  //       id: 1,
+  //       src: portrait1,
+  //       mobileSrc: mobilePortrait1,
+  //       alt: 'Хлопчик біжить в обійми батьків',
+  //     },
+  //     {
+  //       id: 2,
+  //       src: portrait2,
+  //       mobileSrc: mobilePortrait2,
+  //       alt: 'Пара закоханих торкається чолами один одного',
+  //     },
+  //     {
+  //       id: 3,
+  //       src: portrait3,
+  //       mobileSrc: mobilePortrait3,
+  //       alt: 'Жінка обіймає чоловіка',
+  //     },
+  //     {
+  //       id: 4,
+  //       src: portrait4,
+  //       mobileSrc: mobilePortrait4,
+  //       alt: 'Сімʼя сидить на пікніку в лісі',
+  //     },
+  //     {
+  //       id: 5,
+  //       src: portrait5,
+  //       mobileSrc: mobilePortrait5,
+  //       alt: 'Долоні дорослих обіймають дитячі долоні',
+  //     },
+  //     {
+  //       id: 6,
+  //       src: portrait6,
+  //       mobileSrc: mobilePortrait6,
+  //       alt: 'Тато тримає сина на плечах',
+  //     },
+  //   ],
+  //   bgTabsLeft: tabsOptions.white.left,
+  //   bgTabsRight: tabsOptions.white.finishRight,
+  //   tabsTitle: 'Портретна',
+  // },
 ];

@@ -43,6 +43,7 @@ main {
   max-height: 330px;
   padding-bottom: 60px;
   margin-top: auto;
+  
 
   @media (min-width: $tablet-width) {
     // grid-auto-rows: minmax(100px, 300px);
@@ -82,17 +83,17 @@ main {
 }
 .wrapper-tab {
   position: relative;
-  min-height: 940px;
+  min-height: 1020px;
 }
 
 .tabs {
   position: absolute;
   display: flex;
   height: 40px;
-  z-index: -1;
   top: 41px;
   right: -77px;
   transform: rotate(90deg);
+  
 }
 
 .tabs-text {
@@ -107,6 +108,12 @@ main {
   padding-top: 40px;
   margin-bottom: 12px;
   max-width: 370px;
+  
+}
+.title.portfolio-header{
+  @media (max-width: 480px) {
+    font-size: 3rem;
+   }
 }
 .cont {
   display: flex;
@@ -115,6 +122,9 @@ main {
 }
 .portfolio-forWhom {
   display: none;
+  @media (min-width: 768px){
+    display: block;
+  }
 }
 .portfolio-subtitle {
   max-width: 370px;
@@ -133,37 +143,125 @@ main {
   display: grid;
   grid-template-columns: 45% 1fr;
   gap: 0 5px;
+  @media (max-width: 545px) {
+    display: block;
+    margin-bottom: 10px;
+   }
 }
 .icon-dash {
   display: inline;
   margin-right: 5px;
 }
-.active-tab .tabs-text {
+
+.active-tab>.tabs-text {
   background-color: #235f83;
   color: transparent;
+  outline: 1px solid #235f83;
+  outline-offset: -1px;
 }
-
+.content{
+  position: relative;
+  padding: 0 6rem 0 2rem;
+  min-height: 1005px;
+  @media (max-width: 375px){
+    width: 300px;
+  }
+  @media (min-width: 376px){
+   width: 320px;
+  }
+  @media (min-width: 400px){
+    width: 345px;
+   }
+   @media (min-width: 435px){
+    width: 365px;
+   }
+   @media (min-width: 450px){
+    width: 380px;
+   }
+   @media (min-width: 465px){
+    width: 410px;
+   }
+  @media (min-width: 475px){
+    
+   width: 420px;
+  }
+  @media (min-width: 500px){
+    width: 440px;
+   
+   }
+   @media (min-width: 575px){
+    width: 558px;
+    margin: auto;
+   
+   }
+   @media (min-width: 595px){
+    width: 575px;
+    margin: auto;
+   
+   }
+}
+.content > .container-p{
+  
+}
 // ------------------------------------------
 .content {
-  min-height: 895px;
-  position: absolute;
-  top: 65px;
-  left: 0;
-  // left: 50%;
-  // transform: translateX(-50%);
-  z-index: 8;
-  padding: 0 2rem;
+ 
 }
-.content > .container {
+.content > .container-p {
   @include colored-bg;
-  height: 100%;
   border-radius: 35px 0 35px 35px;
-  position: relative;
+  position: absolute;
+  z-index: 8;
+  top: 65px;
+  left: 50%;
+  transform: translateX(-50%);
   background: none;
   background: white;
   border-top: 1px solid #235f83;
   padding: 0 30px;
   margin: auto;
+  width: auto;
+  @media (max-width: 375px) {
+    padding: 15px 5px 15px 10px;
+    margin: 0;
+    left: 10px;
+  transform: none;
+  }
+  @media (min-width: 376px) {
+    height: 1005px;
+    padding: 15px 10px 15px 10px;
+    margin: 0;
+    left: 10px;
+  transform: none;
+  }
+  @media (min-width: 435px){
+    height: 982px;
+   }
+  @media (min-width: 500px) {
+    width: 410px;
+    padding: 20px;
+    margin: auto;
+    left: 0;
+    left: 50%;
+    transform: translateX(-49%);
+  }
+  @media (min-width: 535px) {
+    width: 440px;
+    transform: translateX(-46%);
+    
+  }
+  @media (min-width: 575px) {
+    width: 500px;
+    padding: 30px;
+    transform: translateX(-54%);
+   
+  }
+  // @media (min-width: 595px) {
+  //   width: 515px;
+  //   padding: 30px;
+  //   transform: translateX(-54%);
+   
+  // }
 }
 
 // -----------------------------------------------
@@ -299,389 +397,391 @@ main {
   margin-top: 75px;
 }
 
+.container-p:has(.active-tab) {
+  background: none;
+  @include colored-bg;
+  border-right: 1px solid #235f83;
+}
+
 // ------------------------------------------
 // ++++++++++++++++++++++++++++++++++++++++++
 // ++++++++++++++++++++++++++++++++++++++++++++++++
 .active-tab {
   // background-color: rgb(144, 27, 223);
 }
-@media (min-width: $tablet-width) {
-  .portfolio-forWhom {
-    display: block;
-  }
-  .tabs {
-    left: -1px;
-    top: -45px;
-    height: 45px;
-    transform: rotate(0deg);
-    width: auto;
-    max-width: 100px;
-  }
-  .tabs-text {
-    font-size: 14px;
-    padding-top: 16px;
-    text-transform: capitalize;
-    // line-height: 2.86;
+// @media (min-width: $tablet-width) {
+//   .portfolio-forWhom {
+//     display: block;
+//   }
+//   .tabs {
+//     left: -1px;
+//     top: -45px;
+//     height: 45px;
+//     transform: rotate(0deg);
+//     width: auto;
+//     max-width: 100px;
+//   }
+//   .tabs-text {
+//     font-size: 14px;
+//     padding-top: 16px;
+//     text-transform: capitalize;
+//     // line-height: 2.86;
    
-  }
+//   }
 
   // ------------------------------------------
-  .content {
-    position: absolute;
-    top: 144px;
-    left: 50%;
-    transform: translateX(-51.5%);
-    width: 1358px;
-    z-index: 8;
-    padding: 0 4rem;
-  }
-  .content > .container {
-    @include colored-bg;
-    border-radius: 0 35px 35px 35px;
-    position: relative;
-    background: none;
-    background: white;
-    border-left: 1px solid #235f83;
-    border-right: 1px solid #235f83;
-  }
+//   .content {
+//     position: absolute;
+//     top: 144px;
+//     left: 50%;
+//     transform: translateX(-51.5%);
+//     width: 1358px;
+//     z-index: 8;
+//     padding: 0 4rem;
+//   }
+//   .content > .container {
+//     @include colored-bg;
+//     border-radius: 0 35px 35px 35px;
+//     position: relative;
+//     background: none;
+//     background: white;
+//     border-left: 1px solid #235f83;
+//     border-right: 1px solid #235f83;
+//   }
 
-  // -----------------------------------------------
-  .business {
-    position: absolute;
-    top: 144px;
-    left: 50%;
-    transform: translateX(-51.5%);
-    width: 1358px;
-    z-index: 7;
-    padding: 0 4rem;
-  }
-  .business > .container {
-    @include colored-bg;
-    border-radius: 35px;
-    position: relative;
-  }
-  .business > .container > .tabs {
-    left: 82px;
-    top: -45px;
-    height: 45px;
-  }
-  // --------------------------------
-  .family {
-    position: absolute;
-    top: 144px;
-    left: 50%;
-    transform: translateX(-51.5%);
-    width: 1358px;
-    z-index: 6;
-    padding: 0 4rem;
-  }
-  .family > .container {
-    @include colored-bg;
-    border-radius: 35px;
-    position: relative;
-  }
-  .family > .container > .tabs {
-    left: 164px;
-    top: -45px;
-    height: 45px;
-  }
-  // ----------------------------------
+//   // -----------------------------------------------
+//   .business {
+//     position: absolute;
+//     top: 144px;
+//     left: 50%;
+//     transform: translateX(-51.5%);
+//     width: 1358px;
+//     z-index: 7;
+//     padding: 0 4rem;
+//   }
+//   .business > .container {
+//     @include colored-bg;
+//     border-radius: 35px;
+//     position: relative;
+//   }
+//   .business > .container > .tabs {
+//     left: 82px;
+//     top: -45px;
+//     height: 45px;
+//   }
+//   // --------------------------------
+//   .family {
+//     position: absolute;
+//     top: 144px;
+//     left: 50%;
+//     transform: translateX(-51.5%);
+//     width: 1358px;
+//     z-index: 6;
+//     padding: 0 4rem;
+//   }
+//   .family > .container {
+//     @include colored-bg;
+//     border-radius: 35px;
+//     position: relative;
+//   }
+//   .family > .container > .tabs {
+//     left: 164px;
+//     top: -45px;
+//     height: 45px;
+//   }
+//   // ----------------------------------
 
-  .product {
-    position: absolute;
-    top: 144px;
-    left: 50%;
-    transform: translateX(-51.5%);
-    width: 1358px;
-    z-index: 5;
-    padding: 0 4rem;
-  }
-  .product > .container {
-    @include colored-bg;
-    border-radius: 35px;
-    position: relative;
-  }
-  .product > .container > .tabs {
-    top: -45px;
-    left: 266px;
-    height: 45px;
-  }
-  // ---------------------------------------
-  .loveStory {
-    position: absolute;
-    top: 144px;
-    left: 50%;
-    transform: translateX(-51%);
-    width: 1372px;
-    z-index: 4;
-    padding: 0 4rem;
-  }
-  .loveStory > .container {
-    @include colored-bg;
-    border-radius: 35px;
-    position: relative;
-    background: none;
-    background: white;
-    border-left: 1px solid #235f83;
-    border-right: 1px solid #235f83;
-  }
-  .loveStory > .container > .tabs {
-    top: -45px;
-    left: 402px;
-    height: 45px;
-  }
-  .loveStory > .container > .tabs > .tabs-text {
-   min-width: 90px;
-  }
+//   .product {
+//     position: absolute;
+//     top: 144px;
+//     left: 50%;
+//     transform: translateX(-51.5%);
+//     width: 1358px;
+//     z-index: 5;
+//     padding: 0 4rem;
+//   }
+//   .product > .container {
+//     @include colored-bg;
+//     border-radius: 35px;
+//     position: relative;
+//   }
+//   .product > .container > .tabs {
+//     top: -45px;
+//     left: 266px;
+//     height: 45px;
+//   }
+//   // ---------------------------------------
+//   .loveStory {
+//     position: absolute;
+//     top: 144px;
+//     left: 50%;
+//     transform: translateX(-51%);
+//     width: 1372px;
+//     z-index: 4;
+//     padding: 0 4rem;
+//   }
+//   .loveStory > .container {
+//     @include colored-bg;
+//     border-radius: 35px;
+//     position: relative;
+//     background: none;
+//     background: white;
+//     border-left: 1px solid #235f83;
+//     border-right: 1px solid #235f83;
+//   }
+//   .loveStory > .container > .tabs {
+//     top: -45px;
+//     left: 402px;
+//     height: 45px;
+//   }
+//   .loveStory > .container > .tabs > .tabs-text {
+//    min-width: 90px;
+//   }
 
-  // ---------------------------------------
-  .sacraments {
-    position: absolute;
-    top: 144px;
-    left: 50%;
-    transform: translateX(-50.5%);
-    width: 1386px;
-    z-index: 3;
-    padding: 0 4rem;
-  }
-  .sacraments > .container {
-    @include colored-bg;
-    border-radius: 35px;
-    position: relative;
-    background: none;
-    background: white;
-    border-left: 1px solid #235f83;
-    border-right: 1px solid #235f83;
-  }
-  .sacraments > .container > .tabs {
-    top: -45px;
-    left: 487px;
-    height: 45px;
+//   // ---------------------------------------
+//   .sacraments {
+//     position: absolute;
+//     top: 144px;
+//     left: 50%;
+//     transform: translateX(-50.5%);
+//     width: 1386px;
+//     z-index: 3;
+//     padding: 0 4rem;
+//   }
+//   .sacraments > .container {
+//     @include colored-bg;
+//     border-radius: 35px;
+//     position: relative;
+//     background: none;
+//     background: white;
+//     border-left: 1px solid #235f83;
+//     border-right: 1px solid #235f83;
+//   }
+//   .sacraments > .container > .tabs {
+//     top: -45px;
+//     left: 487px;
+//     height: 45px;
 
-  }
-  // -----------------------------------
+//   }
+//   // -----------------------------------
 
-  .portrait {
-    position: absolute;
-    top: 144px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1400px;
-    z-index: 2;
-    padding: 0 4rem;
-  }
-  .portrait > .container {
-    @include colored-bg;
-    border-radius: 35px 0 35px 35px;
-    position: relative;
-    background: none;
-    background: white;
-    border-left: 1px solid #235f83;
-    border-right: 1px solid #235f83;
-  }
-  .portrait > .container > .tabs {
-    top: -45px;
-    left: 600px;
-    height: 45px;
-  }
-  .portrait > .active-tab .tabs-text {
-    width: 100px;
-  }
-}
+//   .portrait {
+//     position: absolute;
+//     top: 144px;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     width: 1400px;
+//     z-index: 2;
+//     padding: 0 4rem;
+//   }
+//   .portrait > .container {
+//     @include colored-bg;
+//     border-radius: 35px 0 35px 35px;
+//     position: relative;
+//     background: none;
+//     background: white;
+//     border-left: 1px solid #235f83;
+//     border-right: 1px solid #235f83;
+//   }
+//   .portrait > .container > .tabs {
+//     top: -45px;
+//     left: 600px;
+//     height: 45px;
+//   }
+//   .portrait > .active-tab .tabs-text {
+//     width: 100px;
+//   }
+// }
 
-.container:has(.active-tab) {
-  background: none;
-  @include colored-bg;
-  border-right: 1px solid #235f83;
-}
-// ---------------------------------
-// ------------------------------------
-@media (min-width: $desktop-width) {
-  .tabs {
-    position: absolute;
-    top: -73px;
-    left: -1px;
-    display: flex;
-    height: 73px;
-    z-index: -1;
-    width: auto;
-    max-width: 200px;
-  }
-  .tabs-text {
-    background: #fff;
-    color: #235f83;
-    font-size: 18px;
-    text-transform: uppercase;
-    padding-top: 20px;
-    border-top: 1px solid #235f83;
-  }
 
-  .active-tab .tabs-text {
-    background-color: #235f83;
-    color: transparent;
-  }
+// // ---------------------------------
+// // ------------------------------------
+// @media (min-width: $desktop-width) {
+//   .tabs {
+//     position: absolute;
+//     top: -73px;
+//     left: -1px;
+//     display: flex;
+//     height: 73px;
+//     z-index: -1;
+//     width: auto;
+//     max-width: 200px;
+//   }
+//   .tabs-text {
+//     background: #fff;
+//     color: #235f83;
+//     font-size: 18px;
+//     text-transform: uppercase;
+//     padding-top: 20px;
+//     border-top: 1px solid #235f83;
+//   }
 
-  // ------------------------------------------
-  .content {
-    position: absolute;
-    top: 144px;
-    left: 50%;
-    transform: translateX(-51.5%);
-    width: 1358px;
-    z-index: 8;
-    padding: 0 4rem;
-  }
-  .content > .container {
-    @include colored-bg;
-    border-radius: 0 35px 35px 35px;
-    position: relative;
-    background: none;
-    background: white;
-    border-left: 1px solid #235f83;
-    border-right: 1px solid #235f83;
-  }
+//   .active-tab .tabs-text {
+//     background-color: #235f83;
+//     color: transparent;
+//   }
 
-  // -----------------------------------------------
-  .business {
-    position: absolute;
-    top: 144px;
-    left: 50%;
-    transform: translateX(-51.5%);
-    width: 1358px;
-    z-index: 7;
-    padding: 0 4rem;
-  }
-  .business > .container {
-    @include colored-bg;
-    border-radius: 35px;
-    position: relative;
-  }
-  .business > .container > .tabs {
-    left: 138px;
-  }
-  // --------------------------------
-  .family {
-    position: absolute;
-    top: 144px;
-    left: 50%;
-    transform: translateX(-51.5%);
-    width: 1358px;
-    z-index: 6;
-    padding: 0 4rem;
-  }
-  .family > .container {
-    @include colored-bg;
-    border-radius: 35px;
-    position: relative;
-  }
-  .family > .container > .tabs {
-    left: 301px;
-    top: -73px;
-  }
-  // ----------------------------------
+//   // ------------------------------------------
+//   .content {
+//     position: absolute;
+//     top: 144px;
+//     left: 50%;
+//     transform: translateX(-51.5%);
+//     width: 1358px;
+//     z-index: 8;
+//     padding: 0 4rem;
+//   }
+//   .content > .container {
+//     @include colored-bg;
+//     border-radius: 0 35px 35px 35px;
+//     position: relative;
+//     background: none;
+//     background: white;
+//     border-left: 1px solid #235f83;
+//     border-right: 1px solid #235f83;
+//   }
 
-  .product {
-    position: absolute;
-    top: 144px;
-    left: 50%;
-    transform: translateX(-51.5%);
-    width: 1358px;
-    z-index: 5;
-    padding: 0 4rem;
-  }
-  .product > .container {
-    @include colored-bg;
-    border-radius: 35px;
-    position: relative;
-  }
-  .product > .container > .tabs {
-    left: 484px;
-    top: -73px;
-  }
-  // ---------------------------------------
-  .loveStory {
-    position: absolute;
-    top: 144px;
-    left: 50%;
-    transform: translateX(-51%);
-    width: 1372px;
-    z-index: 4;
-    padding: 0 4rem;
-  }
-  .loveStory > .container {
-    @include colored-bg;
-    border-radius: 35px;
-    position: relative;
-    background: none;
-    background: white;
-    border-left: 1px solid #235f83;
-    border-right: 1px solid #235f83;
-  }
-  .loveStory > .container > .tabs {
-    left: 692px;
-    top: -73px;
-  }
-  .loveStory > .container > .tabs > .tabs-text {
-    min-width: 142px;
-   }
+//   // -----------------------------------------------
+//   .business {
+//     position: absolute;
+//     top: 144px;
+//     left: 50%;
+//     transform: translateX(-51.5%);
+//     width: 1358px;
+//     z-index: 7;
+//     padding: 0 4rem;
+//   }
+//   .business > .container {
+//     @include colored-bg;
+//     border-radius: 35px;
+//     position: relative;
+//   }
+//   .business > .container > .tabs {
+//     left: 138px;
+//   }
+//   // --------------------------------
+//   .family {
+//     position: absolute;
+//     top: 144px;
+//     left: 50%;
+//     transform: translateX(-51.5%);
+//     width: 1358px;
+//     z-index: 6;
+//     padding: 0 4rem;
+//   }
+//   .family > .container {
+//     @include colored-bg;
+//     border-radius: 35px;
+//     position: relative;
+//   }
+//   .family > .container > .tabs {
+//     left: 301px;
+//     top: -73px;
+//   }
+//   // ----------------------------------
+
+//   .product {
+//     position: absolute;
+//     top: 144px;
+//     left: 50%;
+//     transform: translateX(-51.5%);
+//     width: 1358px;
+//     z-index: 5;
+//     padding: 0 4rem;
+//   }
+//   .product > .container {
+//     @include colored-bg;
+//     border-radius: 35px;
+//     position: relative;
+//   }
+//   .product > .container > .tabs {
+//     left: 484px;
+//     top: -73px;
+//   }
+//   // ---------------------------------------
+//   .loveStory {
+//     position: absolute;
+//     top: 144px;
+//     left: 50%;
+//     transform: translateX(-51%);
+//     width: 1372px;
+//     z-index: 4;
+//     padding: 0 4rem;
+//   }
+//   .loveStory > .container {
+//     @include colored-bg;
+//     border-radius: 35px;
+//     position: relative;
+//     background: none;
+//     background: white;
+//     border-left: 1px solid #235f83;
+//     border-right: 1px solid #235f83;
+//   }
+//   .loveStory > .container > .tabs {
+//     left: 692px;
+//     top: -73px;
+//   }
+//   .loveStory > .container > .tabs > .tabs-text {
+//     min-width: 142px;
+//    }
  
-  // ---------------------------------------
-  .sacraments {
-    position: absolute;
-    top: 144px;
-    left: 50%;
-    transform: translateX(-50.5%);
-    width: 1386px;
-    z-index: 3;
-    padding: 0 4rem;
-  }
-  .sacraments > .container {
-    @include colored-bg;
-    border-radius: 35px;
-    position: relative;
-    background: none;
-    background: white;
-    border-left: 1px solid #235f83;
-    border-right: 1px solid #235f83;
-  }
-  .sacraments > .container > .tabs {
-    left: 901px;
-    top: -73px;
-  }
-  // -----------------------------------
+//   // ---------------------------------------
+//   .sacraments {
+//     position: absolute;
+//     top: 144px;
+//     left: 50%;
+//     transform: translateX(-50.5%);
+//     width: 1386px;
+//     z-index: 3;
+//     padding: 0 4rem;
+//   }
+//   .sacraments > .container {
+//     @include colored-bg;
+//     border-radius: 35px;
+//     position: relative;
+//     background: none;
+//     background: white;
+//     border-left: 1px solid #235f83;
+//     border-right: 1px solid #235f83;
+//   }
+//   .sacraments > .container > .tabs {
+//     left: 901px;
+//     top: -73px;
+//   }
+//   // -----------------------------------
 
-  .portrait {
-    position: absolute;
-    top: 144px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1400px;
-    z-index: 2;
-    padding: 0 4rem;
-  }
-  .portrait > .container {
-    @include colored-bg;
-    border-radius: 35px 0 35px 35px;
-    position: relative;
-    background: none;
-    background: white;
-    border-left: 1px solid #235f83;
-    border-right: 1px solid #235f83;
-  }
-  .portrait > .container > .tabs {
-    top: -73px;
-    left: 1082px;
-  }
-  .portrait > .active-tab .tabs-text {
-    width: 200px;
-  }
-}
+//   .portrait {
+//     position: absolute;
+//     top: 144px;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     width: 1400px;
+//     z-index: 2;
+//     padding: 0 4rem;
+//   }
+//   .portrait > .container {
+//     @include colored-bg;
+//     border-radius: 35px 0 35px 35px;
+//     position: relative;
+//     background: none;
+//     background: white;
+//     border-left: 1px solid #235f83;
+//     border-right: 1px solid #235f83;
+//   }
+//   .portrait > .container > .tabs {
+//     top: -73px;
+//     left: 1082px;
+//   }
+//   .portrait > .active-tab .tabs-text {
+//     width: 200px;
+//   }
+// }
 
-.container:has(.active-tab) {
-  background: none;
-  @include colored-bg;
-  border-right: 1px solid #235f83;
-}
+// .container:has(.active-tab) {
+//   background: none;
+//   @include colored-bg;
+//   border-right: 1px solid #235f83;
+// }
 // ---------------------------------
 
 .item {
