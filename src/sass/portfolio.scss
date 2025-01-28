@@ -84,11 +84,12 @@ main {
 .wrapper-tab {
   position: relative;
   min-height: 1020px;
+  margin: auto;
 
   @media (max-width: 450px) {
     min-height: 1040px;}
   @media (min-width: 575px){
-    margin: auto;
+   
     width: 575px;
    }
 
@@ -96,36 +97,18 @@ main {
 
 }
 .wrapper-tab> section {
+  max-width: calc(100vw - 75px);
+ 
   @media (max-width: 767px) {
     padding: 0 0 0 2rem;
     min-height: 895px;
    }
    @media (max-width: 556px) {
-    max-width: 490px;
+    
     height: 1000px;
    }
-   @media (max-width: 548px) {
-    max-width: 460px;
-   }
-   @media (max-width: 518px) {
-    max-width: 425px;
-   
-   }
-   @media (max-width: 485px) {
-    max-width: 390px;
-    
-   }
-   @media (max-width: 450px) {
-    max-width: 360px;
-   }
-   @media (max-width: 420px) {
-    max-width: 330px;
-   }
-   @media (max-width: 390px) {
-    max-width: 310px;
-    
-   }
-  
+
+ 
 }
 .tabs {
   position: absolute;
@@ -201,113 +184,13 @@ main {
   object-fit: none
 }
 
-
-// .content, .business {
-  
-//   padding: 0 6rem 0 2rem;
-//   min-height: 1005px;
-//   @media (max-width: 375px){
-//     width: 300px;
-//   }
-//   @media (min-width: 376px){
-//    width: 320px;
-//   }
-//   @media (min-width: 400px){
-//     width: 345px;
-//    }
-//    @media (min-width: 435px){
-//     width: 365px;
-//    }
-//    @media (min-width: 450px){
-//     width: 380px;
-//    }
-//    @media (min-width: 465px){
-//     width: 410px;
-//    }
-//   @media (min-width: 475px){
-    
-//    width: 420px;
-//   }
-//   @media (min-width: 500px){
-//     width: 440px;
-   
-//    }
-//    @media (min-width: 575px){
-//     width: 558px;
-//     margin: auto;
-   
-//    }
-//    @media (min-width: 595px){
-//     width: 575px;
-//     margin: auto;
-   
-//    }
-// }
-
-// ------------------------------------------
-// .content {
-//   position: relative;
-// }
-// .content > .container-p {
-//   @include colored-bg;
-//   border-radius: 35px 0 35px 35px;
-//   position: absolute;
-//   z-index: 8;
-//   top: 65px;
-//   left: 50%;
-//   transform: translateX(-50%);
-//   background: none;
-//   background: white;
-//   border-top: 1px solid #235f83;
-//   padding: 0 30px;
-//   margin: auto;
-//   width: auto;
-//   @media (max-width: 375px) {
-//     padding: 15px 5px 15px 10px;
-//     margin: 0;
-//     left: 10px;
-//   transform: none;
-//   }
-//   @media (min-width: 376px) {
-//     height: 1005px;
-//     padding: 15px 10px 15px 10px;
-//     margin: 0;
-//     left: 10px;
-//   transform: none;
-//   }
-//   @media (min-width: 435px){
-//     height: 982px;
-//    }
-//   @media (min-width: 500px) {
-//     width: 410px;
-//     padding: 20px;
-//     margin: auto;
-//     left: 0;
-//     left: 50%;
-//     transform: translateX(-49%);
-//   }
-//   @media (min-width: 535px) {
-//     width: 440px;
-//     transform: translateX(-46%);
-    
-//   }
-//   @media (min-width: 575px) {
-//     width: 500px;
-//     padding: 30px;
-//     transform: translateX(-54%);
-   
-//   }
-  
-// }
 .content {
   min-height: 895px;
   position: absolute;
   top: 65px;
   left: 0;
-  // left: 50%;
-  // transform: translateX(-50%);
   z-index: 8;
-  // padding: 0 2rem;
+  
 }
 .content > .container {
   @include colored-bg;
@@ -328,7 +211,6 @@ main {
   top: 65px;
   left: 0;
   z-index: 7;
-  // padding: 0 2rem;
 }
 .business > .container {
   min-height: 895px;
@@ -349,7 +231,7 @@ main {
   left: 0;
   left: 0;
   z-index: 6;
-  // padding: 0 2rem;
+ 
 }
 .family > .container {
   @include colored-bg;
@@ -370,7 +252,7 @@ main {
   top: 65px;
   left: 0;
   z-index: 5;
-  // padding: 0 2rem;
+  
 }
 .product > .container {
   min-height: 895px;
@@ -390,7 +272,7 @@ main {
   top: 65px;
   left: 0;
   z-index: 4;
-  // padding: 0 2rem;
+  
 }
 .loveStory > .container {
   @include colored-bg;
@@ -411,7 +293,7 @@ main {
   top: 65px;
   left: 0;
   z-index: 3;
-  // padding: 0 2rem;
+ 
 }
 .sacraments > .container {
   @include colored-bg;
@@ -431,7 +313,7 @@ main {
   top: 65px;
   left: 0;
   z-index: 2;
-  // padding: 0 2rem;
+  
 }
 .portrait > .container {
   @include colored-bg;
@@ -449,9 +331,6 @@ main {
   right: -96px;
 }
 .portrait > .active-tab>.tabs-text {
-  // width: 200px;
-  // border-left: 2px solid #235f83;
-  // border-right: 2px solid #235f83;
   box-shadow: 0 1px 0 0 #235f83;
 }
 .portrait > .container > .cont {
@@ -462,6 +341,7 @@ main {
 // ------------------------------------------
 // ++++++++++++++++++++++++++++++++++++++++++
 // ++++++++++++++++++++++++++++++++++++++++++++++++
+
 .active-tab {
   // background-color: rgb(144, 27, 223);
 }
