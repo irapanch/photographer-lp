@@ -43,15 +43,19 @@ main {
   max-height: 330px;
   padding-bottom: 60px;
   margin-top: auto;
-  
 
   @media (min-width: $tablet-width) {
     // grid-auto-rows: minmax(100px, 300px);
     // grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-template-rows: 300px 300px 150px 150px;
-    grid-auto-rows: 300px;
-    grid-template-columns: repeat(3, 1fr);
+    // grid-template-rows: 300px 300px 150px 150px;
+    // grid-auto-rows: 300px;
+    // grid-template-columns: repeat(3, 1fr);
     // max-width: 60vw;
+    // grid-template-columns: repeat(2, 1.5fr) 1fr;
+    width: 394px;
+    max-height: 365px;
+    padding: 0;
+    margin: 0;
   }
   @media (min-width: $desktop-width) {
     // grid-template-columns: repeat(3, 1fr);
@@ -87,28 +91,22 @@ main {
   margin: auto;
 
   @media (max-width: 450px) {
-    min-height: 1040px;}
-  @media (min-width: 575px){
-   
+    min-height: 1040px;
+  }
+  @media (min-width: 575px) {
     width: 575px;
-   }
-
-
-
+  }
 }
-.wrapper-tab> section {
+.wrapper-tab > section {
   max-width: calc(100vw - 75px);
- 
+
   @media (max-width: 767px) {
     padding: 0 0 0 2rem;
     min-height: 895px;
-   }
-   @media (max-width: 556px) {
-    
+  }
+  @media (max-width: 556px) {
     height: 1000px;
-   }
-
- 
+  }
 }
 .tabs {
   position: absolute;
@@ -117,7 +115,6 @@ main {
   top: 41px;
   right: -80px;
   transform: rotate(90deg);
-  
 }
 
 .tabs-text {
@@ -132,28 +129,25 @@ main {
   padding-top: 40px;
   margin-bottom: 12px;
   max-width: 370px;
-  
 }
-.title.portfolio-header{
+.title.portfolio-header {
   @media (max-width: 480px) {
     font-size: 3rem;
-   }
+  }
 }
 .cont {
   display: flex;
   flex-direction: column;
   min-height: 685px;
 }
-.portfolio-forWhom {
-  display: none;
-  @media (min-width: 768px){
-    display: block;
-  }
-}
+
 .portfolio-subtitle {
   max-width: 370px;
   line-height: 1.2;
   margin-bottom: 32px;
+}
+.portfolio-forWhom {
+  display: none;
 }
 .portfolio-description {
   max-width: 370px;
@@ -166,22 +160,20 @@ main {
   @media (max-width: 550px) {
     display: block;
     margin-bottom: 10px;
-   }
+  }
   margin-top: 7px;
   display: grid;
   grid-template-columns: 45% 1fr;
   gap: 0 5px;
-  
 }
-.points-wrap{
+.points-wrap {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 0 5px;
   align-items: center;
- 
 }
 .icon-dash {
-  object-fit: none
+  object-fit: none;
 }
 
 .content {
@@ -190,7 +182,6 @@ main {
   top: 65px;
   left: 0;
   z-index: 8;
-  
 }
 .content > .container {
   @include colored-bg;
@@ -231,7 +222,6 @@ main {
   left: 0;
   left: 0;
   z-index: 6;
- 
 }
 .family > .container {
   @include colored-bg;
@@ -252,7 +242,6 @@ main {
   top: 65px;
   left: 0;
   z-index: 5;
-  
 }
 .product > .container {
   min-height: 895px;
@@ -272,7 +261,6 @@ main {
   top: 65px;
   left: 0;
   z-index: 4;
-  
 }
 .loveStory > .container {
   @include colored-bg;
@@ -293,7 +281,6 @@ main {
   top: 65px;
   left: 0;
   z-index: 3;
- 
 }
 .sacraments > .container {
   @include colored-bg;
@@ -313,7 +300,6 @@ main {
   top: 65px;
   left: 0;
   z-index: 2;
-  
 }
 .portrait > .container {
   @include colored-bg;
@@ -330,11 +316,8 @@ main {
   top: 760px;
   right: -96px;
 }
-.portrait > .active-tab>.tabs-text {
+.portrait > .active-tab > .tabs-text {
   box-shadow: 0 1px 0 0 #235f83;
-}
-.portrait > .container > .cont {
-  margin-top: 75px;
 }
 
 
@@ -345,190 +328,274 @@ main {
 .active-tab {
   // background-color: rgb(144, 27, 223);
 }
-// @media (min-width: $tablet-width) {
-//   .portfolio-forWhom {
-//     display: block;
-//   }
-//   .tabs {
-//     left: -1px;
-//     top: -45px;
-//     height: 45px;
-//     transform: rotate(0deg);
-//     width: auto;
-//     max-width: 100px;
-//   }
-//   .tabs-text {
-//     font-size: 14px;
-//     padding-top: 16px;
-//     text-transform: capitalize;
-//     // line-height: 2.86;
-   
-//   }
+@media (min-width: $tablet-width) {
+  .wrapper-tab {
+    width: 768px;
+    min-height: 694px;
+    height: 694px;
+  }
+  .wrapper-tab > section {
+    max-width: 732px;
+    width: 732px;
+    padding-top: 0;
+    padding-bottom: 0;
+    left: 16px;
 
-  // ------------------------------------------
-//   .content {
-//     position: absolute;
-//     top: 144px;
-//     left: 50%;
-//     transform: translateX(-51.5%);
-//     width: 1358px;
-//     z-index: 8;
-//     padding: 0 4rem;
-//   }
-//   .content > .container {
-//     @include colored-bg;
-//     border-radius: 0 35px 35px 35px;
-//     position: relative;
-//     background: none;
-//     background: white;
-//     border-left: 1px solid #235f83;
-//     border-right: 1px solid #235f83;
-//   }
+    min-height: 590px;
+    height: 590px;
+  }
+  section > .container {
+    padding: 0 30px;
+  }
+  .portfolio-header {
+    max-width: 100%;
+    padding-top: 30px;
+    margin-bottom: 20px;
+  }
+  .portfolio-subtitle {
+    max-width: 390px;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .cont {
+    flex-direction: row;
+    min-height: auto;
+    justify-content: space-between;
+  }
+  .wrapper-cont {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .portfolio-description {
+    max-width: 100%;
+    margin-top: 0;
+  }
+  .portfolio-forWhom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    right: 20px;
+    top: 90px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .forWhom-wrap {
+    display: flex;
+    gap: 8px;
+  }
+  .icon-forWhom {
+    object-fit: none;
+  }
+  .portfolio-points{
+    grid-template-columns:  1fr;
+  }
+  
 
-//   // -----------------------------------------------
-//   .business {
-//     position: absolute;
-//     top: 144px;
-//     left: 50%;
-//     transform: translateX(-51.5%);
-//     width: 1358px;
-//     z-index: 7;
-//     padding: 0 4rem;
-//   }
-//   .business > .container {
-//     @include colored-bg;
-//     border-radius: 35px;
-//     position: relative;
-//   }
-//   .business > .container > .tabs {
-//     left: 82px;
-//     top: -45px;
-//     height: 45px;
-//   }
-//   // --------------------------------
-//   .family {
-//     position: absolute;
-//     top: 144px;
-//     left: 50%;
-//     transform: translateX(-51.5%);
-//     width: 1358px;
-//     z-index: 6;
-//     padding: 0 4rem;
-//   }
-//   .family > .container {
-//     @include colored-bg;
-//     border-radius: 35px;
-//     position: relative;
-//   }
-//   .family > .container > .tabs {
-//     left: 164px;
-//     top: -45px;
-//     height: 45px;
-//   }
-//   // ----------------------------------
+  .tabs {
+    left: -1px;
+    top: -35px;
+    height: 35px;
+    transform: rotate(0deg);
+    width: auto;
+    max-width: 100px;
+  }
+  .tabs-text {
+    font-size: 13px;
+    padding-top: 7px;
+    text-transform: capitalize;
+    border-top: 0.9px solid #235f83;
+  }
 
-//   .product {
-//     position: absolute;
-//     top: 144px;
-//     left: 50%;
-//     transform: translateX(-51.5%);
-//     width: 1358px;
-//     z-index: 5;
-//     padding: 0 4rem;
-//   }
-//   .product > .container {
-//     @include colored-bg;
-//     border-radius: 35px;
-//     position: relative;
-//   }
-//   .product > .container > .tabs {
-//     top: -45px;
-//     left: 266px;
-//     height: 45px;
-//   }
-//   // ---------------------------------------
-//   .loveStory {
-//     position: absolute;
-//     top: 144px;
-//     left: 50%;
-//     transform: translateX(-51%);
-//     width: 1372px;
-//     z-index: 4;
-//     padding: 0 4rem;
-//   }
-//   .loveStory > .container {
-//     @include colored-bg;
-//     border-radius: 35px;
-//     position: relative;
-//     background: none;
-//     background: white;
-//     border-left: 1px solid #235f83;
-//     border-right: 1px solid #235f83;
-//   }
-//   .loveStory > .container > .tabs {
-//     top: -45px;
-//     left: 402px;
-//     height: 45px;
-//   }
-//   .loveStory > .container > .tabs > .tabs-text {
-//    min-width: 90px;
-//   }
+  .content {
+    position: absolute;
+    // top: 144px;
+    // left: 0;
+    // transform: translateX(-51.5%);
+    width: 732px;
+    z-index: 8;
+    // padding: 0 4rem;
+  }
+  .content > .container {
+    @include colored-bg;
+    border-radius: 0 35px 35px 35px;
+    height: 590px;
+    min-height: 590px;
+    position: relative;
+    background: none;
+    background: white;
+    border-left: 1px solid #235f83;
+    border-right: 1px solid #235f83;
+  }
 
-//   // ---------------------------------------
-//   .sacraments {
-//     position: absolute;
-//     top: 144px;
-//     left: 50%;
-//     transform: translateX(-50.5%);
-//     width: 1386px;
-//     z-index: 3;
-//     padding: 0 4rem;
-//   }
-//   .sacraments > .container {
-//     @include colored-bg;
-//     border-radius: 35px;
-//     position: relative;
-//     background: none;
-//     background: white;
-//     border-left: 1px solid #235f83;
-//     border-right: 1px solid #235f83;
-//   }
-//   .sacraments > .container > .tabs {
-//     top: -45px;
-//     left: 487px;
-//     height: 45px;
+  // -----------------------------------------------
+  .business {
+    position: absolute;
 
-//   }
-//   // -----------------------------------
+    // top: 144px;
+    // left: 50%;
+    // transform: translateX(-51.5%);
+    // width: 1358px;
+    z-index: 7;
+    // padding: 0 4rem;
+  }
+  .business > .container {
+    @include colored-bg;
+    border-radius: 35px;
+    position: relative;
+    width: 732px;
+    height: 590px;
+    min-height: 590px;
+    border-radius: 35px;
+  }
+  .business > .container > .tabs {
+    left: 73px;
+    top: -35px;
+  }
+  
+  .business .location {
+    grid-template-columns: 45% 1fr;
+  }
+  
+  // --------------------------------
+  .family {
+    position: absolute;
+    // top: 144px;
+    // left: 50%;
+    // transform: translateX(-51.5%);
+    // width: 1358px;
+    z-index: 6;
+    // padding: 0 4rem;
+  }
+  .family > .container {
+    @include colored-bg;
+    border-radius: 35px;
+    position: relative;
+    width: 732px;
+    height: 590px;
+    min-height: 590px;
+  }
+  .family > .container > .tabs {
+    left: 160px;
+    top: -35px;
+  }
+  // ----------------------------------
 
-//   .portrait {
-//     position: absolute;
-//     top: 144px;
-//     left: 50%;
-//     transform: translateX(-50%);
-//     width: 1400px;
-//     z-index: 2;
-//     padding: 0 4rem;
-//   }
-//   .portrait > .container {
-//     @include colored-bg;
-//     border-radius: 35px 0 35px 35px;
-//     position: relative;
-//     background: none;
-//     background: white;
-//     border-left: 1px solid #235f83;
-//     border-right: 1px solid #235f83;
-//   }
-//   .portrait > .container > .tabs {
-//     top: -45px;
-//     left: 600px;
-//     height: 45px;
-//   }
-//   .portrait > .active-tab .tabs-text {
-//     width: 100px;
-//   }
-// }
+  .product {
+    position: absolute;
+    // top: 144px;
+    // left: 50%;
+    // transform: translateX(-51.5%);
+    // width: 1358px;
+    z-index: 5;
+    // padding: 0 4rem;
+  }
+  .product > .container {
+    @include colored-bg;
+    border-radius: 35px;
+    position: relative;
+    width: 732px;
+    height: 590px;
+    min-height: 590px;
+  }
+  .product > .container > .tabs {
+    top: -35px;
+    left: 258px;
+  }
+  // ---------------------------------------
+  .loveStory {
+    position: absolute;
+    // top: 144px;
+    // left: 50%;
+    // transform: translateX(-51%);
+    // width: 1372px;
+    z-index: 4;
+    // padding: 0 4rem;
+  }
+  .loveStory > .container {
+    @include colored-bg;
+    border-radius: 35px;
+    position: relative;
+    width: 732px;
+    height: 590px;
+    min-height: 590px;
+    border-radius: 35px;
+    // background: none;
+    // background: white;
+    // border-left: 1px solid #235f83;
+    // border-right: 1px solid #235f83;
+  }
+  .loveStory > .container > .tabs {
+    top: -35px;
+    left: 375px;
+  }
+  .loveStory > .container > .tabs > .tabs-text {
+    min-width: 90px;
+  }
 
+  // ---------------------------------------
+  .sacraments {
+    position: absolute;
+    // top: 144px;
+    // left: 50%;
+    // transform: translateX(-50.5%);
+    // width: 1386px;
+    z-index: 3;
+    // padding: 0 4rem;
+  }
+  .sacraments > .container {
+    @include colored-bg;
+    border-radius: 35px;
+    position: relative;
+    width: 732px;
+    height: 590px;
+    min-height: 590px;
+    border-radius: 35px;
+    // background: none;
+    // background: white;
+    // border-left: 1px solid #235f83;
+    // border-right: 1px solid #235f83;
+  }
+  .sacraments > .container > .tabs {
+    top: -35px;
+    left: 496px;
+  }
+  .sacraments .portfolio-subtitle {
+    margin-bottom: 10px;
+  }
+  // -----------------------------------
+
+  .portrait {
+    position: absolute;
+    // top: 144px;
+    // left: 50%;
+    // transform: translateX(-50%);
+    // width: 1400px;
+    z-index: 2;
+    // padding: 0 4rem;
+  }
+  .portrait > .container {
+    @include colored-bg;
+    border-radius: 35px 0 35px 35px;
+    position: relative;
+    width: 732px;
+    height: 590px;
+    min-height: 590px;
+    background: none;
+    background: white;
+    border-left: 1px solid #235f83;
+    border-right: 1px solid #235f83;
+  }
+  .portrait > .container > .tabs {
+    top: -35px;
+    left: 597px;
+  }
+  .portrait > .active-tab .tabs-text {
+    // width: 100px;
+  }
+}
 
 // // ---------------------------------
 // // ------------------------------------
@@ -660,7 +727,7 @@ main {
 //   .loveStory > .container > .tabs > .tabs-text {
 //     min-width: 142px;
 //    }
- 
+
 //   // ---------------------------------------
 //   .sacraments {
 //     position: absolute;
@@ -801,13 +868,12 @@ main {
 .test {
   padding: 300px 50px;
 }
-.active-tab>.tabs-text {
+.active-tab > .tabs-text {
   background-color: #235f83;
   color: #235f83;
   outline: 1px solid #235f83;
   outline-offset: -1px;
   box-shadow: -1px 4px 1px 4px #235f83;
-  
 }
 .container:has(.active-tab) {
   background: none;
@@ -815,6 +881,6 @@ main {
   border-right: 1px solid #235f83;
 }
 
-.content > .container> .active-tab > .tabs-text {
+.content > .container > .active-tab > .tabs-text {
   box-shadow: none;
 }

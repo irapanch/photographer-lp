@@ -110,22 +110,25 @@ export const dataPortfolio = () => {
       <h3 class="portfolio-subtitle">${item.subtitle}</h3>
       
       <div class="cont ">
+      <div class="wrapper-cont ">
       <div class="portfolio-description">
-      <h4>${item.description}</h4>
+      <h4 class="desc-title">${item.description}</h4>
       </div>
       <div class="portfolio-forWhom">
       ${
         Array.isArray(item.forWhom)
           ? item.forWhom.map(p => `
+            <div class="forWhom-wrap">
             <img class="icon-forWhom" src="${p.icon}"
-            <p>${p.desc}</p>`).join('')
+            <p>${p.desc}</p></div>`).join('')
           : ''
       }
       </div>
+      <div>
       <div class="portfolio-description">
       <h4>${item.servicesTitle}</h4>
       </div>
-      <div class="portfolio-points">
+      <div class="portfolio-points ">
       ${
         Array.isArray(item.services)
           ? item.services.map(p => `
@@ -135,11 +138,12 @@ export const dataPortfolio = () => {
           : ''
       }
       </div>
-
+</div>
+<div>
       <div class="portfolio-description">
       <h4>${item.locationTitle}</h4>
       </div>
-      <div class="portfolio-points">
+      <div class="portfolio-points location">
       ${
         Array.isArray(item.location)
           ? item.location.map(p => `
@@ -149,7 +153,8 @@ export const dataPortfolio = () => {
           : ''
       }
       </div>
-
+      </div>
+</div>
     <div class="info1 gallery">
     ${item.images
       .map(
