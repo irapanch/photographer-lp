@@ -320,7 +320,6 @@ main {
   box-shadow: 0 1px 0 0 #235f83;
 }
 
-
 // ------------------------------------------
 // ++++++++++++++++++++++++++++++++++++++++++
 // ++++++++++++++++++++++++++++++++++++++++++++++++
@@ -389,10 +388,9 @@ main {
   .icon-forWhom {
     object-fit: none;
   }
-  .portfolio-points{
-    grid-template-columns:  1fr;
+  .portfolio-points {
+    grid-template-columns: 1fr;
   }
-  
 
   .tabs {
     left: -1px;
@@ -410,69 +408,35 @@ main {
   }
 
   .content {
-    position: absolute;
-    // top: 144px;
-    // left: 0;
-    // transform: translateX(-51.5%);
     width: 732px;
-    z-index: 8;
-    // padding: 0 4rem;
   }
   .content > .container {
-    @include colored-bg;
     border-radius: 0 35px 35px 35px;
     height: 590px;
     min-height: 590px;
-    position: relative;
-    background: none;
-    background: white;
     border-left: 1px solid #235f83;
     border-right: 1px solid #235f83;
   }
 
   // -----------------------------------------------
-  .business {
-    position: absolute;
 
-    // top: 144px;
-    // left: 50%;
-    // transform: translateX(-51.5%);
-    // width: 1358px;
-    z-index: 7;
-    // padding: 0 4rem;
-  }
   .business > .container {
-    @include colored-bg;
-    border-radius: 35px;
-    position: relative;
     width: 732px;
     height: 590px;
     min-height: 590px;
-    border-radius: 35px;
   }
   .business > .container > .tabs {
     left: 73px;
     top: -35px;
   }
-  
+
   .business .location {
     grid-template-columns: 45% 1fr;
   }
-  
+
   // --------------------------------
-  .family {
-    position: absolute;
-    // top: 144px;
-    // left: 50%;
-    // transform: translateX(-51.5%);
-    // width: 1358px;
-    z-index: 6;
-    // padding: 0 4rem;
-  }
+
   .family > .container {
-    @include colored-bg;
-    border-radius: 35px;
-    position: relative;
     width: 732px;
     height: 590px;
     min-height: 590px;
@@ -483,18 +447,7 @@ main {
   }
   // ----------------------------------
 
-  .product {
-    position: absolute;
-    // top: 144px;
-    // left: 50%;
-    // transform: translateX(-51.5%);
-    // width: 1358px;
-    z-index: 5;
-    // padding: 0 4rem;
-  }
   .product > .container {
-    @include colored-bg;
-    border-radius: 35px;
     position: relative;
     width: 732px;
     height: 590px;
@@ -505,27 +458,11 @@ main {
     left: 258px;
   }
   // ---------------------------------------
-  .loveStory {
-    position: absolute;
-    // top: 144px;
-    // left: 50%;
-    // transform: translateX(-51%);
-    // width: 1372px;
-    z-index: 4;
-    // padding: 0 4rem;
-  }
+
   .loveStory > .container {
-    @include colored-bg;
-    border-radius: 35px;
-    position: relative;
     width: 732px;
     height: 590px;
     min-height: 590px;
-    border-radius: 35px;
-    // background: none;
-    // background: white;
-    // border-left: 1px solid #235f83;
-    // border-right: 1px solid #235f83;
   }
   .loveStory > .container > .tabs {
     top: -35px;
@@ -536,27 +473,11 @@ main {
   }
 
   // ---------------------------------------
-  .sacraments {
-    position: absolute;
-    // top: 144px;
-    // left: 50%;
-    // transform: translateX(-50.5%);
-    // width: 1386px;
-    z-index: 3;
-    // padding: 0 4rem;
-  }
+
   .sacraments > .container {
-    @include colored-bg;
-    border-radius: 35px;
-    position: relative;
     width: 732px;
     height: 590px;
     min-height: 590px;
-    border-radius: 35px;
-    // background: none;
-    // background: white;
-    // border-left: 1px solid #235f83;
-    // border-right: 1px solid #235f83;
   }
   .sacraments > .container > .tabs {
     top: -35px;
@@ -567,218 +488,188 @@ main {
   }
   // -----------------------------------
 
-  .portrait {
-    position: absolute;
-    // top: 144px;
-    // left: 50%;
-    // transform: translateX(-50%);
-    // width: 1400px;
-    z-index: 2;
-    // padding: 0 4rem;
-  }
   .portrait > .container {
-    @include colored-bg;
-    border-radius: 35px 0 35px 35px;
-    position: relative;
     width: 732px;
     height: 590px;
     min-height: 590px;
+  }
+  .portrait > .container > .tabs {
+    top: -35px;
+    left: 597px;
+  }
+}
+
+// // ---------------------------------
+// // ------------------------------------
+@media (min-width: $desktop-width) {
+  .wrapper-tab {
+    width: 1200px;
+    min-height: 810px;
+    height: 810px;
+    padding: 40px;
+  }
+  .wrapper-tab > section {
+    max-width: 1100px;
+    width: 1100px;
+    left: auto;
+    min-height: 666px;
+    height: 666px;
+    padding: 0;
+  }
+  .tabs {
+    top: -63px;
+    height: 63px;
+    max-width: 200px;
+  }
+  .tabs-text {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-top: 22px;
+    border-top: 1px solid #235f83;
+  }
+
+
+  // ------------------------------------------
+  .wrapper-tab >.content {
+    width: 1084px;
+    // min-height: 666px;
+    // height: 666px;
+    top: 103px;
+    // left: 50%;
+    // transform: translateX(-51.5%);
+    // padding: 0;
+    
+  }
+  .content > .container {
+    // @include colored-bg;
+    min-height: 666px;
+    height: 666px;
+    // border-radius: 0 35px 35px 35px;
+    // position: relative;
+    // background: none;
+    // background: white;
+    // border-left: 1px solid #235f83;
+    // border-right: 1px solid #235f83;
+  }
+
+  // -----------------------------------------------
+  .wrapper-tab >.business {
+    width: 1084px;
+    top: 103px;
+  }
+  .business > .container {
+    width: 1084px;
+    min-height: 666px;
+    height: 666px;
+  }
+  .business > .container > .tabs {
+    left: 100px;
+    top: -62px;
+  }
+  // --------------------------------
+ .wrapper-tab >.family {
+    width: 1084px;
+    top: 103px;
+
+  }
+  .family > .container {
+    width: 1084px;
+    min-height: 666px;
+    height: 666px;
+  }
+  .family > .container > .tabs {
+    left: 230px;
+    top: -62px;
+  }
+  // ----------------------------------
+
+  .wrapper-tab >.product {
+    width: 1084px;
+    top: 103px;
+  }
+  .product > .container {
+    width: 1084px;
+    min-height: 666px;
+    height: 666px;
+  }
+  .product > .container > .tabs {
+    left: 382px;
+    top: -62px;
+  }
+  // ---------------------------------------
+  .wrapper-tab >.loveStory {
+    // position: absolute;
+    // top: 144px;
+    // left: 50%;
+    // transform: translateX(-51%);
+    // width: 1372px;
+    // z-index: 4;
+    // padding: 0 4rem;
+
+    width: 1089px;
+      top: 103px;
+      // transform: translateX(0);}
+  }
+  .loveStory > .container {
+    width: 1089px;
+    min-height: 666px;
+    height: 666px;
+    // @include colored-bg;
+    // border-radius: 35px;
+    // position: relative;
+    background: none;
+    background: white;
+    border-left: 1px solid #235f83;
+    border-right: 1px solid #235f83;
+  }
+  .loveStory > .container > .tabs {
+    left: 560px;
+    top: -62px;
+  }
+  .loveStory > .container > .tabs > .tabs-text {
+    min-width: 125px;
+  }
+
+  // ---------------------------------------
+  .wrapper-tab >.sacraments {
+    width: 1094px;
+      top: 103px;
+  }
+  .sacraments > .container {
+    width: 1094px;
+    min-height: 666px;
+    height: 666px;
+    background: none;
+    background: white;
+    border-left: 1px solid #235f83;
+    border-right: 1px solid #235f83;
+  }
+  .sacraments > .container > .tabs {
+    left: 735px;
+    top: -62px;
+  }
+  // -----------------------------------
+
+  .wrapper-tab >.portrait {
+    width: 1100px;
+      top: 103px;
+   
+  }
+  .portrait > .container {
+    width: 1100px;
+    min-height: 666px;
+    height: 666px;
     background: none;
     background: white;
     border-left: 1px solid #235f83;
     border-right: 1px solid #235f83;
   }
   .portrait > .container > .tabs {
-    top: -35px;
-    left: 597px;
+    left: 892px;
+    top: -62px;
   }
-  .portrait > .active-tab .tabs-text {
-    // width: 100px;
-  }
+ 
 }
-
-// // ---------------------------------
-// // ------------------------------------
-// @media (min-width: $desktop-width) {
-//   .tabs {
-//     position: absolute;
-//     top: -73px;
-//     left: -1px;
-//     display: flex;
-//     height: 73px;
-//     z-index: -1;
-//     width: auto;
-//     max-width: 200px;
-//   }
-//   .tabs-text {
-//     background: #fff;
-//     color: #235f83;
-//     font-size: 18px;
-//     text-transform: uppercase;
-//     padding-top: 20px;
-//     border-top: 1px solid #235f83;
-//   }
-
-//   .active-tab .tabs-text {
-//     background-color: #235f83;
-//     color: transparent;
-//   }
-
-//   // ------------------------------------------
-//   .content {
-//     position: absolute;
-//     top: 144px;
-//     left: 50%;
-//     transform: translateX(-51.5%);
-//     width: 1358px;
-//     z-index: 8;
-//     padding: 0 4rem;
-//   }
-//   .content > .container {
-//     @include colored-bg;
-//     border-radius: 0 35px 35px 35px;
-//     position: relative;
-//     background: none;
-//     background: white;
-//     border-left: 1px solid #235f83;
-//     border-right: 1px solid #235f83;
-//   }
-
-//   // -----------------------------------------------
-//   .business {
-//     position: absolute;
-//     top: 144px;
-//     left: 50%;
-//     transform: translateX(-51.5%);
-//     width: 1358px;
-//     z-index: 7;
-//     padding: 0 4rem;
-//   }
-//   .business > .container {
-//     @include colored-bg;
-//     border-radius: 35px;
-//     position: relative;
-//   }
-//   .business > .container > .tabs {
-//     left: 138px;
-//   }
-//   // --------------------------------
-//   .family {
-//     position: absolute;
-//     top: 144px;
-//     left: 50%;
-//     transform: translateX(-51.5%);
-//     width: 1358px;
-//     z-index: 6;
-//     padding: 0 4rem;
-//   }
-//   .family > .container {
-//     @include colored-bg;
-//     border-radius: 35px;
-//     position: relative;
-//   }
-//   .family > .container > .tabs {
-//     left: 301px;
-//     top: -73px;
-//   }
-//   // ----------------------------------
-
-//   .product {
-//     position: absolute;
-//     top: 144px;
-//     left: 50%;
-//     transform: translateX(-51.5%);
-//     width: 1358px;
-//     z-index: 5;
-//     padding: 0 4rem;
-//   }
-//   .product > .container {
-//     @include colored-bg;
-//     border-radius: 35px;
-//     position: relative;
-//   }
-//   .product > .container > .tabs {
-//     left: 484px;
-//     top: -73px;
-//   }
-//   // ---------------------------------------
-//   .loveStory {
-//     position: absolute;
-//     top: 144px;
-//     left: 50%;
-//     transform: translateX(-51%);
-//     width: 1372px;
-//     z-index: 4;
-//     padding: 0 4rem;
-//   }
-//   .loveStory > .container {
-//     @include colored-bg;
-//     border-radius: 35px;
-//     position: relative;
-//     background: none;
-//     background: white;
-//     border-left: 1px solid #235f83;
-//     border-right: 1px solid #235f83;
-//   }
-//   .loveStory > .container > .tabs {
-//     left: 692px;
-//     top: -73px;
-//   }
-//   .loveStory > .container > .tabs > .tabs-text {
-//     min-width: 142px;
-//    }
-
-//   // ---------------------------------------
-//   .sacraments {
-//     position: absolute;
-//     top: 144px;
-//     left: 50%;
-//     transform: translateX(-50.5%);
-//     width: 1386px;
-//     z-index: 3;
-//     padding: 0 4rem;
-//   }
-//   .sacraments > .container {
-//     @include colored-bg;
-//     border-radius: 35px;
-//     position: relative;
-//     background: none;
-//     background: white;
-//     border-left: 1px solid #235f83;
-//     border-right: 1px solid #235f83;
-//   }
-//   .sacraments > .container > .tabs {
-//     left: 901px;
-//     top: -73px;
-//   }
-//   // -----------------------------------
-
-//   .portrait {
-//     position: absolute;
-//     top: 144px;
-//     left: 50%;
-//     transform: translateX(-50%);
-//     width: 1400px;
-//     z-index: 2;
-//     padding: 0 4rem;
-//   }
-//   .portrait > .container {
-//     @include colored-bg;
-//     border-radius: 35px 0 35px 35px;
-//     position: relative;
-//     background: none;
-//     background: white;
-//     border-left: 1px solid #235f83;
-//     border-right: 1px solid #235f83;
-//   }
-//   .portrait > .container > .tabs {
-//     top: -73px;
-//     left: 1082px;
-//   }
-//   .portrait > .active-tab .tabs-text {
-//     width: 200px;
-//   }
-// }
 
 // .container:has(.active-tab) {
 //   background: none;
