@@ -102,7 +102,7 @@ main {
   }
 }
 .wrapper-tab > section {
-  max-width: calc(100vw - 75px);
+  max-width: calc(100vw - 50px);
 
   @media (max-width: 767px) {
     padding: 0 0 0 2rem;
@@ -113,6 +113,7 @@ main {
   }
 }
 .tabs {
+ 
   position: absolute;
   display: flex;
   height: 40px;
@@ -195,7 +196,7 @@ main {
   background: none;
   background: white;
   border-top: 1px solid #235f83;
-  padding: 0 30px;
+  // padding: 0 30px;
   margin: auto;
 }
 
@@ -782,6 +783,7 @@ main {
   padding: 300px 50px;
 }
 .active-tab > .tabs-text {
+  @include colored-bg;
   background-color: #235f83;
   color: #235f83;
   outline: 1px solid #235f83;
