@@ -106,15 +106,15 @@ const iconForWhom7 = require('../../images/iconsForWhom/7.png');
 
 const iconDash = require('../../images/iconsForWhom/dash.png');
 
-const blueStartTabsLeft = require('../../images/tabs/bsl.png');
-const blueTabsRight = require('../../images/tabs/br.png');
-const blueTabsLeft = require('../../images/tabs/bl.png');
-const blueFinishTabsRight = require('../../images/tabs/bfr.png');
+const blueStartTabsLeft = require('../../images/tabs/bsl.svg');
+const blueTabsRight = require('../../images/tabs/br.svg');
+const blueTabsLeft = require('../../images/tabs/bl.svg');
+const blueFinishTabsRight = require('../../images/tabs/bfr.svg');
 
-const whiteStartTabsLeft = require('../../images/tabs/wsl.png');
-const whiteTabsRight = require('../../images/tabs/wr.png');
-const whiteTabsLeft = require('../../images/tabs/wl.png');
-const whiteFinishTabsRight = require('../../images/tabs/wfr.png');
+const whiteStartTabsLeft = require('../../images/tabs/wsl.svg');
+const whiteTabsRight = require('../../images/tabs/wr.svg');
+const whiteTabsLeft = require('../../images/tabs/wl.svg');
+const whiteFinishTabsRight = require('../../images/tabs/wfr.svg');
 
 // const images = {};
 
