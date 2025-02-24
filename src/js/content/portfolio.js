@@ -111,10 +111,20 @@ const blueTabsRight = require('../../images/tabs/br.svg');
 const blueTabsLeft = require('../../images/tabs/bl.svg');
 const blueFinishTabsRight = require('../../images/tabs/bfr.svg');
 
-const whiteStartTabsLeft = require('../../images/tabs/wsl.svg');
+const whiteStartTabsLeft = require('../../images/tabs/wsl2.svg');
 const whiteTabsRight = require('../../images/tabs/wr.svg');
 const whiteTabsLeft = require('../../images/tabs/wl.svg');
 const whiteFinishTabsRight = require('../../images/tabs/wfr.svg');
+
+// const blueStartTabsLeft = require('../../images/tabs/bsl.png');
+// const blueTabsRight = require('../../images/tabs/br.png');
+// const blueTabsLeft = require('../../images/tabs/bl.png');
+// const blueFinishTabsRight = require('../../images/tabs/bfr.png');
+
+// const whiteStartTabsLeft = require('../../images/tabs/wsl.png');
+// const whiteTabsRight = require('../../images/tabs/wr.png');
+// const whiteTabsLeft = require('../../images/tabs/wl.png');
+// const whiteFinishTabsRight = require('../../images/tabs/wfr.png');
 
 // const images = {};
 
