@@ -325,9 +325,7 @@ main {
   top: 760px;
   right: -96px;
 }
-.portrait > .active-tab > .tabs-text {
-  box-shadow: 0 1px 0 0 #235f83;
-}
+
 
 // ------------------------------------------
 // ++++++++++++++++++++++++++++++++++++++++++
@@ -413,7 +411,7 @@ main {
     font-size: 13px;
     padding-top: 7px;
     text-transform: capitalize;
-    border-top: 0.9px solid #235f83;
+    
   }
 
   .content {
@@ -549,7 +547,7 @@ main {
     font-size: 16px;
     text-transform: uppercase;
     padding-top: 22px;
-    border-top: 1px solid #235f83;
+   
   }
 
 
@@ -692,7 +690,7 @@ main {
     border-right: 1px solid #235f83;
   }
   .portrait > .container > .tabs {
-    left: 892px;
+    left: 891px;
     top: -62px;
   }
  
@@ -790,9 +788,9 @@ main {
   @include colored-bg;
   background-color: #235f83;
   color: #235f83;
-  outline: 1px solid #235f83;
-  outline-offset: -1px;
-  box-shadow: -1px 4px 1px 4px #235f83;
+  // outline: 1px solid #235f83;
+  // outline-offset: -1px;
+  // box-shadow: -1px 4px 1px 4px #235f83;
 }
 .container:has(.active-tab) {
   background: none;
