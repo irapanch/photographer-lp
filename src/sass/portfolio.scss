@@ -90,6 +90,7 @@ main {
 .wrapper-tab {
   position: relative;
   min-height: 1020px;
+  width: 100%;
   margin: auto;
 
   @media (max-width: 450px) {
@@ -100,59 +101,32 @@ main {
   }
 }
 .wrapper-tab > section {
-  // max-width: calc(100vw - 50px);
+  max-width: calc(100vw - 50px);
   // max-width: min(100% - 50px, 100vw - 50px);
   // max-width: calc(100% - 40px);
 
-  // @media (max-width: 767px) {
-  //   padding: 0 0 0 1.5rem;
-  //   min-height: 895px;
-  // }
-  // @media (max-width: 556px) {
-  //   height: 1000px;
-  // }
-
-
-  // -------------------
   @media (max-width: 767px) {
-    padding: 0 0 0 2rem;
+    padding: 0 0 0 1.5rem;
     min-height: 895px;
-   }
-   @media (max-width: 556px) {
-    max-width: 490px;
+  }
+  @media (max-width: 556px) {
     height: 1000px;
-   }
-   @media (max-width: 548px) {
-    max-width: 460px;
-   }
-   @media (max-width: 518px) {
-    max-width: 425px;
-   
-   }
-   @media (max-width: 485px) {
-    max-width: 390px;
-    
-   }
-   @media (max-width: 450px) {
-    max-width: 360px;
-   }
-   @media (max-width: 420px) {
-    max-width: 330px;
-   }
-   @media (max-width: 390px) {
-    max-width: 310px;
+  }
 
 
-   }
+ 
 }
 .tabs {
  
   position: absolute;
   display: flex;
   height: 40px;
+  will-change: transform;
   top: 41px;
   right: -80px;
-  transform: rotate(90deg);
+  // transform: rotate(90deg);
+  transform: rotateZ(90deg);
+  
 
 }
 
