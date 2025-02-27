@@ -101,10 +101,11 @@ main {
 }
 .wrapper-tab > section {
   // max-width: calc(100vw - 50px);
-  max-width: min(100% - 50px, 100vw - 50px);
+  // max-width: min(100% - 50px, 100vw - 50px);
+  max-width: calc(100% - 40px);
 
   @media (max-width: 767px) {
-    padding: 0 0 0 2rem;
+    padding: 0 0 0 1.5rem;
     min-height: 895px;
   }
   @media (max-width: 556px) {
