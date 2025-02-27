@@ -86,9 +86,7 @@ main {
 // $desktop-width: 1200px;
 // $desktop-max-width: 1440px;
 
-.active-tab {
-  // background-color: rgb(51, 255, 0);
-}
+
 .wrapper-tab {
   position: relative;
   min-height: 1020px;
@@ -102,7 +100,8 @@ main {
   }
 }
 .wrapper-tab > section {
-  max-width: calc(100vw - 50px);
+  // max-width: calc(100vw - 50px);
+  max-width: min(100% - 50px, 100vw - 50px);
 
   @media (max-width: 767px) {
     padding: 0 0 0 2rem;
@@ -120,6 +119,9 @@ main {
   top: 41px;
   right: -80px;
   transform: rotate(90deg);
+
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 .tabs-text {
