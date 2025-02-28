@@ -86,7 +86,6 @@ main {
 // $desktop-width: 1200px;
 // $desktop-max-width: 1440px;
 
-
 .wrapper-tab {
   position: relative;
   min-height: 1020px;
@@ -112,36 +111,39 @@ main {
   @media (max-width: 556px) {
     height: 1000px;
   }
-
-
- 
 }
 .tabs {
- 
   position: absolute;
   display: flex;
   height: 40px;
   will-change: transform;
-  top: 41px;
-  right: -80px;
+  // top: 41px;
+  // right: -80px;
   // transform: rotate(90deg);
+  // transform: rotateZ(90deg);
+  top: 14px;
   transform: rotateZ(90deg);
-  
-
+  @media (max-width: 400px) {
+    left: 94%;
+  }
+  @media (min-width: 401px) {
+    left: 95%;
+  }
+  @media (min-width: 479px) {
+    left: 96%;
+  }
+ 
 }
 
 .tabs-text {
   background: #fff;
   color: #235f83;
-  font-size: 13px;
-  text-transform: uppercase;
-  padding-top: 10px;
+  font-size: 14px;
+  text-transform: capitalize;
+  padding-top: 8px;
   border-top: 1px solid #235f83;
 }
-.tabs-text > img {
- height: 40px;
- 
-}
+
 .portfolio-header {
   padding-top: 40px;
   margin-bottom: 12px;
@@ -212,6 +214,7 @@ main {
   margin: auto;
 }
 
+
 // -----------------------------------------------
 .business {
   min-height: 895px;
@@ -228,8 +231,17 @@ main {
   position: relative;
 }
 .business > .container > .tabs {
-  top: 137px;
-  right: -84px;
+  // top: 137px;
+  // right: -84px;
+  top: 99px;
+  @media (max-width: 451px) {
+    left: 96%;
+  }
+  
+  @media (min-width: 452px) {
+    left: 97%;
+  }
+  
 }
 // --------------------------------
 .family {
@@ -248,8 +260,19 @@ main {
   position: relative;
 }
 .family > .container > .tabs {
-  top: 245px;
-  right: -94px;
+  top: 207px;
+  // right: -94px;
+  
+  @media (max-width: 437px) {
+    left: 94%;
+  }
+  @media (min-width: 438px) {
+    left: 95%;
+  }
+  
+  @media (min-width: 530px) {
+    left: 96%;
+  }
 }
 // ----------------------------------
 
@@ -268,8 +291,22 @@ main {
   position: relative;
 }
 .product > .container > .tabs {
-  top: 371px;
-  right: -105px;
+  top: 333px;
+  // right: -105px;
+
+  @media (max-width: 423px) {
+    left: 91%;
+  }
+  @media (min-width: 424px) {
+    left: 92%;
+  }
+  @media (min-width: 478px) {
+    left: 93%;
+  }
+  
+  @media (min-width: 543px) {
+    left: 94%;
+  }
 }
 // ---------------------------------------
 .loveStory {
@@ -287,10 +324,26 @@ main {
   position: relative;
 }
 .loveStory > .container > .tabs {
-  top: 509px;
-  right: -105px;
+  top: 469px;
+  // right: -105px;
+ 
+  @media (max-width: 403px) {
+    left: 92%;
+  }
+  @media (min-width: 404px) {
+    left: 93%;
+  }
+  @media (min-width: 459px) {
+    left: 94%;
+  }
+  
+  @media (min-width: 538px) {
+    left: 95%;
+  }
 }
-
+.loveStory > .container > .tabs > .tabs-text {
+  min-width: 90px;
+}
 // ---------------------------------------
 .sacraments {
   position: absolute;
@@ -306,8 +359,20 @@ main {
   position: relative;
 }
 .sacraments > .container > .tabs {
-  top: 642px;
-  right: -98px;
+  top: 596px;
+  // right: -98px;
+ 
+  @media (max-width: 419px) {
+    left: 94%;
+  }
+  
+  @media (min-width: 420px) {
+    left: 95%;
+  }
+  
+  @media (min-width: 505px) {
+    left: 96%;
+  }
 }
 // -----------------------------------
 
@@ -330,10 +395,23 @@ main {
   border-right: 1px solid #235f83;
 }
 .portrait > .container > .tabs {
-  top: 760px;
-  right: -96px;
+  top: 723px;
+  // right: -96px;
+  
+  @media (max-width: 419px) {
+    left: 92%;
+  }
+  @media (min-width: 420px) {
+    left: 93%;
+  }
+  @media (min-width: 478px) {
+    left: 94%;
+  }
+  
+  @media (min-width: 517px) {
+    left: 94.5%;
+  }
 }
-
 
 // ------------------------------------------
 // ++++++++++++++++++++++++++++++++++++++++++
@@ -419,7 +497,6 @@ main {
     font-size: 13px;
     padding-top: 7px;
     text-transform: capitalize;
-    
   }
 
   .content {
@@ -483,9 +560,7 @@ main {
     top: -35px;
     left: 375px;
   }
-  .loveStory > .container > .tabs > .tabs-text {
-    min-width: 90px;
-  }
+  
 
   // ---------------------------------------
 
@@ -532,9 +607,9 @@ main {
     padding: 0;
   }
   .portfolio-subtitle {
-   font-size: 25px;
-   max-width: 700px;
-   margin-bottom: 70px;
+    font-size: 25px;
+    max-width: 700px;
+    margin-bottom: 70px;
   }
   .cont {
     gap: 40px;
@@ -542,7 +617,7 @@ main {
   .portfolio-forWhom {
     right: 30px;
     top: auto;
-    bottom: 466px ;
+    bottom: 466px;
     font-size: 16px;
     line-height: 1.5;
   }
@@ -555,12 +630,10 @@ main {
     font-size: 16px;
     text-transform: uppercase;
     padding-top: 22px;
-   
   }
 
-
   // ------------------------------------------
-  .wrapper-tab >.content {
+  .wrapper-tab > .content {
     width: 1084px;
     // min-height: 666px;
     // height: 666px;
@@ -568,7 +641,6 @@ main {
     // left: 50%;
     // transform: translateX(-51.5%);
     // padding: 0;
-    
   }
   .content > .container {
     // @include colored-bg;
@@ -583,7 +655,7 @@ main {
   }
 
   // -----------------------------------------------
-  .wrapper-tab >.business {
+  .wrapper-tab > .business {
     width: 1084px;
     top: 103px;
   }
@@ -597,10 +669,9 @@ main {
     top: -62px;
   }
   // --------------------------------
- .wrapper-tab >.family {
+  .wrapper-tab > .family {
     width: 1084px;
     top: 103px;
-
   }
   .family > .container {
     width: 1084px;
@@ -613,7 +684,7 @@ main {
   }
   // ----------------------------------
 
-  .wrapper-tab >.product {
+  .wrapper-tab > .product {
     width: 1084px;
     top: 103px;
   }
@@ -627,7 +698,7 @@ main {
     top: -62px;
   }
   // ---------------------------------------
-  .wrapper-tab >.loveStory {
+  .wrapper-tab > .loveStory {
     // position: absolute;
     // top: 144px;
     // left: 50%;
@@ -637,8 +708,8 @@ main {
     // padding: 0 4rem;
 
     width: 1089px;
-      top: 103px;
-      // transform: translateX(0);}
+    top: 103px;
+    // transform: translateX(0);}
   }
   .loveStory > .container {
     width: 1089px;
@@ -661,9 +732,9 @@ main {
   }
 
   // ---------------------------------------
-  .wrapper-tab >.sacraments {
+  .wrapper-tab > .sacraments {
     width: 1094px;
-      top: 103px;
+    top: 103px;
   }
   .sacraments > .container {
     width: 1094px;
@@ -683,10 +754,9 @@ main {
   }
   // -----------------------------------
 
-  .wrapper-tab >.portrait {
+  .wrapper-tab > .portrait {
     width: 1100px;
-      top: 103px;
-   
+    top: 103px;
   }
   .portrait > .container {
     width: 1100px;
@@ -701,7 +771,6 @@ main {
     left: 891px;
     top: -62px;
   }
- 
 }
 
 // .container:has(.active-tab) {

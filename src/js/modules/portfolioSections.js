@@ -66,7 +66,7 @@ const getImageOrientation = (index, odd) => {
 // };
 
 export const dataPortfolio = () => {
-  const wrapper = document.querySelector('.wrapper');
+  const wrapper = document.querySelector('.wrapper-tab');
  
 
   let html = '';
