@@ -136,6 +136,12 @@ main {
 }
 
 .tabs-text {
+  @media (max-width: 767px) {
+    font-size: 11px;
+    padding: 0 7px;
+    padding-top: 12px;
+
+  }
   background: #fff;
   color: #235f83;
   font-size: 14px;
@@ -334,11 +340,11 @@ main {
     left: 93%;
   }
   @media (min-width: 459px) {
-    left: 94%;
+    left: 93.5%;
   }
   
   @media (min-width: 538px) {
-    left: 95%;
+    left: 94%;
   }
 }
 .loveStory > .container > .tabs > .tabs-text {
@@ -843,6 +849,8 @@ main {
     grid-row: span 3;
   }
 }
+
+
 .horizontal {
   grid-column: span 2;
 }
