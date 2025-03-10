@@ -136,18 +136,19 @@ main {
 }
 
 .tabs-text {
-  @media (max-width: 767px) {
-    font-size: 11px;
-    padding: 0 7px;
-    padding-top: 12px;
+  // @media (max-width: 767px) {
+  //   font-size: 11px;
+  //   padding: 0 7px;
+  //   padding-top: 12px;
 
-  }
+  // }
   background: #fff;
   color: #235f83;
   font-size: 14px;
   text-transform: capitalize;
   padding-top: 8px;
   border-top: 1px solid #235f83;
+  text-align: center;
 }
 
 .portfolio-header {
@@ -239,15 +240,25 @@ main {
 .business > .container > .tabs {
   // top: 137px;
   // right: -84px;
-  top: 99px;
-  @media (max-width: 451px) {
-    left: 96%;
+  top: 117px;
+  @media (max-width: 400px) {
+    left: 91%;
   }
   
-  @media (min-width: 452px) {
-    left: 97%;
+  @media (min-width: 401px) {
+    left: 92%;
   }
-  
+  @media (min-width: 479px) {
+    left: 93%;
+  }
+  @media (min-width: 512px) {
+    left: 93.5%;
+  }
+}
+.business > .container > .tabs > .tabs-text {
+  @media (max-width: 767px) {
+   padding: 8px 17px 0;
+  }
 }
 // --------------------------------
 .family {
@@ -266,7 +277,7 @@ main {
   position: relative;
 }
 .family > .container > .tabs {
-  top: 207px;
+  top: 242px;
   // right: -94px;
   
   @media (max-width: 437px) {
@@ -297,7 +308,7 @@ main {
   position: relative;
 }
 .product > .container > .tabs {
-  top: 333px;
+  top: 367px;
   // right: -105px;
 
   @media (max-width: 423px) {
@@ -330,7 +341,7 @@ main {
   position: relative;
 }
 .loveStory > .container > .tabs {
-  top: 469px;
+  top: 501px;
   // right: -105px;
  
   @media (max-width: 403px) {
@@ -344,7 +355,7 @@ main {
   }
   
   @media (min-width: 538px) {
-    left: 94%;
+    left: 94.5%;
   }
 }
 .loveStory > .container > .tabs > .tabs-text {
@@ -365,7 +376,7 @@ main {
   position: relative;
 }
 .sacraments > .container > .tabs {
-  top: 596px;
+  top: 627px;
   // right: -98px;
  
   @media (max-width: 419px) {
@@ -377,7 +388,7 @@ main {
   }
   
   @media (min-width: 505px) {
-    left: 96%;
+    left: 95.6%;
   }
 }
 // -----------------------------------
@@ -401,7 +412,7 @@ main {
   border-right: 1px solid #235f83;
 }
 .portrait > .container > .tabs {
-  top: 723px;
+  top: 753px;
   // right: -96px;
   
   @media (max-width: 419px) {
