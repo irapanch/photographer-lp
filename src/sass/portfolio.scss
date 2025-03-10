@@ -123,9 +123,13 @@ main {
   // transform: rotateZ(90deg);
   top: 18px;
   transform: rotateZ(90deg);
-  @media (max-width: 374px) {
-    left: 93.7%;
+  @media (max-width: 334px) {
+    left: 92.8%;
   }
+  @media (min-width: 335px) {
+    left: 93.1%;
+  }
+  
   @media (min-width: 375px) {
     left: 94%;
   }
@@ -258,9 +262,13 @@ main {
   // top: 137px;
   // right: -84px;
   top: 120px;
-  @media (max-width: 374px) {
-    left: 92.2%;
+  @media (max-width: 334px) {
+    left: 91.2%;
   }
+  @media (min-width: 335px) {
+    left: 91.6%;
+  }
+  
   @media (min-width: 375px) {
     left: 92.7%;
   }
@@ -305,9 +313,13 @@ main {
 .family > .container > .tabs {
   top: 242px;
   // right: -94px;
-  @media (max-width: 374px) {
-    left: 94.5%;
+  @media (max-width: 334px) {
+    left: 94%;
   }
+  @media (min-width: 335px) {
+    left: 94.2%;
+  }
+  
   @media (min-width: 375px) {
     left: 94.9%;
   }
@@ -356,9 +368,13 @@ main {
 .product > .container > .tabs {
   top: 367px;
   // right: -105px;
-  @media (max-width: 374px) {
-    left: 91.3%;
+  @media (max-width: 334px) {
+    left: 90.5%;
   }
+  @media (min-width: 335px) {
+    left: 90.5%;
+  }
+  
   @media (min-width: 375px) {
     left: 91.7%;
   }
@@ -405,9 +421,13 @@ main {
   top: 501px;
   // right: -105px;
  
-  @media (max-width: 374px) {
-    left: 92%;
+  @media (max-width: 334px) {
+    left: 91.2%;
   }
+  @media (min-width: 335px) {
+    left: 91.2%;
+  }
+  
   @media (min-width: 375px) {
     left: 92.3%;
   }
@@ -448,9 +468,13 @@ main {
 .sacraments > .container > .tabs {
   top: 627px;
   // right: -98px;
-  @media (max-width: 374px) {
-    left: 94%;
+  @media (max-width: 334px) {
+    left: 93.5%;
   }
+  @media (min-width: 335px) {
+    left: 93.4%;
+  }
+  
   @media (min-width: 375px) {
     left: 94.3%;
   }
@@ -502,9 +526,13 @@ main {
 .portrait > .container > .tabs {
   top: 753px;
   // right: -96px;
-  @media (max-width: 374px) {
-    left: 91.6%;
+  @media (max-width: 334px) {
+    left: 90.4%;
   }
+  @media (min-width: 335px) {
+    left: 90.8%;
+  }
+  
   @media (min-width: 375px) {
     left: 92%;
   }
