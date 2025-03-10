@@ -121,7 +121,7 @@ main {
   // right: -80px;
   // transform: rotate(90deg);
   // transform: rotateZ(90deg);
-  top: 14px;
+  top: 18px;
   transform: rotateZ(90deg);
   @media (max-width: 400px) {
     left: 94%;
@@ -129,9 +129,7 @@ main {
   @media (min-width: 401px) {
     left: 95%;
   }
-  @media (min-width: 479px) {
-    left: 96%;
-  }
+  
  
 }
 
@@ -221,7 +219,11 @@ main {
   margin: auto;
 }
 
-
+.content > .container > .tabs > .tabs-text{
+  @media (max-width: 767px) {
+    padding: 8px 4px 0;
+   }
+}
 // -----------------------------------------------
 .business {
   min-height: 895px;
@@ -240,7 +242,7 @@ main {
 .business > .container > .tabs {
   // top: 137px;
   // right: -84px;
-  top: 117px;
+  top: 120px;
   @media (max-width: 400px) {
     left: 91%;
   }
@@ -252,12 +254,12 @@ main {
     left: 93%;
   }
   @media (min-width: 512px) {
-    left: 93.5%;
+    left: 94%;
   }
 }
 .business > .container > .tabs > .tabs-text {
   @media (max-width: 767px) {
-   padding: 8px 17px 0;
+   padding: 8px 14px 0;
   }
 }
 // --------------------------------
