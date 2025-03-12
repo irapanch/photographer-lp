@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // faq();
   // titlePortfolio();
   dataPortfolio();
-  burger('.nav', '.mobile-menu__button');
+  // burger('.nav', '.mobile-menu__button');
   mask('[name="phone"]');
   baguetteBox.run('.gallery', {
     buttons: true,

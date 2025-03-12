@@ -91,7 +91,7 @@ export const dataPortfolio = () => {
     html += `
     <section class="${item.id} " id="${item.id}">
     <div class="container ">
-    <div class="tabs ${activeTabClass}">
+    <div class="tabs-portfolio ${activeTabClass}">
     <img class="tabs-left" src="${
       isContentSection && activeTabClass === 'active-tab'
         ? tabsOptions.blue.startLeft // Меняем src для активной вкладки
@@ -179,7 +179,7 @@ export const dataPortfolio = () => {
 
   wrapper.insertAdjacentHTML('beforeend', html);
   
-  const allTabs = document.querySelectorAll('.tabs');
+  const allTabs = document.querySelectorAll('.tabs-portfolio');
 
   allTabs.forEach(tab =>
     tab.addEventListener('pointerdown', e => {

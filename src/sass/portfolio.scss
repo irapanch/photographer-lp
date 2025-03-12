@@ -80,6 +80,7 @@ main {
   position: relative;
 }
 
+
 // $phone-width: 375px;
 // $tablet-width: 768px;
 // $mobile-and-table-only: 767px;
@@ -112,7 +113,7 @@ main {
     height: 1000px;
   }
 }
-.tabs {
+.tabs-portfolio {
   position: absolute;
   display: flex;
   height: 40px;
@@ -238,7 +239,7 @@ main {
   margin: auto;
 }
 
-.content > .container > .tabs > .tabs-text{
+.content > .container > .tabs-portfolio > .tabs-text{
   @media (max-width: 767px) {
     padding: 8px 4px 0;
    }
@@ -258,7 +259,7 @@ main {
   border-radius: 35px;
   position: relative;
 }
-.business > .container > .tabs {
+.business > .container > .tabs-portfolio {
   // top: 137px;
   // right: -84px;
   top: 120px;
@@ -289,7 +290,7 @@ main {
     left: 95.2%;
   }
 }
-.business > .container > .tabs > .tabs-text {
+.business > .container > .tabs-portfolio > .tabs-text {
   @media (max-width: 767px) {
    padding: 8px 14px 0;
   }
@@ -310,7 +311,7 @@ main {
   border-radius: 35px;
   position: relative;
 }
-.family > .container > .tabs {
+.family > .container > .tabs-portfolio {
   top: 242px;
   // right: -94px;
   @media (max-width: 334px) {
@@ -365,7 +366,7 @@ main {
   border-radius: 35px;
   position: relative;
 }
-.product > .container > .tabs {
+.product > .container > .tabs-portfolio {
   top: 367px;
   // right: -105px;
   @media (max-width: 334px) {
@@ -417,7 +418,7 @@ main {
   border-radius: 35px;
   position: relative;
 }
-.loveStory > .container > .tabs {
+.loveStory > .container > .tabs-portfolio {
   top: 501px;
   // right: -105px;
  
@@ -448,7 +449,7 @@ main {
     left: 94.9%;
   }
 }
-.loveStory > .container > .tabs > .tabs-text {
+.loveStory > .container > .tabs-portfolio > .tabs-text {
   min-width: 90px;
 }
 // ---------------------------------------
@@ -465,7 +466,7 @@ main {
   border-radius: 35px;
   position: relative;
 }
-.sacraments > .container > .tabs {
+.sacraments > .container > .tabs-portfolio {
   top: 627px;
   // right: -98px;
   @media (max-width: 334px) {
@@ -523,7 +524,7 @@ main {
   border-left: 1px solid #235f83;
   border-right: 1px solid #235f83;
 }
-.portrait > .container > .tabs {
+.portrait > .container > .tabs-portfolio {
   top: 753px;
   // right: -96px;
   @media (max-width: 334px) {
@@ -629,7 +630,7 @@ main {
     grid-template-columns: 1fr;
   }
 
-  .tabs {
+  .tabs-portfolio {
     left: -1px;
     top: -35px;
     height: 35px;
@@ -661,7 +662,7 @@ main {
     height: 590px;
     min-height: 590px;
   }
-  .business > .container > .tabs {
+  .business > .container > .tabs-portfolio {
     left: 73px;
     top: -35px;
   }
@@ -677,7 +678,7 @@ main {
     height: 590px;
     min-height: 590px;
   }
-  .family > .container > .tabs {
+  .family > .container > .tabs-portfolio {
     left: 160px;
     top: -35px;
   }
@@ -689,7 +690,7 @@ main {
     height: 590px;
     min-height: 590px;
   }
-  .product > .container > .tabs {
+  .product > .container > .tabs-portfolio {
     top: -35px;
     left: 258px;
   }
@@ -700,7 +701,7 @@ main {
     height: 590px;
     min-height: 590px;
   }
-  .loveStory > .container > .tabs {
+  .loveStory > .container > .tabs-portfolio {
     top: -35px;
     left: 375px;
   }
@@ -713,7 +714,7 @@ main {
     height: 590px;
     min-height: 590px;
   }
-  .sacraments > .container > .tabs {
+  .sacraments > .container > .tabs-portfolio {
     top: -35px;
     left: 496px;
   }
@@ -727,7 +728,7 @@ main {
     height: 590px;
     min-height: 590px;
   }
-  .portrait > .container > .tabs {
+  .portrait > .container > .tabs-portfolio {
     top: -35px;
     left: 597px;
   }
@@ -765,7 +766,7 @@ main {
     font-size: 16px;
     line-height: 1.5;
   }
-  .tabs {
+  .tabs-portfolio {
     top: -63px;
     height: 63px;
     max-width: 200px;
@@ -808,7 +809,7 @@ main {
     min-height: 666px;
     height: 666px;
   }
-  .business > .container > .tabs {
+  .business > .container > .tabs-portfolio {
     left: 100px;
     top: -62px;
   }
@@ -822,7 +823,7 @@ main {
     min-height: 666px;
     height: 666px;
   }
-  .family > .container > .tabs {
+  .family > .container > .tabs-portfolio {
     left: 230px;
     top: -62px;
   }
@@ -837,7 +838,7 @@ main {
     min-height: 666px;
     height: 666px;
   }
-  .product > .container > .tabs {
+  .product > .container > .tabs-portfolio {
     left: 382px;
     top: -62px;
   }
@@ -867,11 +868,11 @@ main {
     border-left: 1px solid #235f83;
     border-right: 1px solid #235f83;
   }
-  .loveStory > .container > .tabs {
+  .loveStory > .container > .tabs-portfolio {
     left: 560px;
     top: -62px;
   }
-  .loveStory > .container > .tabs > .tabs-text {
+  .loveStory > .container > .tabs-portfolio > .tabs-text {
     min-width: 125px;
   }
 
@@ -889,7 +890,7 @@ main {
     border-left: 1px solid #235f83;
     border-right: 1px solid #235f83;
   }
-  .sacraments > .container > .tabs {
+  .sacraments > .container > .tabs-portfolio {
     left: 735px;
     top: -62px;
   }
@@ -911,7 +912,7 @@ main {
     border-left: 1px solid #235f83;
     border-right: 1px solid #235f83;
   }
-  .portrait > .container > .tabs {
+  .portrait > .container > .tabs-portfolio {
     left: 891px;
     top: -62px;
   }
