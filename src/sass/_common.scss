@@ -29,7 +29,9 @@ body {
   font-weight: 400;
   background-color: $bg-color;
 }
-
+html, body {
+  overflow-x: hidden;
+}
 ul {
   list-style: none;
 }
